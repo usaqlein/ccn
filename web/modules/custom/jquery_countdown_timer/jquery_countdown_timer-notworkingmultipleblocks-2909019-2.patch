@@ -1,0 +1,83 @@
+diff --git a/js/jquery_countdown_timer_init.js b/js/jquery_countdown_timer_init.js
+index 6f7d55a..580c41a 100755
+--- a/js/jquery_countdown_timer_init.js
++++ b/js/jquery_countdown_timer_init.js
+@@ -5,22 +5,24 @@
+      */
+     Drupal.behaviors.jsCountdownTimer = {
+         attach: function (context) {
+-            var note = $('#jquery-countdown-timer-note'),
+-                ts = new Date(drupalSettings.countdown.unixtimestamp * 1000);
+-
+-            $(context).find('#jquery-countdown-timer').once('jquery-countdown-timer').countdown({
+-                timestamp: ts,
+-                font_size: drupalSettings.countdown.fontsize,
+-                callback: function (weeks, days, hours, minutes, seconds) {
+-                    var dateStrings = new Array();
+-                    dateStrings['@weeks'] = Drupal.formatPlural(weeks, '1 week', '@count weeks');
+-                    dateStrings['@days'] = Drupal.formatPlural(days, '1 day', '@count days');
+-                    dateStrings['@hours'] = Drupal.formatPlural(hours, '1 hour', '@count hours');
+-                    dateStrings['@minutes'] = Drupal.formatPlural(minutes, '1 minute', '@count minutes');
+-                    dateStrings['@seconds'] = Drupal.formatPlural(seconds, '1 second', '@count seconds');
+-                    var message = Drupal.t('@weeks, @days, @hours, @minutes, @seconds left', dateStrings);
+-                    note.html(message);
+-                }
++            $.each(drupalSettings.countdown, function (key, value) {
++                var note = $('#jquery-countdown-timer-note-' + key),
++                    ts = new Date(value.unixtimestamp * 1000);
++                
++                $(context).find('#jquery-countdown-timer-' + key).once('jquery-countdown-timer-' + key).countdown({
++                    timestamp: ts,
++                    font_size: value.fontsize,
++                    callback: function (weeks, days, hours, minutes, seconds) {
++                        var dateStrings = new Array();
++                        dateStrings['@weeks'] = Drupal.formatPlural(weeks, '1 week', '@count weeks');
++                        dateStrings['@days'] = Drupal.formatPlural(days, '1 day', '@count days');
++                        dateStrings['@hours'] = Drupal.formatPlural(hours, '1 hour', '@count hours');
++                        dateStrings['@minutes'] = Drupal.formatPlural(minutes, '1 minute', '@count minutes');
++                        dateStrings['@seconds'] = Drupal.formatPlural(seconds, '1 second', '@count seconds');
++                        var message = Drupal.t('@weeks, @days, @hours, @minutes, @seconds left', dateStrings);
++                        note.html(message);
++                    }
++                });     
+             });
+         }
+     };
+diff --git a/src/Plugin/Block/JqueryCountdownTimerBlock.php b/src/Plugin/Block/JqueryCountdownTimerBlock.php
+index 1e4c902..7945029 100755
+--- a/src/Plugin/Block/JqueryCountdownTimerBlock.php
++++ b/src/Plugin/Block/JqueryCountdownTimerBlock.php
+@@ -62,27 +62,28 @@ class JqueryCountdownTimerBlock extends BlockBase {
+     $dt = $form_state->getValue('jquery_countdown_timer_date');
+     $this->configuration['countdown_datetime'] = $dt->format('Y-m-d H:i:s');
+     $this->configuration['font_size'] = $form_state->getValue('jquery_countdown_timer_font_size');
++    $block_id = $form['id']['#default_value'];
++    $this->configuration['block_id'] = $block_id;
+   }
+ 
+   /**
+    * {@inheritdoc}
+    */
+   public function build() {
+-
++    
++    $block_id = $this->configuration['block_id'];
+     $settings = array(
+       'unixtimestamp' => strtotime($this->configuration['countdown_datetime']),
+       'fontsize' => $this->configuration['font_size'],
+     );
+-
+     $build = array();
+     $build['content'] = array(
+-      '#markup' => '<div id="jquery-countdown-timer"></div><div id="jquery-countdown-timer-note"></div>',
++      '#markup' => '<div id="jquery-countdown-timer-' . $block_id . '"></div><div id="jquery-countdown-timer-note-' . $block_id . '"></div>',
+     );
+ 
+     // Attach library containing css and js files.
+     $build['#attached']['library'][] = 'jquery_countdown_timer/countdown.timer';
+-    $build['#attached']['drupalSettings']['countdown'] = $settings;
+-
++    $build['#attached']['drupalSettings']['countdown'][$block_id] = $settings;
+     return $build;
+   }
+ }
