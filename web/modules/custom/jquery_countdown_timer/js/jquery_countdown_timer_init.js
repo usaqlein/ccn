@@ -18,8 +18,10 @@
                         dateStrings['@days'] = Drupal.formatPlural(days, '1 day', '@count days');
                         dateStrings['@hours'] = Drupal.formatPlural(hours, '1 hour', '@count hours');
                         dateStrings['@minutes'] = Drupal.formatPlural(minutes, '1 minute', '@count minutes');
-                        dateStrings['@seconds'] = Drupal.formatPlural(seconds, '1 second', '@count seconds');
-                        var message = Drupal.t('@weeks, @days, @hours, @minutes, @seconds left', dateStrings);
+                        // dateStrings['@seconds'] = Drupal.formatPlural(seconds, '1 second', '@count seconds');
+                        // var message = Drupal.t('@weeks, @days, @hours, @minutes, @seconds left', dateStrings);
+                        // note.html(message);
+                        var message = Drupal.t('@weeks, @days, @hours, @minutes left', dateStrings);
                         note.html(message);
                     }
                 }); 

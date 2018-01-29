@@ -38,6 +38,7 @@ regions:
   after_footer: 'After Footer'
   copyright: 'Copyright'
   other: 'Other'
+  countdown: 'Countdowns'
 
 version: '8.x'
 core: '8.x'
