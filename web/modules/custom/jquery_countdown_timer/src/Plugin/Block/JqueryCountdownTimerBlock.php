@@ -25,7 +25,7 @@ class JqueryCountdownTimerBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    $font_size = 18;
+    $font_size = 16;
     $dt = new DateTime('tomorrow');
     $countdown_datetime = $dt->format('Y-m-d H:i:s');
 

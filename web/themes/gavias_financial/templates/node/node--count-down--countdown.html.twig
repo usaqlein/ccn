@@ -1,0 +1,26 @@
+{%
+  set classes = [
+    'node',
+    'node-detail',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<div class="post-block">
+  <div class="post-image">
+    {{ content.field_countdown_image }}
+  </div>
+  <div class="post-content text-left">
+    <div class="post-title"> <a href="{{ url }}" rel="bookmark">{{ label }}</a> </div>            
+      <div class="post-body">
+        {{ content.field_countdown }}
+      </div>
+      <div class="post-body">
+        {{ content.field_punchline }}
+      </div>
+  </div>
+</div>
