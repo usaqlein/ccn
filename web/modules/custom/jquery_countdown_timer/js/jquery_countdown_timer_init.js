@@ -28,4 +28,4 @@
             });
         }
     };
-})(jQuery, Drupal, drupalSettings);2018_01_31_07_53_47_bb_export.txtØ
+})(jQuery, Drupal, drupalSettings);
