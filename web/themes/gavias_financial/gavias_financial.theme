@@ -376,3 +376,19 @@ function gavias_financial_preprocess_views_view(&$variables){
       $variables['attributes']['class'][] = "view-page";
     }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function gavias_financial_theme_suggestions_taxonomy_term_alter(&$suggestions, $variables) {
+  /** @var \Drupal\taxonomy\TermInterface $term */
+  $term = $variables['elements']['#taxonomy_term'];
+
+  $view = $variables['elements']['#view_mode'];
+  $bundle = $term->bundle();
+
+  $suggestions[] = 'taxonomy_term__' . $view;
+  $suggestions[] = 'taxonomy_term__' . $bundle .'__'. $view;
+
+  return $suggestions;
+}
