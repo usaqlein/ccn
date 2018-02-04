@@ -77,8 +77,10 @@ class JqueryCountdownTimerBlock extends BlockBase {
     );
 
     $build = array();
+    $block_id_array = explode('_', $block_id);
+    $block_id_class = $block_id_array[0];
     $build['content'] = array(
-      '#markup' => '<div id="jquery-countdown-timer-' . $block_id . '"></div><div id="jquery-countdown-timer-note-' . $block_id . '"></div>',
+      '#markup' => '<div id="jquery-countdown-timer-' . $block_id . '" class="jquery-countdown-timer-' . $block_id_class . '"></div><div id="jquery-countdown-timer-note-' . $block_id . '" class="jquery-countdown-timer-note-' . $block_id_class . '"></div>',
     );
 
     // Attach library containing css and js files.
