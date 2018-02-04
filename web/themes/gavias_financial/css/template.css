@@ -10233,10 +10233,24 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
 
 /******************* Custom Additions ***********************************/
 
+/*** Card Level CSS ***/
+
+/* Frong Page Countdown Cards */
+div.view-portfolio > div.cd_types {
+  padding: 2px;
+}
+/* Front Page Top Slider */
+div.item.countdown.slider {
+  padding: 5px;
+}
+
+/***** Field Level CSS *****/
+
+/* Field Cards Crypto Taxonomy Icons */
 div.crypto-icon {
   padding-right: 10px;
 }
-
-span.post-card-tag {
+/* Field Cards Card Tags */
+span.countdown-card-tag {
   padding-right: 5px;
 }

@@ -6,8 +6,9 @@
       <h3>{{ title }}</h3>
    {% endif %}
 
+
     {% for row in rows %}
-         <div class="item">
+         <div class="item {{ row.content['#view_mode'] }} slider">
             <div{{ row.attributes }}>{{ row.content|raw }}</div>
          </div>
     {% endfor %}
