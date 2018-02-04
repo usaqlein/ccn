@@ -29,7 +29,7 @@ class JqueryCountdownTimerBlock extends BlockBase {
     $dt = new DateTime('tomorrow');
     $countdown_datetime = $dt->format('Y-m-d H:i:s');
 
-    return array('countdown_datetime' => $countdown_datetime, 'font_size' => $font_size);
+    return array('countdown_datetime' => $countdown_datetime, 'font_size' => $font_size, 'label_display' => FALSE);
   }
 
   /**

@@ -10230,3 +10230,13 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
 .gavias_customize_form .form-group.action input#gavias_customize_reset {
   background: #f0ad4e;
 }
+
+/******************* Custom Additions ***********************************/
+
+div.crypto-icon {
+  padding-right: 10px;
+}
+
+span.post-card-tag {
+  padding-right: 5px;
+}

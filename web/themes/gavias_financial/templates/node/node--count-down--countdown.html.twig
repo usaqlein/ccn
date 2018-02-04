@@ -10,17 +10,50 @@
     'clearfix',
   ]
 %}
+{# Template for Card#}
 <div class="post-block">
+
+  <!---- Header / Image Conent ----->
   <div class="post-image">
     {{ content.field_countdown_image }}
   </div>
+
+  <!---- Body Conent ----->
   <div class="post-content text-left">
-    <div class="post-title"> <a href="{{ url }}" rel="bookmark">{{ label }}</a> </div>            
-      <div class="post-body">
-        {{ content.field_countdown }}
-      </div>
-      <div class="post-body">
-        {{ content.field_punchline }}
-      </div>
+
+    {# Body Title #}
+    <div class="block-title card-title">
+      <span><a href="{{ url }}" rel="bookmark">{{ label }}</a></span>
+    </div>
+
+    {# Body Meta #}
+    <div class="post-meta">
+      <span class="float-let"> / </span>
+      <span class="post-categories float-let">{{ content.field_cd_type }}</span>
+      <span class="post-card-tag float-left">{{ content.field_tags }}</span>
+    </div>
+
+    {# Body Countdown #}
+    <div class="countdown">
+      {{ content.field_countdown }}
+    </div>
+
+    {# Body Body #}
+    <div class="post-body">
+      {{ content.field_punchline }}
+    </div>
+
+    {# Body Card Icons #}
+    <div class="card-icons">
+      {{ content.field_asset }}
+    </div>
   </div>
+
+  <!---- Footer Content ----->
+  <div class="category-list item-list card-read-more">
+    <div class="item-list">
+      <ul><li class="view-list-item"><a href="{{ url }}" hreflang="en"><span class="text-theme">Read More</span> | {{ date }} </a></li></ul>
+    </div>
+  </div>
+  {# End Card Content #}
 </div>
