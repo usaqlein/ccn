@@ -10235,17 +10235,39 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
 
 /*** Card Level CSS ***/
 
+/* Countdown Card */
+div.countdown-card {
+  margin: 0 !important;
+  border: 2px solid #5eb4e7;
+  border-radius: 10px;
+}
 /* Frong Page Countdown Cards */
 div.view-portfolio > div.cd_types {
-  padding: 2px;
+  padding: 5px !important;
 }
 /* Front Page Top Slider */
 div.item.countdown.slider {
-  padding: 5px;
+  padding: 5px !important;
+}
+
+/***** Node Region Level CSS *****/
+
+/* Card Body */
+div.card-body {
+  padding: 10px !important;
+}
+
+/* Card Footer Ribbon */
+li.card-read-more {
+  margin: 0 !important;
 }
 
 /***** Field Level CSS *****/
 
+/* Field Card Title */
+div.card-title {
+  margin-bottom: 5px !important;
+}
 /* Field Cards Crypto Taxonomy Icons */
 div.crypto-icon {
   padding-right: 10px;
@@ -10253,4 +10275,20 @@ div.crypto-icon {
 /* Field Cards Card Tags */
 span.countdown-card-tag {
   padding-right: 5px;
+}
+
+
+/***** INTRA Field Level CSS *****/
+
+/* Countdown Time Clock */
+div.jquery-countdown-timer-countdowntimer{
+  padding-top: 10px;
+  text-align: center;
+}
+/* Countdown Timer Time Left Text */
+div.jquery-countdown-timer-note-countdowntimer{
+  font-size: 12px;
+  font-style: italic;
+  color: #5eb4e7;
+  text-align: center;
 }
