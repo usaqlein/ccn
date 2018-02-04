@@ -88,7 +88,7 @@ function template_preprocess_views_view_gvaportfolio(&$variables) {
         if(isset($f['target_id']) && $f['target_id']) $tid .= ' ' . $f['target_id'];
       }
     }
-    $variables['rows'][$key] = '<div class="' . "{$xclass} {$tid}" . '">' . render($variables['rows'][$key]) . '</div>';
+    $variables['rows'][$key] = '<div class="' . "{$xclass} {$tid} {$taxonomy}" . '">' . render($variables['rows'][$key]) . '</div>';
   }
 
   $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
