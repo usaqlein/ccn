@@ -8,6 +8,7 @@ global-styling:
       css/font-awesome.css: {}
       css/icon-custom.css: {}
       css/animate.css: {}
+      css/custom_countdown.css: {}
       vendor/owl-carousel/assets/owl.carousel.min.css: {}
       vendor/owl-carousel/assets/owl.theme.default.min.css: {}
       vendor/prettyphoto/css/prettyPhoto.css: {}
