@@ -1,0 +1,33 @@
+uuid: dafa3ade-78dd-4e37-9828-74f1f7c11b8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_246
+theme: gavias_financial
+region: countdown
+weight: 0
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#countdowntimer_246 Fake news'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-06-08 00:00:00'
+  font_size: '16'
+  block_id: countdowntimer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

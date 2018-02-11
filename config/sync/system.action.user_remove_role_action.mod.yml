@@ -1,0 +1,14 @@
+uuid: b4d9d97b-c0bd-438a-bc9a-b22d10eabfc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mod
+  module:
+    - user
+id: user_remove_role_action.mod
+label: 'Remove the Mod role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mod

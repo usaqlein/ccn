@@ -1,0 +1,38 @@
+uuid: 7b4c01a9-a6ff-4343-b327-8c98886edadd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_asset_icon
+    - taxonomy.vocabulary.asset
+  module:
+    - image
+id: taxonomy_term.asset.field_asset_icon
+field_name: field_asset_icon
+entity_type: taxonomy_term
+bundle: asset
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: icons
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 50x50
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 67925af5-1ef8-4083-b3a7-643a421c4ad3
+    alt: ''
+    title: ''
+    width: 400
+    height: 400
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

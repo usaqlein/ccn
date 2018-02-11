@@ -1,0 +1,33 @@
+uuid: d532a922-a8fd-4324-b133-1089a227c960
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_224
+theme: gavias_financial
+region: countdown
+weight: 0
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#224 ADD CDC'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-05-12 02:15:00'
+  font_size: '16'
+  block_id: countdowntimer_224
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

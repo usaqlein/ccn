@@ -1,0 +1,63 @@
+uuid: 416aa664-93de-46dc-b4dc-423c8c0bd173
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.just_tiny_icon
+    - field.field.taxonomy_term.asset.field_asset_icon
+    - field.field.taxonomy_term.asset.field_coin_market_cap
+    - field.field.taxonomy_term.asset.field_ticker
+    - field.field.taxonomy_term.asset.field_website
+    - taxonomy.vocabulary.asset
+  module:
+    - image
+    - link
+id: taxonomy_term.asset.just_tiny_icon
+targetEntityType: taxonomy_term
+bundle: asset
+mode: just_tiny_icon
+content:
+  field_asset_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_coin_market_cap:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ticker:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_website:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  description: true
+  langcode: true

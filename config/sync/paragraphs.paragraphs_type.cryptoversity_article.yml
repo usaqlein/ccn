@@ -1,0 +1,11 @@
+uuid: f66ff0f7-a9a6-44bb-ae7d-bc3dfadd7767
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:47b2d0a9-74e3-4cc0-8536-41f85f4a7e40'
+id: cryptoversity_article
+label: 'Cryptoversity Article'
+icon_uuid: 47b2d0a9-74e3-4cc0-8536-41f85f4a7e40
+description: 'Fields for Cryptoversity Articles'
+behavior_plugins: {  }

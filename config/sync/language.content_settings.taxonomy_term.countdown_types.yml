@@ -1,0 +1,11 @@
+uuid: 05c86ac6-85e2-4be1-9999-f268012d1703
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.countdown_types
+id: taxonomy_term.countdown_types
+target_entity_type_id: taxonomy_term
+target_bundle: countdown_types
+default_langcode: site_default
+language_alterable: false

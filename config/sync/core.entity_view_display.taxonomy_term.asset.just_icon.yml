@@ -1,0 +1,41 @@
+uuid: baf4a1d3-d9aa-4874-8142-79e61627daba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.just_icon
+    - field.field.taxonomy_term.asset.field_asset_icon
+    - field.field.taxonomy_term.asset.field_coin_market_cap
+    - field.field.taxonomy_term.asset.field_ticker
+    - field.field.taxonomy_term.asset.field_website
+    - image.style.logo
+    - taxonomy.vocabulary.asset
+  module:
+    - image
+id: taxonomy_term.asset.just_icon
+targetEntityType: taxonomy_term
+bundle: asset
+mode: just_icon
+content:
+  field_asset_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: logo
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ticker:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  description: true
+  field_coin_market_cap: true
+  field_website: true
+  langcode: true

@@ -1,0 +1,14 @@
+uuid: 214ee103-c262-4721-917e-2f071ff2187b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mod
+  module:
+    - user
+id: user_add_role_action.mod
+label: 'Add the Mod role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mod

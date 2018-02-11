@@ -5,18 +5,27 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_countdown
     - field.field.node.portfolio.field_portfolio_images
     - field.field.node.portfolio.field_portfolio_information
     - field.field.node.portfolio.field_portfolio_tags
     - node.type.portfolio
   module:
     - image
+    - text
     - user
 id: node.portfolio.teaser
 targetEntityType: node
 bundle: portfolio
 mode: teaser
 content:
+  field_countdown:
+    type: text_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_portfolio_images:
     type: image
     weight: 2
@@ -37,9 +46,9 @@ content:
     region: content
   links:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   body: true
   field_portfolio_information: true

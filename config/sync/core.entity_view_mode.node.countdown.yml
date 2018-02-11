@@ -1,0 +1,10 @@
+uuid: 52172159-0e60-4a19-ac6a-18cdca67559c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.countdown
+label: CountDown
+targetEntityType: node
+cache: true

@@ -1,0 +1,14 @@
+uuid: d1019af9-f19e-4c62-bf48-3e3f86ae06e4
+langcode: en
+status: true
+dependencies: {  }
+name: logo
+label: logo5050
+effects:
+  29da8443-68dd-4f96-b4ca-ea2f8d7e19d8:
+    uuid: 29da8443-68dd-4f96-b4ca-ea2f8d7e19d8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50

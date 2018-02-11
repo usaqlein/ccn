@@ -1,0 +1,20 @@
+uuid: f162be41-b223-4b2d-82fa-09589fb968ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_countdown
+field_name: field_countdown
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

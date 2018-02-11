@@ -6,4 +6,4 @@ name: Category
 vid: category
 description: 'Category for article'
 hierarchy: 0
-weight: 0
+weight: -10

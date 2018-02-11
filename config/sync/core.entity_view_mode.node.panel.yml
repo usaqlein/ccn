@@ -1,0 +1,10 @@
+uuid: bd4ca612-7a7b-46c2-afd3-507e7ffb245c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.panel
+label: Panel
+targetEntityType: node
+cache: true

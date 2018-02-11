@@ -1,0 +1,24 @@
+uuid: 5a2c1d41-bd07-4675-aaac-d5ade23331dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_coundown_block
+    - paragraphs.paragraphs_type.countdown_article
+  module:
+    - text
+id: paragraph.countdown_article.field_coundown_block
+field_name: field_coundown_block
+entity_type: paragraph
+bundle: countdown_article
+label: 'Time Remaining'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '[block:countdowntimer_#]'
+    format: blockinsert
+default_value_callback: ''
+settings: {  }
+field_type: text

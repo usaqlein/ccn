@@ -1,0 +1,9 @@
+uuid: 8a4c4f01-3dbd-47d3-9a69-f88b8fb3bf13
+langcode: en
+status: true
+dependencies: {  }
+name: 'Trade Types'
+vid: trade_types
+description: 'Trade Categories'
+hierarchy: 0
+weight: -4

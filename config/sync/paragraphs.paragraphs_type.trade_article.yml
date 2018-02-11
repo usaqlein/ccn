@@ -1,0 +1,11 @@
+uuid: 4970ff10-7562-4160-a01c-4daf1701b5a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:28d7a76a-c708-47d4-82b4-be7b758464f5'
+id: trade_article
+label: 'Trade Article'
+icon_uuid: 28d7a76a-c708-47d4-82b4-be7b758464f5
+description: 'Fields for Trade Articles'
+behavior_plugins: {  }

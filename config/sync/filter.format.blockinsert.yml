@@ -1,0 +1,17 @@
+uuid: c1ec3162-c464-4f6b-910f-faae477c9ecd
+langcode: en
+status: true
+dependencies:
+  module:
+    - insert_block
+name: BlockInsert
+format: blockinsert
+weight: 0
+filters:
+  filter_insert_block:
+    id: filter_insert_block
+    provider: insert_block
+    status: true
+    weight: 0
+    settings:
+      check_roles: '1'

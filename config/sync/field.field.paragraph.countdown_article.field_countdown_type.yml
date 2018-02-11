@@ -1,0 +1,29 @@
+uuid: f35013bd-9da5-42c7-8f97-1f11b091cf3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_countdown_type
+    - paragraphs.paragraphs_type.countdown_article
+    - taxonomy.vocabulary.countdown_types
+id: paragraph.countdown_article.field_countdown_type
+field_name: field_countdown_type
+entity_type: paragraph
+bundle: countdown_article
+label: 'Countdown Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      countdown_types: countdown_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 270d4570-3484-47da-9a67-5086694c8178
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cd_types
+  module:
+    - text
+id: taxonomy_term.cd_types.default
+targetEntityType: taxonomy_term
+bundle: cd_types
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

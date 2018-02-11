@@ -1,0 +1,64 @@
+uuid: bbe99fe7-b64c-45c5-b890-dcac3bfc0283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_class
+    - node.type.article
+    - paragraphs.paragraphs_type.countdown_article
+    - paragraphs.paragraphs_type.cryptoversity_article
+    - paragraphs.paragraphs_type.trade_article
+    - paragraphs.paragraphs_type.trending_article
+  module:
+    - entity_reference_revisions
+id: node.article.field_article_class
+field_name: field_article_class
+entity_type: node
+bundle: article
+label: 'Article Class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      countdown_article: countdown_article
+      trending_article: trending_article
+      trade_article: trade_article
+      cryptoversity_article: cryptoversity_article
+    target_bundles_drag_drop:
+      countdown_article:
+        enabled: true
+        weight: -21
+      trending_article:
+        enabled: true
+        weight: -20
+      trade_article:
+        enabled: true
+        weight: -19
+      cryptoversity_article:
+        enabled: true
+        weight: -18
+      image_text:
+        weight: -17
+        enabled: false
+      images:
+        weight: -16
+        enabled: false
+      nested_paragraph:
+        weight: -15
+        enabled: false
+      text:
+        weight: -14
+        enabled: false
+      text_image:
+        weight: -13
+        enabled: false
+      user:
+        weight: -12
+        enabled: false
+field_type: entity_reference_revisions

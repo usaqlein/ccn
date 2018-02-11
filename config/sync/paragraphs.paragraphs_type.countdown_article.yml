@@ -1,0 +1,11 @@
+uuid: 57068fd9-1521-43cf-b65b-ae970dd72927
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:31bd794a-3e7f-4cc6-85b8-8d663cd9af2b'
+id: countdown_article
+label: 'Countdown Article'
+icon_uuid: 31bd794a-3e7f-4cc6-85b8-8d663cd9af2b
+description: 'Fields for Countdowns Articles'
+behavior_plugins: {  }

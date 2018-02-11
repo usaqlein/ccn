@@ -1,0 +1,69 @@
+uuid: cddac542-b2b8-4759-b9cb-d96a83c496e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.asset.field_asset_icon
+    - field.field.taxonomy_term.asset.field_coin_market_cap
+    - field.field.taxonomy_term.asset.field_ticker
+    - field.field.taxonomy_term.asset.field_website
+    - image.style.thumbnail
+    - taxonomy.vocabulary.asset
+  module:
+    - image
+    - link
+    - path
+id: taxonomy_term.asset.default
+targetEntityType: taxonomy_term
+bundle: asset
+mode: default
+content:
+  field_asset_icon:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_coin_market_cap:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_ticker:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_website:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true

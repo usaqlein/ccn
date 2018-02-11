@@ -1,0 +1,29 @@
+uuid: 9de6acd3-b99e-4bc0-8dd9-14f13da245b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asset
+    - node.type.count_down
+    - taxonomy.vocabulary.asset
+id: node.count_down.field_asset
+field_name: field_asset
+entity_type: node
+bundle: count_down
+label: 'Crypto Currency'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      asset: asset
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

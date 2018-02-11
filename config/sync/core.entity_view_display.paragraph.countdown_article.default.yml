@@ -1,0 +1,31 @@
+uuid: 45347a62-28d6-468a-8d44-606d00f3e64b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.countdown_article.field_coundown_block
+    - field.field.paragraph.countdown_article.field_countdown_type
+    - paragraphs.paragraphs_type.countdown_article
+  module:
+    - text
+id: paragraph.countdown_article.default
+targetEntityType: paragraph
+bundle: countdown_article
+mode: default
+content:
+  field_coundown_block:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_countdown_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 15e389ea-78bb-4999-a585-6848476c7caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_trending_type
+    - paragraphs.paragraphs_type.trending_article
+    - taxonomy.vocabulary.trending_types
+id: paragraph.trending_article.field_trending_type
+field_name: field_trending_type
+entity_type: paragraph
+bundle: trending_article
+label: 'Trending Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trending_types: trending_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

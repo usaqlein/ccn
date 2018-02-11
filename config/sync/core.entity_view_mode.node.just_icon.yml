@@ -1,0 +1,10 @@
+uuid: eece1ac6-8d2f-4d02-b885-74572f9901a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.just_icon
+label: 'Just Icon'
+targetEntityType: node
+cache: true

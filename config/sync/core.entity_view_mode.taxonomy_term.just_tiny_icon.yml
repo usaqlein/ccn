@@ -1,0 +1,10 @@
+uuid: e19361e2-5629-4b44-ae1f-e1fe4c8623c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.just_tiny_icon
+label: 'Just Tiny Icon'
+targetEntityType: taxonomy_term
+cache: true

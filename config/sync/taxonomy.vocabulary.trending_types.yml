@@ -1,0 +1,9 @@
+uuid: fb502b22-a598-4b92-b55c-0ce067397ce1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Trending Types'
+vid: trending_types
+description: 'Trending Categories'
+hierarchy: 0
+weight: -5

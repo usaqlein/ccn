@@ -1,0 +1,22 @@
+uuid: 9e8d1462-c361-4684-a1e0-f84a972e1d88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cryptoversity_article.field_cryptoversity_type
+    - paragraphs.paragraphs_type.cryptoversity_article
+id: paragraph.cryptoversity_article.default
+targetEntityType: paragraph
+bundle: cryptoversity_article
+mode: default
+content:
+  field_cryptoversity_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

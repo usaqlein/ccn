@@ -1,0 +1,21 @@
+uuid: 912bd4b0-c299-4a6e-8c91-3cec15a44075
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trade_article.field_trade_type
+    - paragraphs.paragraphs_type.trade_article
+id: paragraph.trade_article.default
+targetEntityType: paragraph
+bundle: trade_article
+mode: default
+content:
+  field_trade_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

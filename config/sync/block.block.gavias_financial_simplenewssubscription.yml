@@ -14,7 +14,7 @@ third_party_settings:
 id: gavias_financial_simplenewssubscription
 theme: gavias_financial
 region: other
-weight: -13
+weight: -16
 provider: null
 plugin: simplenews_subscription_block
 settings:

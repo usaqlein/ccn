@@ -12,7 +12,7 @@ field_name: field_post_format
 entity_type: node
 bundle: article
 label: 'Post format'
-description: ''
+description: "For Standard (Image): Image Field is required\r\nFor Gallery: Fill in Post Gallery\r\nFor Audio & Video: Paste URL from Youtube, Vimeo in the Embed Code."
 required: false
 translatable: false
 default_value:

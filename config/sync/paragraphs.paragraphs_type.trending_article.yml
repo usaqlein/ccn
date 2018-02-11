@@ -1,0 +1,11 @@
+uuid: bec2fb76-d31e-4175-8e45-f3f8310b55ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:3bebed0d-b311-4386-af56-18a32ab48bf3'
+id: trending_article
+label: 'Trending Article'
+icon_uuid: 3bebed0d-b311-4386-af56-18a32ab48bf3
+description: 'Fields for Trending Articles'
+behavior_plugins: {  }

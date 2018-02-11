@@ -1,0 +1,38 @@
+uuid: 3cf8f517-199d-422d-873e-e1e2d26e5fc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cd_types
+  module:
+    - path
+    - text
+id: taxonomy_term.cd_types.default
+targetEntityType: taxonomy_term
+bundle: cd_types
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

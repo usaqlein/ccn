@@ -1,0 +1,21 @@
+uuid: 6cbf5f09-81a9-4f6e-8951-9ebe3ad6cbd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_date
+    - node.type.article
+id: node.article.field_target_date
+field_name: field_target_date
+entity_type: node
+bundle: article
+label: 'Target Date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1518376184
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

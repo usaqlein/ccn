@@ -1,0 +1,33 @@
+uuid: 3aefe9f5-8751-455d-9011-01f80f68afd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_206
+theme: gavias_financial
+region: countdown
+weight: -18
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#206 LendConnect Exchange'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-02-14 13:21:40'
+  font_size: '16'
+  block_id: countdowntimer_206
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

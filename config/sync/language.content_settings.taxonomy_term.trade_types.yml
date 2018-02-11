@@ -1,0 +1,11 @@
+uuid: 19fabe10-0eec-4970-a036-c47eed05923d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trade_types
+id: taxonomy_term.trade_types
+target_entity_type_id: taxonomy_term
+target_bundle: trade_types
+default_langcode: site_default
+language_alterable: false

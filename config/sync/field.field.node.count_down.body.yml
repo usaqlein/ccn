@@ -1,0 +1,22 @@
+uuid: d6625290-48a7-43a8-a4db-316bc0a8ec4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.count_down
+  module:
+    - text
+id: node.count_down.body
+field_name: body
+entity_type: node
+bundle: count_down
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

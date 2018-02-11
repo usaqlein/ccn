@@ -1,0 +1,22 @@
+uuid: e1f027d9-7990-42cf-a13d-ea4e28ba7462
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_countdowns
+label: 'Content Countdowns'
+type: 'canonical_entities:node'
+pattern: '/countdown/[node:title]/[node:nid]'
+selection_criteria:
+  b0757ba3-b6c5-4faa-90e2-1a39ded9cc0a:
+    id: node_type
+    bundles:
+      count_down: count_down
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b0757ba3-b6c5-4faa-90e2-1a39ded9cc0a
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,11 @@
+uuid: 651f3728-093c-4f1b-a3f1-b2f404caa044
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.count_down
+id: node.count_down
+target_entity_type_id: node
+target_bundle: count_down
+default_langcode: site_default
+language_alterable: false

@@ -1,7 +1,9 @@
 uuid: 0704c195-40a2-4eda-8f00-f1cd673f7ce2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - insert_block
 name: 'Plain text'
 format: plain_text
 weight: 10
@@ -25,3 +27,10 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_insert_block:
+    id: filter_insert_block
+    provider: insert_block
+    status: true
+    weight: 0
+    settings:
+      check_roles: '1'

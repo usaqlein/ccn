@@ -1,0 +1,21 @@
+uuid: 1f5e37a6-3811-4a2c-86e7-00151f390ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ticker
+    - taxonomy.vocabulary.asset
+id: taxonomy_term.asset.field_ticker
+field_name: field_ticker
+entity_type: taxonomy_term
+bundle: asset
+label: Ticker
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '???'
+default_value_callback: ''
+settings: {  }
+field_type: string
