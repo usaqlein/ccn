@@ -1,0 +1,22 @@
+uuid: 7245a948-1e93-4baf-a422-4860c637b88a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trending_article.field_trending_type
+    - paragraphs.paragraphs_type.trending_article
+id: paragraph.trending_article.default
+targetEntityType: paragraph
+bundle: trending_article
+mode: default
+content:
+  field_trending_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

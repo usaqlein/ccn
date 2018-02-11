@@ -1,0 +1,11 @@
+uuid: f1a6a17f-d55c-463b-b54c-fa861354deee
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cryptoversity_types
+id: taxonomy_term.cryptoversity_types
+target_entity_type_id: taxonomy_term
+target_bundle: cryptoversity_types
+default_langcode: site_default
+language_alterable: false

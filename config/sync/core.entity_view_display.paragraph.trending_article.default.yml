@@ -1,0 +1,21 @@
+uuid: f6d563c4-2189-4eb4-b5a7-9e4129919e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trending_article.field_trending_type
+    - paragraphs.paragraphs_type.trending_article
+id: paragraph.trending_article.default
+targetEntityType: paragraph
+bundle: trending_article
+mode: default
+content:
+  field_trending_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

@@ -1,0 +1,33 @@
+uuid: 05ae3fae-0404-476c-af71-8c0fe1c8b07d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_211
+theme: gavias_financial
+region: countdown
+weight: -13
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#211 Mouse is gonna have babies'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-02-14 03:00:00'
+  font_size: '16'
+  block_id: countdowntimer_211
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

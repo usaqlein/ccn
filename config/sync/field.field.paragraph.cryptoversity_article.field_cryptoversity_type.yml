@@ -1,0 +1,29 @@
+uuid: f39843ad-ad40-42df-bdb9-7f10628e911f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cryptoversity_type
+    - paragraphs.paragraphs_type.cryptoversity_article
+    - taxonomy.vocabulary.cryptoversity_types
+id: paragraph.cryptoversity_article.field_cryptoversity_type
+field_name: field_cryptoversity_type
+entity_type: paragraph
+bundle: cryptoversity_article
+label: 'Cryptoversity Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cryptoversity_types: cryptoversity_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -2271,8 +2271,10 @@ display:
           el_class: ''
           el_id: ''
       row:
-        type: fields
-        options: {  }
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       fields:
         title:
           id: title

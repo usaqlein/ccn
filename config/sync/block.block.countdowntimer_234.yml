@@ -1,0 +1,33 @@
+uuid: 2ea8057c-df1e-4dfe-9115-abfe37bcca21
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_234
+theme: gavias_financial
+region: countdown
+weight: 0
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#234 Governments CUT'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-05-28 04:00:00'
+  font_size: '16'
+  block_id: countdowntimer_234
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

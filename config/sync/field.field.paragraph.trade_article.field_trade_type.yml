@@ -1,0 +1,29 @@
+uuid: d00bd569-96f6-469f-b5c5-0d42ba9f2220
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_trade_type
+    - paragraphs.paragraphs_type.trade_article
+    - taxonomy.vocabulary.trade_types
+id: paragraph.trade_article.field_trade_type
+field_name: field_trade_type
+entity_type: paragraph
+bundle: trade_article
+label: 'Trade Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trade_types: trade_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

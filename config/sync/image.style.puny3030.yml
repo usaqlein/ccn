@@ -1,0 +1,14 @@
+uuid: e2ddf831-516a-4733-87a5-215f9f9c3fa5
+langcode: en
+status: true
+dependencies: {  }
+name: puny3030
+label: puny3030
+effects:
+  e7d3fee5-3b48-43b5-a37f-eb6fa201ad84:
+    uuid: e7d3fee5-3b48-43b5-a37f-eb6fa201ad84
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 30
+      height: 30

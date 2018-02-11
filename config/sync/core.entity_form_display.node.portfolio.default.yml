@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_countdown
     - field.field.node.portfolio.field_portfolio_images
     - field.field.node.portfolio.field_portfolio_information
     - field.field.node.portfolio.field_portfolio_tags
@@ -32,6 +33,14 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_countdown:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   field_portfolio_images:
     weight: 36

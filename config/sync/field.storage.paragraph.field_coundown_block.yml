@@ -1,0 +1,20 @@
+uuid: 3b1665cd-6fd5-473c-a822-502211871548
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_coundown_block
+field_name: field_coundown_block
+entity_type: paragraph
+type: text
+settings:
+  max_length: 100
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

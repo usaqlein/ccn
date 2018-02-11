@@ -1,0 +1,24 @@
+uuid: e0f01ebd-dc34-4b79-aa5e-3d508f24759d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_countdown
+    - node.type.count_down
+  module:
+    - text
+id: node.count_down.field_countdown
+field_name: field_countdown
+entity_type: node
+bundle: count_down
+label: 'Time Left:'
+description: 'Date/Time to Countdown till.'
+required: true
+translatable: true
+default_value:
+  -
+    value: '[block:countdowntimer_#]'
+    format: blockinsert
+default_value_callback: ''
+settings: {  }
+field_type: text

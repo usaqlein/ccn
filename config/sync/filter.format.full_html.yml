@@ -5,6 +5,7 @@ dependencies:
   module:
     - editor
     - gavias_blockbuilder
+    - insert_block
 name: 'Full HTML'
 format: full_html
 weight: 1
@@ -54,3 +55,10 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_insert_block:
+    id: filter_insert_block
+    provider: insert_block
+    status: false
+    weight: 0
+    settings:
+      check_roles: '1'

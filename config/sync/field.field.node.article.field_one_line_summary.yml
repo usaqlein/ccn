@@ -1,0 +1,21 @@
+uuid: 528d910d-c03e-4867-8fc6-e4165282ca0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_one_line_summary
+    - node.type.article
+id: node.article.field_one_line_summary
+field_name: field_one_line_summary
+entity_type: node
+bundle: article
+label: 'One Line Summary'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Time is of the essence. '
+default_value_callback: ''
+settings: {  }
+field_type: string

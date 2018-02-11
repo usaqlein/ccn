@@ -1,0 +1,83 @@
+uuid: 56fe19a4-ae62-4f06-84b5-3065a07be3c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.count_down.body
+    - field.field.node.count_down.field_affiliate_link
+    - field.field.node.count_down.field_asset
+    - field.field.node.count_down.field_cd_type
+    - field.field.node.count_down.field_countdown
+    - field.field.node.count_down.field_countdown_image
+    - field.field.node.count_down.field_punchline
+    - field.field.node.count_down.field_tags
+    - field.field.node.count_down.field_target_date
+    - image.style.normal_size
+    - node.type.count_down
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.count_down.default
+targetEntityType: node
+bundle: count_down
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_affiliate_link:
+    weight: 5
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_asset:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_cd_type:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_countdown:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_countdown_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: normal_size
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_punchline: true
+  field_tags: true
+  field_target_date: true
+  langcode: true
+  links: true

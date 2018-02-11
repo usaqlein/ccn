@@ -1,0 +1,21 @@
+uuid: e59ad5fc-4b16-411c-9825-5bb93fca4eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_date
+    - node.type.count_down
+id: node.count_down.field_target_date
+field_name: field_target_date
+entity_type: node
+bundle: count_down
+label: 'Target Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1607753532
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

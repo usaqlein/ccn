@@ -1,0 +1,33 @@
+uuid: eb9b5559-0ec8-4a5a-8e60-ebcb96e4d5ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_208
+theme: gavias_financial
+region: countdown
+weight: -16
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#208 China is gonna FUD IT'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-03-30 01:55:01'
+  font_size: '16'
+  block_id: countdowntimer_208
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: thumbnail
-label: 'Thumbnail (150×150)'
+label: thumbnail150150
 effects:
   d2b6caee-0c96-4a61-8e1a-2630d7bae4ab:
     uuid: d2b6caee-0c96-4a61-8e1a-2630d7bae4ab

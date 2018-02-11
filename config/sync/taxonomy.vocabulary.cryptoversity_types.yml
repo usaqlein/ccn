@@ -1,0 +1,9 @@
+uuid: 3c3d9d70-5ecc-415e-a57a-c1f1fec8268a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cryptoversity Types'
+vid: cryptoversity_types
+description: 'Cryptoversity Categories'
+hierarchy: 0
+weight: -6

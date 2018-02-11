@@ -1,0 +1,9 @@
+uuid: 05cc9b26-cdff-4c11-bc3a-2874f8e0d21d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Countdown Types'
+vid: countdown_types
+description: 'Countdown Categories'
+hierarchy: 0
+weight: -7

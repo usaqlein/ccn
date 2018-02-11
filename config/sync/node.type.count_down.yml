@@ -1,0 +1,18 @@
+uuid: df7c66d0-834d-40f3-913c-8026d96df523
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Count Down'
+type: count_down
+description: '|| Future Timeline Events ||'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -16,7 +16,7 @@ third_party_settings:
 id: contactblock
 theme: gavias_financial
 region: other
-weight: -15
+weight: -11
 provider: null
 plugin: contact_block
 settings:

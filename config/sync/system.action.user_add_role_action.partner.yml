@@ -1,0 +1,14 @@
+uuid: aaf67235-5614-4513-868f-13bfa93ddb43
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.partner
+  module:
+    - user
+id: user_add_role_action.partner
+label: 'Add the Partner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: partner

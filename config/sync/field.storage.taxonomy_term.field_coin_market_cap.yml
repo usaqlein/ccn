@@ -1,0 +1,19 @@
+uuid: 43bcd882-dc58-41f5-bdad-eedd9b99a67b
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_coin_market_cap
+field_name: field_coin_market_cap
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

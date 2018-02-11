@@ -10,7 +10,7 @@ favicon:
 theme_skin: ''
 enable_customize: '1'
 sticky_menu: '1'
-site_layout: wide
+site_layout: boxed
 preloader: '1'
 default_header: header
 footer_fixed: ''

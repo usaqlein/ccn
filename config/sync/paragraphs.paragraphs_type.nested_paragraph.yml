@@ -1,0 +1,11 @@
+uuid: a6fa8ad7-aeee-4a74-b62f-d67760a40702
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9gUhcTgKdQ7DUPNmOLJt-FGUPDJKxWrrJTTZSGbZPEs
+id: nested_paragraph
+label: 'Nested Paragraph'
+icon_uuid: null
+description: 'Use <em>Nested Paragraph</em> for nesting more paragraphs inside.'
+behavior_plugins: {  }

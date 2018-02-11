@@ -1,0 +1,9 @@
+uuid: 7e3012f7-78a2-4f0c-b1ef-c6eee25c1b1b
+langcode: en
+status: true
+dependencies: {  }
+name: Cryptos
+vid: asset
+description: 'A crypto currency or ICO the articles is related to.'
+hierarchy: 0
+weight: -9

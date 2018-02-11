@@ -1,0 +1,14 @@
+uuid: c4204729-e78e-4720-9036-a273d2889230
+langcode: en
+status: true
+dependencies: {  }
+name: tiny
+label: tiny100100
+effects:
+  35269ffd-c878-4a56-ae5b-2119b7c5c2bc:
+    uuid: 35269ffd-c878-4a56-ae5b-2119b7c5c2bc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100

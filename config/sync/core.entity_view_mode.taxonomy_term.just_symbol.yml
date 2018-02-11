@@ -1,0 +1,10 @@
+uuid: d3d88f98-ca8a-42c3-bd64-28a894999ed5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.just_symbol
+label: 'Just Symbol'
+targetEntityType: taxonomy_term
+cache: true

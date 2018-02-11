@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - insert_block
 name: 'Basic HTML'
 format: basic_html
 weight: 0
@@ -41,3 +42,10 @@ filters:
     status: true
     weight: 11
     settings: {  }
+  filter_insert_block:
+    id: filter_insert_block
+    provider: insert_block
+    status: true
+    weight: 0
+    settings:
+      check_roles: '1'

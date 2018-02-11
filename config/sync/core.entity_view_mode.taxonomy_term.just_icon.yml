@@ -1,0 +1,10 @@
+uuid: 74f561c7-c6a2-4126-8525-ebf699e71d84
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.just_icon
+label: 'Just Icon'
+targetEntityType: taxonomy_term
+cache: true

@@ -1,0 +1,29 @@
+uuid: 41635cb4-f9e5-4fda-b76b-d61db435241c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cd_type
+    - node.type.count_down
+    - taxonomy.vocabulary.cd_types
+id: node.count_down.field_cd_type
+field_name: field_cd_type
+entity_type: node
+bundle: count_down
+label: 'Countdown Tag'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cd_types: cd_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

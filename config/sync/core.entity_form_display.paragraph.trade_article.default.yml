@@ -1,0 +1,22 @@
+uuid: 3c5d1d35-d580-41e1-9fe0-bac2d610dbe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trade_article.field_trade_type
+    - paragraphs.paragraphs_type.trade_article
+id: paragraph.trade_article.default
+targetEntityType: paragraph
+bundle: trade_article
+mode: default
+content:
+  field_trade_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -14,7 +14,7 @@ third_party_settings:
 id: gaviassliderlayerslider4
 theme: gavias_financial
 region: other
-weight: -9
+weight: -12
 provider: null
 plugin: 'gavias_sliderlayer_block:gavias_sliderlayer_block____4'
 settings:

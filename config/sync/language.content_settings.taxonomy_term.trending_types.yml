@@ -1,0 +1,11 @@
+uuid: 9f1ed8cc-ae10-4e71-a2ba-f4bfe180d975
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trending_types
+id: taxonomy_term.trending_types
+target_entity_type_id: taxonomy_term
+target_bundle: trending_types
+default_langcode: site_default
+language_alterable: false

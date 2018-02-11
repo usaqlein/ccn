@@ -1,0 +1,33 @@
+uuid: 91d47f7d-1e82-4595-aa62-dbc5a253d0ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - jquery_countdown_timer
+  theme:
+    - gavias_financial
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: countdowntimer_226
+theme: gavias_financial
+region: countdown
+weight: 0
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: '#226 Data Wallet ICO'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2018-02-25 13:57:02'
+  font_size: '16'
+  block_id: countdowntimer_226
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

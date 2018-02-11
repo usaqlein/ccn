@@ -1,0 +1,34 @@
+uuid: 7a91ad35-0e95-49cc-8120-5c992d42b310
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.countdown
+    - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_countdown
+    - field.field.node.portfolio.field_portfolio_images
+    - field.field.node.portfolio.field_portfolio_information
+    - field.field.node.portfolio.field_portfolio_tags
+    - node.type.portfolio
+  module:
+    - text
+    - user
+id: node.portfolio.countdown
+targetEntityType: node
+bundle: portfolio
+mode: countdown
+content:
+  field_countdown:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  body: true
+  field_portfolio_images: true
+  field_portfolio_information: true
+  field_portfolio_tags: true
+  langcode: true
+  links: true

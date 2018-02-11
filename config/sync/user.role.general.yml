@@ -1,0 +1,10 @@
+uuid: 5137d926-ce5f-47bd-b80c-6134c9cc6dbd
+langcode: en
+status: true
+dependencies: {  }
+id: general
+label: General
+weight: -2
+is_admin: null
+permissions:
+  - 'access toolbar'

@@ -1,0 +1,21 @@
+uuid: ab76dcab-c94d-4a8f-81ca-dbf7094c6f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_punchline
+    - node.type.count_down
+id: node.count_down.field_punchline
+field_name: field_punchline
+entity_type: node
+bundle: count_down
+label: 'One Line Summary'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Time is Another form of Money'
+default_value_callback: ''
+settings: {  }
+field_type: string
