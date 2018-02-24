@@ -10235,12 +10235,25 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
 
 /*** Card Level CSS ***/
 
-/* Countdown Card */
-div.countdown-card {
+/** Outer Container for Content / outside Card/Box etc. **/
+div.special_class_types, div.alpha_class_types, div.beta_class_types, div.charlie_class_types, div.delta_class_types {
+  padding: 5px !important;
+}
+
+/** Card outermost boundary **/
+.content-card {
   margin: 0 !important;
   border: 2px solid #5eb4e7;
   border-radius: 10px;
 }
+
+/** Box outermost boundary **/
+.content-box {
+  margin: 0 !important;
+  border: 2px solid #5eb4e7;
+  border-radius: 10px;
+}
+
 /* Frong Page Countdown Cards */
 div.view-portfolio > div.cd_types {
   padding: 5px !important;

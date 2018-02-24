@@ -8,6 +8,12 @@ function gavias_financial_base_url(){
 function gavias_financial_preprocess_node(&$variables) {
   $date = $variables['node']->getCreatedTime();
   $variables['date'] = date( 'j F Y', $date);
+
+  $variables['default'] = $variables['view_mode'] == 'default';
+  $variables['card'] = $variables['view_mode'] == 'card';
+  $variables['box'] = $variables['view_mode'] == 'box';
+  $variables['text'] = $variables['view_mode'] == 'text';
+
   
   if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
@@ -44,6 +50,7 @@ function gavias_financial_preprocess_node(&$variables) {
       $variables['gva_iframe'] = $iframe;
       $variables['post_format'] = $post_format;
   }
+  $variables['field_names'] = implode(', ', array_keys($variables['content']));
 }
 
 function gavias_financial_preprocess_node__portfolio(&$variables){
