@@ -34,6 +34,11 @@
 
     <link rel="stylesheet" href="{{ theme_path }}/css/custom.css" media="screen" />
     <link rel="stylesheet" href="{{ theme_path }}/css/update.css" media="screen" />
+    <link rel="stylesheet" href="{{ theme_path }}/css/box.css" media="screen" />
+    <link rel="stylesheet" href="{{ theme_path }}/css/card.css" media="screen" />
+    <link rel="stylesheet" href="{{ theme_path }}/css/article.css" media="screen" />
+    <link rel="stylesheet" href="{{ theme_path }}/css/special.css" media="screen" />
+
 
     {{ links_google_fonts|raw }}
 
@@ -58,7 +63,7 @@
   %}
 
   <body{{ attributes.addClass(body_classes) }}>
-
+  {{ dump(theme_path) }}
     <a href="#main-content" class="visually-hidden focusable">
       {{ 'Skip to main content'|t }}
     </a>

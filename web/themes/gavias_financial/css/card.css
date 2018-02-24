@@ -1,0 +1,47 @@
+
+
+/*.card-head iframe {*/
+/*min-height: 0 !important;*/
+/*}*/
+
+div.content-card {
+    margin: 0 !important;
+    border: 2px solid #5eb4e7;
+    border-radius: 10px;
+}
+@media (max-width: 780px) {
+    .card-head > iframe {
+        min-height: 0 !important;
+        max-height: 300px !important;
+    }
+    article.content-card {
+        background-color: green !important;
+    }
+}
+@media (max-width: 991px) {
+    .card-head > iframe {
+        min-height: 0 !important;
+        max-height: 144px !important;
+    }
+    article.content-card {
+        background-color: purple !important;
+    }
+}
+@media (min-width: 991px) {
+    .card-head > iframe {
+        min-height: 0 !important;
+        max-height: 152px !important;
+    }
+    article.content-card {
+        background-color: green !important;
+    }
+}
+@media (min-width: 1199px) {
+    .card-head > iframe {
+        min-height: 0 !important;
+        max-height: 191px !important;
+    }
+    article.content-card {
+        background-color: blue !important;
+    }
+}

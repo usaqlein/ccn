@@ -149,6 +149,10 @@ gavias-financial-admin:
   css: 
     theme: 
       css/theme-settings.css: {}
+      css/article.css: {}
+      css/card.css: {}
+      css/special.css: {}
+      css/box.css: {}
       vendor/colorpicker/css/colorpicker.css: {}
       vendor/codemirror/lib/codemirror.css: {}
       vendor/codemirror/lib/codemirror.css: {}
