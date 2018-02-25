@@ -392,3 +392,7 @@ function gavias_financial_theme_suggestions_taxonomy_term_alter(&$suggestions, $
 
   return $suggestions;
 }
+
+function gavias_financial_preprocess_taxonomy_term(&$variables){
+$x = $variables;
+}

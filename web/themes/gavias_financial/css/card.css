@@ -1,47 +1,277 @@
 
+/**********(1)**********************************/
+/*#### HEAD ############################# post-image card-head
+/**********  **********************************/
 
-/*.card-head iframe {*/
-/*min-height: 0 !important;*/
-/*}*/
+.card-head iframe {
+    min-height: 0 !important;
+}
 
-div.content-card {
+.card-head{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 2em;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px; }
+
+
+/***********************************************************************************************  START content-image card-image    ****/
+.card-image{
+    overflow: hidden;
+}
+.content-card:hover .card-image img {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+div.card-image {
     margin: 0 !important;
     border: 2px solid #5eb4e7;
     border-radius: 10px;
 }
+/***********************************************************************************************  END content-image card-image    ****/
+
+/***********************************************************************************************  START avatarcontainer    ****/
+
+.avatarcontainer {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    display: block; }
+.avatarcontainer:hover > .hover {
+    opacity: 1; }
+
+.avatar {
+    width: 100%;
+    border: 8px solid #5cc0ff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative; }
+.avatar img {
+    width: 65px;
+    height: 65px; }
+.avatar:hover + .hover {
+    opacity: 1;
+    cursor: pointer; }
+
+.hover {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    top: 0;
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+    padding-top: 18%;
+    opacity: 0;
+    font-family: 'FontAwesome';
+    font-weight: 300;
+    border: 8px solid #5cc0ff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease; }
+/***********************************************************************************************  END  avatarcontainer  ****/
+/***** END HEAD ###############################################*/
+
+
+/**********  **********************************/
+/*#### ICON ############################# card__icon
+/**********  **********************************/
+
+.card__icon {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    background-color: coral;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    line-height: 13px;
+}
+
+/***** END ICON ###############################################*/
+
+
+/**********  **********************************/
+/*#### BODY ############################# card__body
+/**********  **********************************/
+.card__body {
+    padding: 5px;
+}
+
+/***********************************************************************************************  START card__category    ****/
+.card__category {
+
+}
+/***********************************************************************************************  END card__category    ****/
+
+/***********************************************************************************************  START card__title    ****/
+.card__title {
+
+}
+/***********************************************************************************************  END card__title    ****/
+
+/***********************************************************************************************  START card__subtitle    ****/
+.card__subtitle {
+
+}
+/***********************************************************************************************  END card__subtitle    ****/
+
+/***********************************************************************************************  START card__description    ****/
+/* Make Text Disappear so it can only be shown during hover */
+.card__description {
+    position: absolute;
+
+    bottom: 0%;
+    margin: 0;
+    padding: 0;
+    color: #666C74;
+    line-height: 27px;
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.3s, transform 0.3s;
+    transition-delay: 0s;
+}
+/* Make Text Reappear upon hover */
+.content-card:hover .card__description {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+/***********************************************************************************************  END card__description    ****/
+
+
+/*####### END BODY ###############################################*/
+
+/**********  **********************************/
+/*#### FOOTER ############################# card__footer
+/**********  **********************************/
+
+.card__footer {
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    right: 20px;
+    font-size: 11px;
+    color: #A3A9A2;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0 2px;
+    font-size: 18px;
+}
+
+.icon + .icon {
+    padding-left: 10px;
+}
+/***** END FOOTER ###############################################*/
+
+
+
+
+
+
+/*********************************************************************************************************************
+ Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
+**********************************************************************************************************************/
+
+
+
+
+
+
+/*********************************************************************************************************************
+ END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
+**********************************************************************************************************************/
+
+/*********************************************************************************************************************
+ Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
+**********************************************************************************************************************/
+
+
+
+
+
+
+
+
+/*********************************************************************************************************************
+ END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
+**********************************************************************************************************************/
+
+
+
+
+
 @media (max-width: 780px) {
-    .card-head > iframe {
+    .card-image > iframe {
         min-height: 0 !important;
         max-height: 300px !important;
     }
     article.content-card {
-        background-color: green !important;
+        /*background-color: green !important;*/
     }
 }
 @media (max-width: 991px) {
-    .card-head > iframe {
+    .card-image > iframe {
         min-height: 0 !important;
         max-height: 144px !important;
     }
     article.content-card {
-        background-color: purple !important;
+        /*background-color: purple !important;*/
     }
 }
 @media (min-width: 991px) {
-    .card-head > iframe {
+    .card-image > iframe {
         min-height: 0 !important;
         max-height: 152px !important;
     }
     article.content-card {
-        background-color: green !important;
+        /*background-color: green !important;*/
     }
 }
 @media (min-width: 1199px) {
-    .card-head > iframe {
+    .card-image > iframe {
         min-height: 0 !important;
         max-height: 191px !important;
     }
     article.content-card {
-        background-color: blue !important;
+        /*background-color: blue !important;*/
     }
 }
