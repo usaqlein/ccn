@@ -18,11 +18,11 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!-- End Display article for teaser page -->
 {% elseif card == true %}
 
-    <!-- Start Display article for card page -->
     {#<span>{{ field_names }}</span>#}
     <!-- Start Display article for card page -->
     <article{{ attributes.addClass(classes) }}>
         <div class="post-image card-head">
+            <div class="content-image card-image">
                 {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
                     {{ gva_iframe|raw }}
                 {% elseif post_format == 'gallery' and content.field_post_gallery %}
@@ -30,8 +30,38 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                 {% else %}
                     {{ content.field_image }}
                 {% endif %}
+            </div>
+            {# Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
+            <div class="avatarcontainer">
+                {{ content.field_tax_embed_one }}
+                <div class="hover">
+                    <div class="icon-twitter"></div>
+                </div>
+            </div>
+            {# END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
         </div>
+        <!---- Icon ----->
+        <div class="card__icon">
+
+        </div>
+
+        <!---- Body Conent ----->
+        <div class="card__body">
+            <div class="card__category"><a href="#">Photos</a></div>
+            <h2 class="card__title"><a href="#">We're on a highway to hell!</a></h2>
+            <div class="card__subtitle">Bender is frying Doc !</div>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit cumque non commodi, modi recusandae cupiditate ipsa ab soluta. Illum, dolore.</p>
+        </div>
+
+        <!---- Footer Conent ----->
+        <footer class="card__footer">
+            <span class="icon ion-clock"></span> 6min ago
+            <span class="icon ion-chatbox"></span><a href="#"> 42 comments</a>
+        </footer>
+
     </article>
+
+
 
     <!-- End Display article for card page -->
 
