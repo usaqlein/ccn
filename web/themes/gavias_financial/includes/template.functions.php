@@ -14,7 +14,6 @@ function gavias_financial_preprocess_node(&$variables) {
   $variables['box'] = $variables['view_mode'] == 'box';
   $variables['text'] = $variables['view_mode'] == 'text';
 
-  
   if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
   }
@@ -49,9 +48,65 @@ function gavias_financial_preprocess_node(&$variables) {
       }
       $variables['gva_iframe'] = $iframe;
       $variables['post_format'] = $post_format;
+
+  } elseif($variables['node']->getType() == 'special') {
+    $node = $variables['node'];
+    $variables['comment_count'] = $node->get('comment')->comment_count;
   }
   $variables['field_names'] = implode(', ', array_keys($variables['content']));
 }
+
+function gavias_financial_preprocess_node__article(&$variables){
+  $x = 'i am here';
+}
+
+function gavias_financial_preprocess_node__special(&$variables){
+  $x = 'i am here';
+}
+
+
+function gavias_financial_preprocess_node__article__card(&$variables){
+  /* Drupal\taxonomy\Entity\Term $tax_term */
+  $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term'];
+
+
+  if($tax_term->getName()){
+    //$sub_category = $variables['content']['field_content_category'][0]['#title'];
+
+    switch ($tax_term->getName()) {
+      case "Alpha":
+        $variables['content']['content_sub_category'] = $variables['content']['field_alpha_sub_category'];
+        break;
+      case "Beta":
+        $variables['content']['content_sub_category'] = $variables['content']['field_beta_sub_category'];
+        break;
+      case "Charlie":
+        $variables['content']['content_sub_category'] = $variables['content']['field_charlie_sub_category'];
+        break;
+      case "Delta":
+        $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
+        break;
+      default:
+        $variables['content']['content_sub_category'] = null;
+    }
+  }
+}
+function gavias_financial_preprocess_node__article_box(&$variables){
+
+  $x = 'i am here';
+}
+
+
+function gavias_financial_preprocess_node__special_card(&$variables){
+  $x = 'i am here';
+
+}
+function gavias_financial_preprocess_node__special_box(&$variables){
+
+  $x = 'i am here';
+}
+
+
 
 function gavias_financial_preprocess_node__portfolio(&$variables){
   $node = $variables['node'];
