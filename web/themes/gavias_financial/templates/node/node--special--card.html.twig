@@ -28,30 +28,49 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             {# Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
             <div class="avatarcontainer">
                 {{ content.field_tax_embed_one }}
-                {#<img src="http://www.croop.cl/UI/twitter/images/carl.jpg" alt="avatar" class="avatar">#}
                 <div class="hover">
-                    <div class="icon-twitter"></div>
+                    <div class="icon-twitter">
+                        <a href="{{ url }}">
+                            <span class="icon icon-Twitter"></span>
+                            <p class="avatar-bottom-text">Read More</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             {# END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
         </div>
-        <!---- Icon -->
-        <div class="card__icon">
 
+        <!---- Icon ----->
+        <div class="card__icon">
+            {{ content.field_special_sub_category }}
+        </div>
+
+        <!---- border icons ---->
+        <div class="mid-left">
+            {#<span class="icon icon-Bar-Chart" style="color: red; font-size: 30px; font-weight: bold;"></span>#}
+            {{ content.field_content_category }}
+
+        </div>
+        <div class="mid-right">
+            {{ content.field_tax_embed_one }}
         </div>
 
         <!---- Body Conent ----->
             <div class="card__body">
-                <div class="card__category"><a href="#">Photos</a></div>
-                <h2 class="card__title"><a href="#">We're on a highway to hell!</a></h2>
-                <div class="card__subtitle">Bender is frying Doc !</div>
-                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit cumque non commodi, modi recusandae cupiditate ipsa ab soluta. Illum, dolore.</p>
+                <!-- card main entity -->
+                <div class="card__category">
+                    {{ content.field_block_one }}
+                </div>
+                <h2 class="card__title"><a href="{{ url }}">{{ label }}</a></h2>
+                <div class="card__subtitle">{{ content.field_punchline }}</div>
+                <p class="card__description"><a href="{{ url }}">Read More {{ date }}</a></p>
             </div>
 
         <!---- Footer Conent ----->
         <footer class="card__footer">
-            <span class="icon ion-clock"></span> 6min ago
-            <span class="icon ion-chatbox"></span><a href="#"> 42 comments</a>
+            <span class="icon ion-clock"></span> {{ date }}
+            <span class="icon ion-chatbox"></span><a href="{{ url }}"> {{ comment_count }} comments</a>
+            <span class="read-more text-theme"><a href="{{ url }}">Read More</a></span>
         </footer>
 
 
