@@ -86,27 +86,44 @@ function gavias_financial_preprocess_node__article__card(&$variables){
       case "Delta":
         $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
         break;
+      case "Special":
+        $variables['content']['content_sub_category'] = $variables['content']['field_special_sub_category'];
+        break;
       default:
         $variables['content']['content_sub_category'] = null;
     }
   }
 }
-function gavias_financial_preprocess_node__article_box(&$variables){
 
-  $x = 'i am here';
+function gavias_financial_preprocess_node__article__box(&$variables){
+  /* Drupal\taxonomy\Entity\Term $tax_term */
+  $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term'];
+
+
+  if($tax_term->getName()){
+    //$sub_category = $variables['content']['field_content_category'][0]['#title'];
+
+    switch ($tax_term->getName()) {
+      case "Alpha":
+        $variables['content']['content_sub_category'] = $variables['content']['field_alpha_sub_category'];
+        break;
+      case "Beta":
+        $variables['content']['content_sub_category'] = $variables['content']['field_beta_sub_category'];
+        break;
+      case "Charlie":
+        $variables['content']['content_sub_category'] = $variables['content']['field_charlie_sub_category'];
+        break;
+      case "Delta":
+        $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
+        break;
+      case "Special":
+        $variables['content']['content_sub_category'] = $variables['content']['field_special_sub_category'];
+        break;
+      default:
+        $variables['content']['content_sub_category'] = null;
+    }
+  }
 }
-
-
-function gavias_financial_preprocess_node__special_card(&$variables){
-  $x = 'i am here';
-
-}
-function gavias_financial_preprocess_node__special_box(&$variables){
-
-  $x = 'i am here';
-}
-
-
 
 function gavias_financial_preprocess_node__portfolio(&$variables){
   $node = $variables['node'];

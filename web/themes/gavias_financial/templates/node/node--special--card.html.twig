@@ -21,6 +21,11 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     {#<span>{{ field_names }}</span>#}
     <!-- Start Display article for card page -->
     <article{{ attributes.addClass(classes) }}>
+        <!---- Icon ----->
+        <div class="card__icon_top_right">
+            {{ content.field_special_sub_category }}
+        </div>
+
         <div class="post-image card-head">
             <div class="content-image card-image">
                 {{ content.field_special_image }}
@@ -38,11 +43,6 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                 </div>
             </div>
             {# END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
-        </div>
-
-        <!---- Icon ----->
-        <div class="card__icon">
-            {{ content.field_special_sub_category }}
         </div>
 
         <!---- border icons ---->

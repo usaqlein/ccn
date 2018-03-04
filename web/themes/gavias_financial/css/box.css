@@ -1,42 +1,132 @@
+article.content-box.post-block {
+    padding-bottom: 0 !important;
+    height: 300px !important;
+    width: 270px !important;
+}
+/*#### HEAD ############################# box-head */
+.box-head {
+    height: 59% !important;
+}
+/********** Head **********************************/
 .box-head iframe {
-    min-height: 0 !important;
+    height: 59% !important;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
-/*a {*/
-/*color: red !important;*/
+/***** END HEAD ###############################################*/
+
+
+/*#### BODY ############################# box-body */
+.box-body {
+    height: 28% !important;
+    background-color: #00c99a;
+    overflow: hidden;
+}
+/********** Main **********************************/
+.box-main{
+    height: 60%;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+div.jquery-countdown-timer-countdowntimer{
+    padding-top: 5px;
+}
+.jquery-countdown-timer-note-countdowntimer {
+    margin-top: -10px;
+}
+/********** Title **********************************/
+.box-title h3{
+    color: green;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*margin: 0 !important;*/
+    margin-top: -7px;
+}
+/***** END BODY ###############################################*/
+
+/*#### FOOTER ############################# box-footer */
+.box-footer {
+    height: 13% !important;
+    background-color: #ffffaa;
+}
+/**********  **********************************/
+/***** END FOOTER ###############################################*/
+
+.content-box:hover span.crypto-token-logo {
+    display: none;
+}
+
+.content-box:hover span.crypto-token-name {
+    display: block;
+}
+
+.content-box:hover .sub-category-logo {
+    display: none;
+}
+
+.content-box:hover .sub-category-name {
+    display: block;
+}
+
+li.box-footer-link a{
+    padding: 10px 0 2px 35px !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.card__icon_top_left {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+}
+
+.card__icon_bottom_right {
+    position: absolute;
+    z-index: 100;
+    bottom: 5px;
+    right: 20px;
+}
+
+/*@media (max-width: 780px) {*/
+    /*.box-head > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 300px !important;*/
+    /*}*/
+    /*article.content-box {*/
+        /*background-color: green !important;*/
+    /*}*/
 /*}*/
-@media (max-width: 780px) {
-    .box-head > iframe {
-        min-height: 0 !important;
-        max-height: 300px !important;
-    }
-    article.content-box {
-        background-color: green !important;
-    }
-}
-@media (max-width: 991px) {
-    .box-head > iframe {
-        min-height: 0 !important;
-        max-height: 144px !important;
-    }
-    article.content-box {
-        background-color: purple !important;
-    }
-}
-@media (min-width: 991px) {
-    .box-head > iframe {
-        min-height: 0 !important;
-        max-height: 152px !important;
-    }
-    article.content-box {
-        background-color: green !important;
-    }
-}
-@media (min-width: 1199px) {
-    .box-head > iframe {
-        min-height: 0 !important;
-        max-height: 191px !important;
-    }
-    article.content-box {
-        background-color: blue !important;
-    }
-}
+/*@media (max-width: 991px) {*/
+    /*.box-head > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 144px !important;*/
+    /*}*/
+    /*article.content-box {*/
+        /*background-color: purple !important;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 991px) {*/
+    /*.box-head > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 152px !important;*/
+    /*}*/
+    /*article.content-box {*/
+        /*background-color: green !important;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 1199px) {*/
+    /*.box-head > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 191px !important;*/
+    /*}*/
+    /*article.content-box {*/
+        /*background-color: blue !important;*/
+    /*}*/
+/*}*/

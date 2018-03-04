@@ -1,6 +1,4 @@
-article a{
-    /*color: red;*/
-}
+
 /**********(1)**********************************/
 /*#### HEAD ############################# post-image card-head
 /**********  **********************************/
@@ -123,21 +121,28 @@ p.avatar-bottom-text{
 /*#### ICON ############################# card__icon
 /**********  **********************************/
 
-.card__icon {
+.card__icon_top_right {
     position: absolute;
     z-index: 100;
     top: 20px;
     right: 20px;
-    width: 45px;
-    height: 45px;
-    padding-top: 10px;
-    background-color: coral;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    line-height: 13px;
 }
+
+/*.card__icon {*/
+    /*position: absolute;*/
+    /*z-index: 100;*/
+    /*top: 20px;*/
+    /*right: 20px;*/
+    /*width: 45px;*/
+    /*height: 45px;*/
+    /*padding-top: 10px;*/
+    /*background-color: coral;*/
+    /*border-radius: 50%;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*font-weight: 700;*/
+    /*line-height: 13px;*/
+/*}*/
 
 /***** END ICON ###############################################*/
 
@@ -180,19 +185,19 @@ p.avatar-bottom-text{
 /**********  MID LEFT CATEGORY TOKEN**********************************/
 
 /**********  MID RIGHT CRYPTO TOKEN**********************************/
-div.mid-right > div.field > div.crypto-token > span.crypto-token-logo {
+span.crypto-token-logo {
     display: block;
 }
 
-div.mid-right > div.field > div.crypto-token > span.crypto-token-name {
+span.crypto-token-name {
     display: none;
 }
 
-.content-card:hover div.mid-right > div.field > div.crypto-token > span.crypto-token-logo {
+.content-card:hover span.crypto-token-logo {
     display: none;
 }
 
-.content-card:hover div.mid-right > div.field > div.crypto-token > span.crypto-token-name {
+.content-card:hover span.crypto-token-name {
     display: block;
 }
 /***** END BORDER ###############################################*/
