@@ -17,9 +17,22 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!-- Start Display article for teaser page -->
     <!-- End Display article for teaser page -->
 {% elseif box == true %}
-    {#<span>{{ field_names }}</span>#}
     <!-- Start Display article for box page -->
     <article{{ attributes.addClass(classes) }}>
+        <!---- Top Right ----->
+        <div class="card__icon_top_right">
+            {{ content.field_tax_embed_one }}
+        </div>
+        {#<!---- Top Left ----->#}
+        <div class="card__icon_top_left">
+            {{ content.content_sub_category }}
+        </div>
+        {#<!---- Bottom Right ----->#}
+        <div class="card__icon_bottom_right">
+            {{ content.field_content_category }}
+        </div>
+
+        <!-- Header -->
         <div class="post-image box-head">
             {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
                 {{ gva_iframe|raw }}
@@ -28,6 +41,38 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             {% else %}
                 {{ content.field_image }}
             {% endif %}
+        </div>
+
+
+        {#<!---- Bottom Right ----->#}
+        {#<div class="card__icon_bottom_right">#}
+            {#{{ content.field_content_category }}#}
+        {#</div>#}
+        {#<!---- Top Left ----->#}
+        {#<div class="card__icon_top_left">#}
+            {#{{ content.content_sub_category }}#}
+        {#</div>#}
+
+        <!-- Box Body -->
+        <div class="box-body">
+            <div class="box-main">
+                {{ content.field_punchline }}
+            </div>
+            <div class="box-title">
+                <h3><a href="{{ url }}">{{ label }}</a></h3>
+            </div>
+
+        </div>
+        <!---- Footer Content ----->
+        <div class="card-foot countdown-card-foot box-footer">
+
+            {# Footer Readmore and Date #}
+            <div class="category-list item-list countdown-card-readmore">
+                <div class="item-list">
+                    <ul><li class="view-list-item card-read-more box-footer-link"><a href="{{ url }}" hreflang="en"><span class="text-theme">Read More</span> | {{ date }} </a></li></ul>
+                </div>
+            </div>
+
         </div>
     </article>
 
