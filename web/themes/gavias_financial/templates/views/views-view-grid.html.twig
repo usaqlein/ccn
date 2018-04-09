@@ -48,7 +48,13 @@
     {% set xclass = ['col-lg-2 col-md-2 col-sm-6 col-xs-6'] %}
   {% else %}
     {% set xclass = ['col-lg-4 col-md-4 col-sm-4 col-xs-12'] %}
-  {% endif %}    
+  {% endif %}
+
+  {% if gridViewName is defined %}
+    {% set viewName = [gridViewName] %}
+  {% else %}
+    {% set viewName = ['generic'] %}
+  {% endif %}
 
 {% if options.row_class_default %}
   {%
@@ -78,7 +84,7 @@
       {% endif %}  
 
         {% for column in row.content %}
-          <div{{ column.attributes.addClass(col_classes, options.col_class_default ? 'col-' ~ loop.index, xclass, gva_masonry.class_item) }}>
+          <div{{ column.attributes.addClass(col_classes, options.col_class_default ? 'col-' ~ loop.index, xclass, viewName, gva_masonry.class_item) }}>
             {{ column.content }}
           </div>
         {% endfor %}

@@ -10240,20 +10240,6 @@ div.special_class_types, div.alpha_class_types, div.beta_class_types, div.charli
   padding: 5px !important;
 }
 
-/** Card outermost boundary **/
-.content-card {
-  margin: 0 !important;
-  border: 2px solid #5eb4e7;
-  border-radius: 10px;
-}
-
-/** Box outermost boundary **/
-.content-box {
-  margin: 0 !important;
-  border: 2px solid #5eb4e7;
-  border-radius: 10px;
-}
-
 /* Frong Page Countdown Cards */
 div.view-portfolio > div.cd_types {
   padding: 5px !important;

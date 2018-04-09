@@ -12,100 +12,141 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 'post-block '
 ]
 %}
+{% if card == true %}
+    <!--### ###-->
+    <!--=== ===-->
+    <!-- -->
+    <!-- -->
+    <!--=== ===-->
+    <!--### ###-->
 
-{% if teaser == true %}
-    <!-- Start Display article for teaser page -->
-    <!-- End Display article for teaser page -->
-{% elseif card == true %}
+<!--*#*#*#*#*#*# Node Special Card *#*#*#*#*#*#-->
 
-    {#<span>{{ field_names }}</span>#}
-    <!-- Start Display article for card page -->
-    <article{{ attributes.addClass(classes) }}>
-        <!---- Icon ----->
-        <div class="card__icon_top_right">
-            {{ content.field_special_sub_category }}
+<article{{ attributes.addClass(classes) }}>
+
+    <!--### Outer ###-->
+
+    <!--=== Top Right===-->
+    <div class="card_outer_top_right">
+        {{ content.field_special_sub_category }}
+    </div>
+    <!--=== End Top Right===-->
+
+    <!--=== Top Left===-->
+    <div class="card_outer_top_left"></div>
+    <!--=== End Top Left===-->
+
+    <!--=== Bottom Right===-->
+    <div class="card_outer_bottom_right"></div>
+    <!--=== End Bottom Right===-->
+
+    <!--=== Top Bottom Left===-->
+    <div class="card_outer_bottom_left"></div>
+    <!--=== End Bottom Left==-->
+
+    <!--### End Outer ###-->
+
+<!--***********************************************************************************************************-->
+
+    <!--### Header ###-->
+    <!--=== Card Head===-->
+    <div class="post-image card-head">
+        <!-- Card Head Image -->
+        <div class="content-image card-head-image">
+            {{ content.field_special_image }}
         </div>
+        <!-- End Card Head Image-->
+        <!-- Card Head Avatar Hover -->
+        <div class="card-head-avatar">
 
-        <div class="post-image card-head">
-            <div class="content-image card-image">
-                {{ content.field_special_image }}
-            </div>
-            {# Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
-            <div class="avatarcontainer">
+            <!-- Card Head Avatar Default -->
+            <div class="card-head-avatar-default">
                 {{ content.field_tax_embed_one }}
-                <div class="hover">
-                    <div class="icon-twitter">
-                        <a href="{{ url }}">
-                            <span class="icon icon-Twitter"></span>
-                            <p class="avatar-bottom-text">Read More</p>
-                        </a>
-                    </div>
+            </div>
+            <!-- End Card Head Avatar Default -->
+
+            <!-- Card Head Avatar Hover -->
+            <div class="card-head-avatar-hover">
+                <div class="card-avatar-hover-icon">
+                    <a href="{{ url }}">
+                        <span class="icon icon-Twitter"></span>
+                        <p class="avatar-bottom-text">Read More</p>
+                    </a>
                 </div>
             </div>
-            {# END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
-        </div>
-
-        <!---- border icons ---->
-        <div class="mid-left">
-            {#<span class="icon icon-Bar-Chart" style="color: red; font-size: 30px; font-weight: bold;"></span>#}
-            {{ content.field_content_category }}
+            <!-- End Card Head Avatar Hover -->
 
         </div>
-        <div class="mid-right">
-            {{ content.field_tax_embed_one }}
+        <!-- End Card Head Avatar -->
+    </div>
+    <!--=== End Card Head===-->
+    <!--### End Header ###-->
+
+<!--***********************************************************************************************************-->
+
+    <!--### Card Belt Icons ###-->
+
+    <div class="card-belt-icon-left">
+        {{ content.field_content_category }}
+    </div>
+
+    <div class="card-belt-icon-right">
+        {{ content.field_tax_embed_one }}
+    </div>
+
+    <!--### End Card Belt Icons ###-->
+
+<!--***********************************************************************************************************-->
+    <!--### Body ###-->
+    <div class="card__body">
+        <!--=== ===-->
+        <div class="card__category">
+            {{ content.field_block_one }}
         </div>
+        <!--=== ===-->
 
-        <!---- Body Conent ----->
-            <div class="card__body">
-                <!-- card main entity -->
-                <div class="card__category">
-                    {{ content.field_block_one }}
-                </div>
-                <h2 class="card__title"><a href="{{ url }}">{{ label }}</a></h2>
-                <div class="card__subtitle">{{ content.field_punchline }}</div>
-                <p class="card__description"><a href="{{ url }}">Read More {{ date }}</a></p>
-            </div>
+        <!--=== ===-->
+        <h2 class="card__title">
+            <a href="{{ url }}">{{ label }}</a>
+        </h2>
+        <!--=== ===-->
 
-        <!---- Footer Conent ----->
-        <footer class="card__footer">
-            <span class="icon ion-clock"></span> {{ date }}
-            <span class="icon ion-chatbox"></span><a href="{{ url }}"> {{ comment_count }} comments</a>
-            <span class="read-more text-theme"><a href="{{ url }}">Read More</a></span>
-        </footer>
-
-
-    </article>
-
-
-    <!-- End Display article for card page -->
-
-{% else %}
-    <!-- Start Display article for detail page -->
-
-    <article{{ attributes.addClass(classes)|without('about') }}>
-        <header>
-            {{ title_prefix }}
-            {% if not page %}
-                <h2{{ title_attributes.addClass('node__title') }}>
-                    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-                </h2>
-            {% endif %}
-            {% set title_suffix = '' %}
-            {{ title_suffix }}
-            {% if display_submitted %}
-                <div class="node__meta">
-                    {{ author_picture }}
-                    <span{{ author_attributes }}>
-      {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-    </span>
-                    {{ metadata }}
-                </div>
-            {% endif %}
-        </header>
-        <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-            {{ content }}
+        <!--=== ===-->
+        <div class="card__subtitle">
+            {{ content.field_punchline }}
         </div>
-    </article>
+        <!--=== ===-->
 
-    <!-- End Display article for detail page -->
+        <!--=== ===-->
+        <p class="card__description">
+            <a href="{{ url }}">Read More {{ date }}</a>
+        </p>
+        <!--=== ===-->
+    </div>
+    <!--### End Body ###-->
+
+<!--***********************************************************************************************************-->
+    <!--### Footer ###-->
+    <footer class="card__footer">
+        <!--=== ===-->
+        <span class="icon ion-clock"></span>
+        {{ date }}
+        <!--=== ===-->
+        <!--=== ===-->
+        <span class="icon ion-chatbox"></span>
+        <a href="{{ url }}">
+            {{ comment_count }} comments
+        </a>
+        <!--=== ===-->
+        <!--=== ===-->
+        <span class="read-more text-theme">
+        <a href="{{ url }}">Read More</a>
+        </span>
+        <!--=== ===-->
+    </footer>
+    <!--### End Footer###-->
+<!--***********************************************************************************************************-->
+
+</article>
+<!--*#*#*#*#*#*#  Node Special Card *#*#*#*#*#*#-->
 {% endif %}

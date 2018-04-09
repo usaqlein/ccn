@@ -28,7 +28,16 @@ function template_preprocess_views_view_gvaowl(&$variables) {
   $handler = $variables['view']->style_plugin;
 
   $settings = gavias_view_owl_settings($handler->options);
-  
+
+  $view = $variables['view'];
+  if($view) {
+    /** @var Drupal\views\Entity\View $viewStorage */
+    $viewStorage = $view->storage;
+    if($viewStorage) {
+      $variables['owlViewName'] = 'owl-'.$viewStorage->id();
+    }
+  }
+
   $variables['attributes']['class'][] = $settings['el_class'];
   $variables['attributes']['class'][] = 'owl-carousel';
   $variables['attributes']['class'][] = 'init-carousel-owl';
@@ -51,6 +60,15 @@ function template_preprocess_views_view_gvaowl(&$variables) {
  * Default template: views_view_gvaportfolio.html.twig.
  */
 function template_preprocess_views_view_gvaportfolio(&$variables) {
+  $view = $variables['view'];
+  if($view) {
+    /** @var Drupal\views\Entity\View $viewStorage */
+    $viewStorage = $view->storage;
+    if($viewStorage) {
+      $variables['portViewName'] = 'port-'.$viewStorage->id();
+    }
+  }
+
   $_id = gavias_view_random_id();
   $handler = $variables['view']->style_plugin;
 
@@ -88,7 +106,7 @@ function template_preprocess_views_view_gvaportfolio(&$variables) {
         if(isset($f['target_id']) && $f['target_id']) $tid .= ' ' . $f['target_id'];
       }
     }
-    $variables['rows'][$key] = '<div class="' . "{$xclass} {$tid} {$taxonomy}" . '">' . render($variables['rows'][$key]) . '</div>';
+    $variables['rows'][$key] = '<div class="' . "{$xclass} {$tid} {$taxonomy} {$variables['portViewName']}" . '">' . render($variables['rows'][$key]) . '</div>';
   }
 
   $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
