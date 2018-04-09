@@ -12,85 +12,86 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 'post-block '
 ]
 %}
+{% if box == true %}
+    <!--### ###-->
+    <!--=== ===-->
+    <!-- -->
+    <!-- -->
+    <!--=== ===-->
+    <!--### ###-->
 
-{% if teaser == true %}
-    <!-- Start Display article for teaser page -->
-    <!-- End Display article for teaser page -->
-{% elseif box == true %}
-    {#<span>{{ field_names }}</span>#}
-    <!-- Start Display article for box page -->
+<!--*#*#*#*#*#*# Node Special Box *#*#*#*#*#*#-->
+<article{{ attributes.addClass(classes) }}>
 
-    <article{{ attributes.addClass(classes) }}>
-        <!---- Top Right ----->
-        <div class="card__icon_top_right">
-            {{ content.field_tax_embed_one }}
-        </div>
-        {#<!---- Top Left ----->#}
-        <div class="card__icon_top_left">
+    <!--### Outer ###-->
+
+    <!--=== Top Right===-->
+    <div class="box_outer_top_right">
+        {{ content.field_tax_embed_one }}
+    </div>
+    <!--=== End Top Right===-->
+
+    <!--=== Top Left===-->
+    <div class="box_outer_top_left">
         {{ content.field_special_sub_category }}
-        </div>
-        {#<!---- Bottom Right ----->#}
-        <div class="card__icon_bottom_right">
+    </div>
+    <!--=== End Top Left===-->
+
+    <!--=== Bottom Right===-->
+    <div class="box_outer_bottom_right">
         {{ content.field_content_category }}
-        </div>
+    </div>
+    <!--=== End Bottom Right===-->
 
-        <!-- Header -->
-        <div class="post-image box-head">
-            {{ content.field_special_image }}
-        </div>
+    <!--=== Top Bottom Left===-->
+    <div class="box_outer_bottom_left"></div>
+    <!--=== End Bottom Left==-->
 
-        <!-- Box Body -->
-        <div class="box-body">
-            <div class="box-main">
-                {{ content.field_block_one }}
+    <!--### End Outer ###-->
+
+<!--***********************************************************************************************************-->
+
+    <!--### Header ###-->
+    <!--=== Box Head===-->
+    <div class="post-image box-head">
+        {{ content.field_special_image }}
+    </div>
+    <!--=== End Box Head===-->
+    <!--### End Header ###-->
+
+<!--***********************************************************************************************************-->
+
+    <!--### Body ###-->
+    <div class="box-body">
+        <!--=== ===-->
+        <div class="box-main">
+            {{ content.field_block_one }}
+        </div>
+        <!--=== ===-->
+        <!--=== ===-->
+        <div class="box-title">
+            <h3><a href="{{ url }}">{{ label }}</a></h3>
+        </div>
+        <!--=== ===-->
+    </div>
+    <!--### End Body ###-->
+
+<!--***********************************************************************************************************-->
+    <!--### Footer ###-->
+    <div class="card-foot countdown-card-foot box-footer">
+        <!--=== ===-->
+        <div class="category-list item-list countdown-card-readmore">
+            <!-- -->
+            <div class="item-list">
+                <ul><li class="view-list-item card-read-more box-footer-link"><a href="{{ url }}" hreflang="en"><span class="text-theme">Read More</span> | {{ date }}</a></li></ul>
             </div>
-            <div class="box-title">
-                <h3><a href="{{ url }}">{{ label }}</a></h3>
-            </div>
-
+            <!-- -->
         </div>
-        <!---- Footer Content ----->
-        <div class="card-foot countdown-card-foot box-footer">
+        <!--=== ===-->
+    </div>
+    <!--### End Footer###-->
+<!--***********************************************************************************************************-->
 
-            {# Footer Readmore and Date #}
-            <div class="category-list item-list countdown-card-readmore">
-                <div class="item-list">
-                    <ul><li class="view-list-item card-read-more box-footer-link"><a href="{{ url }}" hreflang="en"><span class="text-theme">Read More</span> | {{ date }}</a></li></ul>
-                </div>
-            </div>
-
-        </div>
-    </article>
-
-    <!-- End Display article for box page -->
-
-{% else %}
-    <!-- Start Display article for detail page -->
-
-    <article{{ attributes.addClass(classes)|without('about') }}>
-        <header>
-            {{ title_prefix }}
-            {% if not page %}
-                <h2{{ title_attributes.addClass('node__title') }}>
-                    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-                </h2>
-            {% endif %}
-            {% set title_suffix = '' %}
-            {{ title_suffix }}
-            {% if display_submitted %}
-                <div class="node__meta">
-                    {{ author_picture }}
-                    <span{{ author_attributes }}>
-      {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-    </span>
-                    {{ metadata }}
-                </div>
-            {% endif %}
-        </header>
-        <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-            {{ content }}
-        </div>
-    </article>
-
-    <!-- End Display article for detail page -->
+</article>
+<!--*#*#*#*#*#*#  Node Special Box *#*#*#*#*#*#-->
 {% endif %}

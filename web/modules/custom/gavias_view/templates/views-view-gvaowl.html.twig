@@ -1,6 +1,12 @@
 {% if attributes -%}
    <div{{ attributes }}>
 {% endif %}
+
+{% if owlViewName is defined %}
+   {% set viewName = owlViewName %}
+{% else %}
+   {% set viewName = 'generic' %}
+{% endif %}
    
    {% if title %}
       <h3>{{ title }}</h3>
@@ -8,7 +14,7 @@
 
 
     {% for row in rows %}
-         <div class="item {{ row.content['#view_mode'] }} slider">
+         <div class="item {{ row.content['#view_mode'] }} slider {{ viewName }}">
             <div{{ row.attributes }}>{{ row.content|raw }}</div>
          </div>
     {% endfor %}

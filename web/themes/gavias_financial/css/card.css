@@ -1,43 +1,185 @@
-
-/**********(1)**********************************/
-/*#### HEAD ############################# post-image card-head
-/**********  **********************************/
-
-.card-head iframe {
-    min-height: 0 !important;
+/**#*#*#*#*#*# Card *#*#*#*#*#*#*/
+@media (max-width: 500px) {
+    .card-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 300px !important;
+    }
+    article.content-card {
+        /*background-color: green !important;*/
+    }
+}
+@media (min-width: 501px) {
+    .card-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 400px !important;
+    }
+    article.content-card {
+        /*background-color: green !important;*/
+    }
+}
+@media (min-width: 768px) {
+    .card-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 160px !important;
+    }
+    .card-head-image {
+        min-height: 160px !important;
+        max-height: 160px !important;
+    }
+    .card-head-image img{
+        /*height: 160px !important;*/
+    }
+    article.content-card {
+        /*background-color: purple !important;*/
+    }
+}
+@media (min-width: 992px) {
+    .card-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 155px !important;
+    }
+    .card-head-image {
+        min-height: 155px !important;
+        max-height: 155px !important;
+    }
+    .card-head-image img{
+        /*height: 155px !important;*/
+    }
+    article.content-card {
+        /*background-color: green !important;*/
+    }
+}
+@media (min-width: 1200px) {
+    .card-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 193px !important;
+    }
+    .card-head-image {
+        min-height: 193px !important;
+        max-height: 193px !important;
+    }
+    .card-head-image img{
+        /*height: 193px !important;*/
+    }
+    article.content-card {
+        /*max-width: 300px;*/
+    }
 }
 
-.card-head{
+
+/*--*#*#*#*#*#*#  Card *#*#*#*#*#*#-->*/
+
+/*--### Outer ###-->*/
+.grid-grid_caro_all {
+    padding: 5px !important;
+}
+
+/** Card outermost boundary **/
+
+/* Provide shadow around card and box */
+.content-card {
+    margin: 0 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--===Top Right ===-->*/
+.card_outer_top_right {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    right: 20px;
+}
+/*--===End Top Right ===-->*/
+
+/*--===Top Left ===-->*/
+.card_outer_top_left {
+}
+/*--===End Top Left ===-->*/
+
+/*--===Bottom Right ===-->*/
+.card_outer_bottom_right {
+}
+/*--===End Bottom Right ===-->*/
+
+/*--===Bottom Left ===-->*/
+.card_outer_bottom_left {
+}
+/*--===End Bottom Left ===-->*/
+
+/*--### End Outer ###-->*/
+
+/* Sub Category Hover States */
+.sub-category-logo {
+    display: block;
+}
+.sub-category-name {
+    display: none;
+}
+
+.content-card:hover .sub-category-logo {
+    display: none;
+}
+
+.content-card:hover .sub-category-name {
+    display: block;
+}
+
+/*****************************************************************************************************/
+
+/*--### Header ###-->*/
+.card-head {
     display: block;
     overflow: hidden;
     position: relative;
     padding-bottom: 2em;
-    -moz-border-radius-topleft: 8px;
-    -webkit-border-top-left-radius: 8px;
-    border-top-left-radius: 8px;
-    -moz-border-radius-topright: 8px;
-    -webkit-border-top-right-radius: 8px;
-    border-top-right-radius: 8px; }
+    background-color: #F6F6F6;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
 
+}
 
-/***********************************************************************************************  START content-image card-image    ****/
-.card-image{
+/*.box-head iframe {*/
+    /*height: 59% !important;*/
+    /*width: 100%;*/
+    /*min-height: 100%;*/
+    /*max-height: 100%;*/
+    /*min-width: 100%;*/
+    /*max-width: 100%;*/
+/*}*/
+
+.card-head iframe {
+    min-height: 0 !important;
+    background-color: black;
+}
+/*--=== Card Head Image===-->*/
+.card-head-image{
     overflow: hidden;
 }
-.content-card:hover .card-image img {
-    opacity: 0.6;
+.card-head-image img{
+    margin-bottom: 0;
+    height: 100%;
+}
+.content-card:hover .card-head-image img {
+    opacity: 0.8;
     transform: scale(1.2);
 }
-div.card-image {
+
+/* border */
+div.card-head-image {
     margin: 0 !important;
-    border: 2px solid #5eb4e7;
-    border-radius: 10px;
 }
-/***********************************************************************************************  END content-image card-image    ****/
+/*--=== End Card Head Image===-->*/
 
-/***********************************************************************************************  START avatarcontainer    ****/
-
-.avatarcontainer {
+/*--=== Card Head Avatar===-->*/
+.card-head-avatar {
     position: absolute;
     z-index: 100;
     bottom: 0;
@@ -46,28 +188,17 @@ div.card-image {
     margin: auto;
     width: 70px;
     height: 70px;
-    display: block; }
-.content-card:hover .hover {
-    opacity: 1; }
+    display: block;
+}
 
-.avatar {
-    width: 100%;
-    border: 8px solid #5cc0ff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative; }
-.avatar img {
-    width: 65px;
-    height: 65px; }
-.avatar:hover + .hover {
-    opacity: 1;
-    cursor: pointer; }
+/*-- Card Head Avatar Default -->*/
+.card-head-avatar-default {
 
-.hover {
+}
+/*-- END Card Head Avatar Default -->*/
+
+/*-- Card Head Avatar Hover-->*/
+.card-head-avatar-hover {
     position: absolute;
     cursor: pointer;
     width: 100%;
@@ -77,7 +208,7 @@ div.card-image {
     font-size: 1.8em;
     text-align: center;
     color: white;
-    padding-top: 18%;
+    /*padding-top: 18%;*/
     opacity: 0;
     font-family: 'FontAwesome';
     font-weight: 300;
@@ -98,7 +229,12 @@ div.card-image {
     -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
-    transition-timing-function: ease; }
+    transition-timing-function: ease;
+}
+
+.content-card:hover .card-head-avatar-hover {
+    opacity: 1;
+}
 
 span.icon-Twitter{
     font-size: 30px;
@@ -110,129 +246,89 @@ span.icon-Twitter{
 p.avatar-bottom-text{
     font-size: 8px;
     font-style: italic;
+    margin-top: -12px;
     color: #ffffff !important;
 }
 
-/***********************************************************************************************  END  avatarcontainer  ****/
-/***** END HEAD ###############################################*/
-
-
-/**********  **********************************/
-/*#### ICON ############################# card__icon
-/**********  **********************************/
-
-.card__icon_top_right {
-    position: absolute;
-    z-index: 100;
-    top: 20px;
-    right: 20px;
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0 2px;
+    font-size: 18px;
 }
 
-/*.card__icon {*/
-    /*position: absolute;*/
-    /*z-index: 100;*/
-    /*top: 20px;*/
-    /*right: 20px;*/
-    /*width: 45px;*/
-    /*height: 45px;*/
-    /*padding-top: 10px;*/
-    /*background-color: coral;*/
-    /*border-radius: 50%;*/
-    /*color: #fff;*/
-    /*text-align: center;*/
-    /*font-weight: 700;*/
-    /*line-height: 13px;*/
-/*}*/
-
-/***** END ICON ###############################################*/
-
-/**********  **********************************/
-/*#### BORDER #############################
-/**********  **********************************/
-
-.mid-left {
-    position: absolute;
-    z-index: 100;
-    margin-top: -30px;
-    left: 15px;
-
+.icon + .icon {
+    padding-left: 10px;
 }
-.mid-right {
-    position: absolute;
-    z-index: 100;
-    margin-top: -30px;
-    right: 15px;
 
-}
-/**********  **********************************/
+/*-- End Card Head Avatar Hover-->*/
 
-/**********  TOP SUB CATEGORY **********************************/
-.sub-category-logo {
+/*--=== End Card Head Avatar===-->*/
+/*--### End Header ###-->*/
+
+/*****************************************************************************************************/
+
+/* Category Hover States*/
+.category-logo {
     display: block;
 }
-
-.sub-category-name {
+.category-name {
     display: none;
 }
 
-.content-card:hover .sub-category-logo {
+.content-card:hover .category-logo {
     display: none;
 }
 
-.content-card:hover .sub-category-name {
-    display: block;
-}
-/**********  MID LEFT CATEGORY TOKEN**********************************/
-
-/**********  MID RIGHT CRYPTO TOKEN**********************************/
-span.crypto-token-logo {
+.content-card:hover .category-name {
     display: block;
 }
 
-span.crypto-token-name {
+/* Crypto Token Hover states*/
+.crypto-token-logo {
+    display: block;
+}
+.crypto-token-name {
     display: none;
 }
 
 .content-card:hover span.crypto-token-logo {
     display: none;
 }
-
-.content-card:hover span.crypto-token-name {
+.content-card:hover .card-belt-icon-right span.crypto-token-name {
     display: block;
 }
-/***** END BORDER ###############################################*/
 
+/*--=== Card Belt Icon Left ===-->*/
+.card-belt-icon-left {
+    position: absolute;
+    z-index: 100;
+    margin-top: -30px;
+    left: 15px;
 
-/**********  **********************************/
-/*#### BODY ############################# card__body
-/**********  **********************************/
+}
+/*--=== End Card Belt Icon Left===-->*/
+
+/*--=== Card Belt Icon Right===-->*/
+.card-belt-icon-right {
+    position: absolute;
+    z-index: 100;
+    margin-top: -30px;
+    right: 15px;
+}
+/*--=== End Card Belt Icon Right===-->*/
+
+/*****************************************************************************************************/
+
+/*--### Body ###-->*/
 .card__body {
     padding: 5px;
+    background-color: #F6F6F6;
 }
-
-/***********************************************************************************************  START card__category    ****/
-.card__category {
-
-}
-/***********************************************************************************************  END card__category    ****/
-
-/***********************************************************************************************  START card__title    ****/
-.card__title {
-
-}
-/***********************************************************************************************  END card__title    ****/
-
-/***********************************************************************************************  START card__subtitle    ****/
-.card__subtitle {
-
-}
-/***********************************************************************************************  END card__subtitle    ****/
-
-/***********************************************************************************************  START card__description    ****/
+/*--=== ===-->*/
 /* Make Text Disappear so it can only be shown during hover */
 .card__description {
     position: absolute;
-
     bottom: 0%;
     margin: 0;
     padding: 0;
@@ -249,109 +345,38 @@ span.crypto-token-name {
     transform: translateY(0);
     transition-delay: 0.2s;
 }
-/***********************************************************************************************  END card__description    ****/
+/*--=== ===-->*/
+
+/*--=== Card Title===-->*/
+h2.card__title{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*--=== End Card Title===-->*/
 
 
-/*####### END BODY ###############################################*/
+/*--### End Body ###-->*/
 
-/**********  **********************************/
-/*#### FOOTER ############################# card__footer
-/**********  **********************************/
+/*****************************************************************************************************/
 
+/*--### Footer ###-->*/
 .card__footer {
     position: absolute;
     bottom: 12px;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     font-size: 11px;
     color: #A3A9A2;
 }
-
-.icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin: -2px 0 0 2px;
-    font-size: 18px;
-}
-
-.icon + .icon {
-    padding-left: 10px;
-}
+/*--=== ===-->*/
+/*-- -->*/
 .read-more {
     padding-left: 10px;
 }
-/***** END FOOTER ###############################################*/
+/*-- -->*/
+/*--=== ===-->*/
+/*--### End Footer ###-->*/
 
-
-
-
-
-
-/*********************************************************************************************************************
- Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
-**********************************************************************************************************************/
-
-
-
-
-
-
-/*********************************************************************************************************************
- END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
-**********************************************************************************************************************/
-
-/*********************************************************************************************************************
- Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
-**********************************************************************************************************************/
-
-
-
-
-
-
-
-
-/*********************************************************************************************************************
- END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false
-**********************************************************************************************************************/
-
-
-
-
-
-@media (max-width: 780px) {
-    .card-image > iframe {
-        min-height: 0 !important;
-        max-height: 300px !important;
-    }
-    article.content-card {
-        /*background-color: green !important;*/
-    }
-}
-@media (max-width: 991px) {
-    .card-image > iframe {
-        min-height: 0 !important;
-        max-height: 144px !important;
-    }
-    article.content-card {
-        /*background-color: purple !important;*/
-    }
-}
-@media (min-width: 991px) {
-    .card-image > iframe {
-        min-height: 0 !important;
-        max-height: 152px !important;
-    }
-    article.content-card {
-        /*background-color: green !important;*/
-    }
-}
-@media (min-width: 1199px) {
-    .card-image > iframe {
-        min-height: 0 !important;
-        max-height: 191px !important;
-    }
-    article.content-card {
-        /*background-color: blue !important;*/
-    }
-}
+/*****************************************************************************************************/

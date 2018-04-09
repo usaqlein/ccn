@@ -12,128 +12,131 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 'post-block '
 ]
 %}
+{% if card == true %}
 
-{% if teaser == true %}
-    <!-- Start Display article for teaser page -->
-    <!-- End Display article for teaser page -->
-{% elseif card == true %}
+<!--*#*#*#*#*#*# Node Article Card *#*#*#*#*#*#-->
+<article{{ attributes.addClass(classes) }}>
 
-    {#<span>{{ field_names }}</span>#}
-    <!-- Start Display article for card page -->
-    <article{{ attributes.addClass(classes) }}>
-        <!---- Icon ----->
-        <div class="card__icon_top_right">
-            {{ content.content_sub_category }}
+    <!--### Outer ###-->
+
+    <!--=== Top Right===-->
+    <div class="card_outer_top_right">
+        {{ content.content_sub_category }}
+    </div>
+    <!--=== End Top Right===-->
+
+    <!--=== Top Left===-->
+    <div class="card_outer_top_left"></div>
+    <!--=== End Top Left===-->
+
+    <!--=== Bottom Right===-->
+    <div class="card_outer_bottom_right"></div>
+    <!--=== End Bottom Right===-->
+
+    <!--=== Top Bottom Left===-->
+    <div class="card_outer_bottom_left"></div>
+    <!--=== End Bottom Left==-->
+
+    <!--### End Outer ###-->
+
+<!--***********************************************************************************************************-->
+
+    <!--### Header ###-->
+    <!--=== Card Head===-->
+    <div class="post-image card-head">
+        <!-- Card Head Image-->
+        <div class="content-image card-head-image">
+            {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
+                {{ gva_iframe|raw }}
+            {% elseif post_format == 'gallery' and content.field_post_gallery %}
+                {{ content.field_post_gallery }}
+            {% else %}
+                {{ content.field_image }}
+            {% endif %}
         </div>
-
-        <div class="post-image card-head">
-            <div class="content-image card-image">
-                {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
-                    {{ gva_iframe|raw }}
-                {% elseif post_format == 'gallery' and content.field_post_gallery %}
-                    {{ content.field_post_gallery }}
-                {% else %}
-                    {{ content.field_image }}
-                {% endif %}
-            </div>
-            {# Start of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
-            <div class="avatarcontainer">
-                {{ content.field_tax_embed_one }}
-                <div class="hover">
-                    <div class="icon-twitter">
-                        <a href="{{ url }}">
-                            <span class="icon icon-Twitter"></span>
-                            <p class="avatar-bottom-text">Read More</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            {# END of https://codepen.io/marceloag/pen/nzLmu?depth=everything&order=popularity&page=7&q=card&show_forks=false #}
-        </div>
-
-        <!---- border icons ---->
-        <div class="mid-left">
-            {#<span class="icon icon-Bar-Chart" style="color: red; font-size: 30px; font-weight: bold;"></span>#}
-            {{ content.field_content_category }}
-
-        </div>
-        <div class="mid-right">
+        <!-- End Card Head Image-->
+        <!-- Card Head Avatar-->
+        <div class="card-head-avatar">
             {{ content.field_tax_embed_one }}
-        </div>
-
-        <!---- Body Conent ----->
-        <div class="card__body">
-            <!-- card main entity -->
-            <div class="card__category">
-                {{ content.field_punchline }}
-            </div>
-            <h2 class="card__title"><a href="{{ url }}">{{ label }}</a></h2>
-            <div class="card__subtitle">{{ content.field_punchline }}</div>
-            <p class="card__description"><a href="{{ url }}">Read More {{ date }}</a></p>
-        </div>
-
-        <!---- Footer Conent ----->
-        <footer class="card__footer">
-            <span class="icon ion-clock"></span> {{ date }}
-            <span class="icon ion-chatbox"></span><a href="{{ url }}"> {{ comment_count }} comments</a>
-            <span class="read-more text-theme"><a href="{{ url }}">Read More</a></span>
-        </footer>
-
-    </article>
-
-
-
-    <!-- End Display article for card page -->
-
-{% else %}
-    <!-- Start Display article for detail page -->
-    <article{{ attributes.addClass(classes) }}>
-        <div class="post-block">
-
-            <div class="post-thumbnail post-{{ post_format }}">
-                {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
-                    {{ gva_iframe|raw }}
-                {% elseif post_format == 'gallery' and content.field_post_gallery %}
-                    {{ content.field_post_gallery }}
-                {% else %}
-                    {{ content.field_image }}
-                {% endif %}
-            </div>
-
-            <div class="post-content">
-                {{ title_prefix }}
-                <h1{{ title_attributes.addClass('post-title') }}>{{ label }}</h1>
-                {{ title_suffix }}
-                <div class="post-meta">
-                    <span class="post-categories">{{ content.field_post_category }}</span> /
-                    <span class="post-created"> {{date }} </span> /
-                    <span class="post-comment">
-          <a href="{{url}}/#comments">{{ comment_count }} Comments</a>
-        </span> /
-                    <span>{{ author_name }}</span>
+            <!-- Card Head Avatar Hover -->
+            <div class="card-head-avatar-hover">
+                <div class="card-avatar-hover-icon">
+                    <a href="{{ url }}">
+                        <span class="icon icon-Twitter"></span>
+                        <p class="avatar-bottom-text">Read More</p>
+                    </a>
                 </div>
-
-                {% if display_submitted %}
-                    <div class="node__meta hidden">
-                        {{ author_picture }}
-                        <span{{ author_attributes }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-          </span>
-                        {{ metadata }}
-                    </div>
-                {% endif %}
-
-                <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-                    {{ content|without('field_image','field_post_category', 'field_post_format', 'field_post_type', 'field_post_embed', 'field_post_gallery', 'comment') }}
-                </div>
-                <div id="node-single-comment">
-                    {{ content.comment }}
-                </div>
-
             </div>
-
+            <!-- End Card Head Avatar Hover -->
         </div>
+        <!--End Card Head Avatar-->
+    </div>
+    <!--=== End Card Head===-->
+    <!--### End Header ###-->
 
-    </article>
-    <!-- End Display article for detail page -->
+<!--***********************************************************************************************************-->
+
+    <!--### Outer Body ###-->
+    <div class="card-belt-icon-left">
+        {{ content.field_content_category }}
+    </div>
+
+    <div class="card-belt-icon-right">
+        {{ content.field_tax_embed_one }}
+    </div>
+    <!--### End Outer Body ###-->
+
+<!--***********************************************************************************************************-->
+    <!--### Body ###-->
+    <div class="card__body">
+        <!--=== ===-->
+        <div class="card__category">
+            {{ content.field_punchline }}
+        </div>
+        <!--=== ===-->
+
+        <!--=== ===-->
+        <h2 class="card__title">
+            <a href="{{ url }}">{{ label }}</a>
+        </h2>
+        <!--=== ===-->
+
+        <!--=== ===-->
+        <div class="card__subtitle">
+            {{ content.field_punchline }}
+        </div>
+        <!--=== ===-->
+
+        <!--=== ===-->
+        <p class="card__description">
+            <a href="{{ url }}">Read More {{ date }}</a>
+        </p>
+        <!--=== ===-->
+    </div>
+    <!--### End Body ###-->
+
+<!--***********************************************************************************************************-->
+    <!--### Footer ###-->
+    <footer class="card__footer">
+        <!--=== ===-->
+        <span class="icon ion-clock"></span>
+        {{ date }}
+        <!--=== ===-->
+        <!--=== ===-->
+        <span class="icon ion-chatbox"></span>
+        <a href="{{ url }}">
+            {{ comment_count }} comments
+        </a>
+        <!--=== ===-->
+        <!--=== ===-->
+        <span class="read-more text-theme">
+            <a href="{{ url }}">Read More</a>
+        </span>
+        <!--=== ===-->
+    </footer>
+    <!--### End Footer###-->
+<!--***********************************************************************************************************-->
+
+</article>
+<!--*#*#*#*#*#*#  Node Article Card *#*#*#*#*#*#-->
 {% endif %}
