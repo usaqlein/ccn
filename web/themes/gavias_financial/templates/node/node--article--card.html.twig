@@ -62,7 +62,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             <div class="card-head-avatar-hover">
                 <div class="card-avatar-hover-icon">
                     <a href="{{ url }}">
-                        <span class="icon icon-Twitter"></span>
+                        {#<span class="icon icon-Twitter"></span>#}
+                        <span class="icon icon-Astronaut" style="color: #FFFFFF; font-weight: bold"></span>
                         <p class="avatar-bottom-text">Read More</p>
                     </a>
                 </div>
@@ -90,26 +91,28 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Body ###-->
     <div class="card__body">
         <!--=== ===-->
-        <div class="card__category">
+        <div class="card__special">
             {{ content.field_punchline }}
         </div>
         <!--=== ===-->
 
         <!--=== ===-->
-        <h2 class="card__title">
+        <div class="card__title">
             <a href="{{ url }}">{{ label }}</a>
-        </h2>
+        </div>
         <!--=== ===-->
 
         <!--=== ===-->
-        <div class="card__subtitle">
+        <div class="card__punchline">
             {{ content.field_punchline }}
         </div>
         <!--=== ===-->
 
         <!--=== ===-->
-        <p class="card__description">
-            <a href="{{ url }}">Read More {{ date }}</a>
+        <p class="card__pullup">
+            {#<span class="icon icon-Arrow-Forward2" style="color: #3498db; font-size: 20px;"></span>#}
+            <a href="{{ url }}">Read More</a>
+            <span class="icon icon-Cursor-Click2" style="color: #3498db; font-size: 20px;"></span>
         </p>
         <!--=== ===-->
     </div>
@@ -119,18 +122,16 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Footer ###-->
     <footer class="card__footer">
         <!--=== ===-->
-        <span class="icon ion-clock"></span>
-        {{ date }}
-        <!--=== ===-->
-        <!--=== ===-->
-        <span class="icon ion-chatbox"></span>
-        <a href="{{ url }}">
-            {{ comment_count }} comments
-        </a>
-        <!--=== ===-->
-        <!--=== ===-->
-        <span class="read-more text-theme">
-            <a href="{{ url }}">Read More</a>
+        {#<span class="icon icon-clock"></span>#}
+        <span class="foot-date">
+            <span class="icon icon-Calendar-4" style="color: #3498db; font-size: 16px;"></span>
+            {{ date }}
+        </span>
+        <span class="foot-comments">
+            <span class="icon icon-Speach-Bubble" style="color: #3498db; font-size: 16px;"></span>
+            <a href="{{ url }}">
+                {{ comment_count }} Comments
+            </a>
         </span>
         <!--=== ===-->
     </footer>
@@ -140,3 +141,5 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 </article>
 <!--*#*#*#*#*#*#  Node Article Card *#*#*#*#*#*#-->
 {% endif %}
+
+
