@@ -4,8 +4,26 @@
         min-height: 0 !important;
         max-height: 300px !important;
     }
-    article.content-card {
-        /*background-color: green !important;*/
+    .grid-cols-3 {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+    .grid-cols-4 {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+    .card__special {
+        height: 55px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 18px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 14px !important;
+    }
+    .card__title {
+        font-size: 22px;
     }
 }
 @media (min-width: 501px) {
@@ -13,8 +31,26 @@
         min-height: 0 !important;
         max-height: 400px !important;
     }
-    article.content-card {
-        /*background-color: green !important;*/
+    .grid-cols-3 {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+    .grid-cols-4 {
+        padding: 10px !important;
+        width: 100% !important;
+    }
+    .card__special {
+        height: 60px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 14px !important;
+    }
+    .card__title {
+        font-size: 22px;
     }
 }
 @media (min-width: 768px) {
@@ -26,11 +62,23 @@
         min-height: 160px !important;
         max-height: 160px !important;
     }
-    .card-head-image img{
-        /*height: 160px !important;*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 33.3333% !important;
     }
-    article.content-card {
-        /*background-color: purple !important;*/
+    .grid-cols-4 {
+        padding: 10px !important;
+        width: 50% !important;
+    }
+    .card__special {
+        height: 50px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 15px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 12px !important;
     }
 }
 @media (min-width: 992px) {
@@ -42,11 +90,23 @@
         min-height: 155px !important;
         max-height: 155px !important;
     }
-    .card-head-image img{
-        /*height: 155px !important;*/
+    .grid-cols-3 {
+        padding: 10px !important;
+        width: 33.3333% !important;
     }
-    article.content-card {
-        /*background-color: green !important;*/
+    .grid-cols-4 {
+        padding: 5px !important;
+        width: 25% !important;
+    }
+    .card__special {
+        height: 40px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 14px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 11px !important;
     }
 }
 @media (min-width: 1200px) {
@@ -58,11 +118,23 @@
         min-height: 193px !important;
         max-height: 193px !important;
     }
-    .card-head-image img{
-        /*height: 193px !important;*/
+    .grid-cols-3 {
+        padding: 10px !important;
+        width: 33.3333% !important;
     }
-    article.content-card {
-        /*max-width: 300px;*/
+    .grid-cols-4 {
+        padding: 10px !important;
+        width: 25% !important;
+    }
+    .card__special {
+        height: 50px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 16px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 12px !important;
     }
 }
 
@@ -71,7 +143,7 @@
 
 /*--### Outer ###-->*/
 .grid-grid_caro_all {
-    padding: 5px !important;
+
 }
 
 /** Card outermost boundary **/
@@ -80,6 +152,7 @@
 .content-card {
     margin: 0 !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 40px;
 }
 
 .content-card:hover {
@@ -189,6 +262,13 @@ div.card-head-image {
     width: 70px;
     height: 70px;
     display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+
 }
 
 /*-- Card Head Avatar Default -->*/
@@ -208,7 +288,6 @@ div.card-head-image {
     font-size: 1.8em;
     text-align: center;
     color: white;
-    /*padding-top: 18%;*/
     opacity: 0;
     font-family: 'FontAwesome';
     font-weight: 300;
@@ -250,16 +329,16 @@ p.avatar-bottom-text{
     color: #ffffff !important;
 }
 
-.icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin: -2px 0 0 2px;
-    font-size: 18px;
-}
+/*.icon {*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*margin: -2px 0 0 2px;*/
+    /*font-size: 18px;*/
+/*}*/
 
-.icon + .icon {
-    padding-left: 10px;
-}
+/*.icon + .icon {*/
+    /*padding-left: 10px;*/
+/*}*/
 
 /*-- End Card Head Avatar Hover-->*/
 
@@ -303,7 +382,7 @@ p.avatar-bottom-text{
 .card-belt-icon-left {
     position: absolute;
     z-index: 100;
-    margin-top: -30px;
+    margin-top: -25px;
     left: 15px;
 
 }
@@ -313,8 +392,14 @@ p.avatar-bottom-text{
 .card-belt-icon-right {
     position: absolute;
     z-index: 100;
-    margin-top: -30px;
+    margin-top: -25px;
     right: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 /*--=== End Card Belt Icon Right===-->*/
 
@@ -327,20 +412,31 @@ p.avatar-bottom-text{
 }
 /*--=== ===-->*/
 /* Make Text Disappear so it can only be shown during hover */
-.card__description {
+.card__pullup {
     position: absolute;
     bottom: 0%;
     margin: 0;
     padding: 0;
     color: #666C74;
-    line-height: 27px;
+    line-height: 35px;
     opacity: 0;
     transform: translateY(45px);
     transition: opacity 0.3s, transform 0.3s;
     transition-delay: 0s;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+.card__pullup a {
+    color: #3498db !important;
+}
+p.card__pullup {
+    margin-bottom: 8px;
 }
 /* Make Text Reappear upon hover */
-.content-card:hover .card__description {
+.content-card:hover .card__pullup {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.2s;
@@ -348,11 +444,22 @@ p.avatar-bottom-text{
 /*--=== ===-->*/
 
 /*--=== Card Title===-->*/
-h2.card__title{
+.card__title {
+    margin: 1px 0;
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.card__punchline {
+    height: 45px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.5em;
 }
 /*--=== End Card Title===-->*/
 
@@ -365,15 +472,31 @@ h2.card__title{
 .card__footer {
     position: absolute;
     bottom: 12px;
-    left: 10px;
-    right: 10px;
-    font-size: 11px;
-    color: #A3A9A2;
+    width: 100%;
+}
+.foot-date {
+    font-size: 12px;
+    float: left;
+    padding-left: 5px;
+}
+
+.content-card:hover .foot-date {
+    display: none;
+}
+
+.foot-comments {
+    font-size: 12px;
+    float: right;
+    padding-right: 22px;
+}
+
+.content-card:hover .foot-comments {
+    display: none;
 }
 /*--=== ===-->*/
 /*-- -->*/
 .read-more {
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 }
 /*-- -->*/
 /*--=== ===-->*/
