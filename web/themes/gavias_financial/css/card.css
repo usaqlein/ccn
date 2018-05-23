@@ -5,7 +5,7 @@
         max-height: 300px !important;
     }
     .grid-cols-3 {
-        padding: 10px !important;
+        padding: 5px !important;
         width: 100% !important;
     }
     .grid-cols-4 {
@@ -25,6 +25,15 @@
     .card__title {
         font-size: 22px;
     }
+    .content-card {
+        padding-bottom: 40px !important;
+    }
+    .card__footer {
+        bottom: 13px !important;
+    }
+    p.card__pullup {
+        margin-bottom: 8px;
+    }
 }
 @media (min-width: 501px) {
     .card-head-image > iframe {
@@ -32,7 +41,7 @@
         max-height: 400px !important;
     }
     .grid-cols-3 {
-        padding: 10px !important;
+        padding: 5px !important;
         width: 100% !important;
     }
     .grid-cols-4 {
@@ -51,6 +60,15 @@
     }
     .card__title {
         font-size: 22px;
+    }
+    .content-card {
+        padding-bottom: 50px !important;
+    }
+    .card__footer {
+        bottom: 18px !important;
+    }
+    p.card__pullup {
+        margin-bottom: 12px;
     }
 }
 @media (min-width: 768px) {
@@ -80,6 +98,15 @@
     .jquery-countdown-timer-note-countdowntimer {
         font-size: 12px !important;
     }
+    .content-card {
+        padding-bottom: 40px !important;
+    }
+    .card__footer {
+        bottom: 13px !important;
+    }
+    p.card__pullup {
+        margin-bottom: 7px;
+    }
 }
 @media (min-width: 992px) {
     .card-head-image > iframe {
@@ -91,7 +118,7 @@
         max-height: 155px !important;
     }
     .grid-cols-3 {
-        padding: 10px !important;
+        padding: 5px !important;
         width: 33.3333% !important;
     }
     .grid-cols-4 {
@@ -108,6 +135,15 @@
     .jquery-countdown-timer-note-countdowntimer {
         font-size: 11px !important;
     }
+    .content-card {
+        padding-bottom: 40px !important;
+    }
+    .card__footer {
+        bottom: 13px !important;
+    }
+    p.card__pullup {
+        margin-bottom: 7px;
+    }
 }
 @media (min-width: 1200px) {
     .card-head-image > iframe {
@@ -119,11 +155,11 @@
         max-height: 193px !important;
     }
     .grid-cols-3 {
-        padding: 10px !important;
+        padding: 5px !important;
         width: 33.3333% !important;
     }
     .grid-cols-4 {
-        padding: 10px !important;
+        padding: 5px !important;
         width: 25% !important;
     }
     .card__special {
@@ -135,6 +171,15 @@
     }
     .jquery-countdown-timer-note-countdowntimer {
         font-size: 12px !important;
+    }
+    .content-card {
+        padding-bottom: 40px !important;
+    }
+    .card__footer {
+        bottom: 13px !important;
+    }
+    p.card__pullup {
+        margin-bottom: 7px;
     }
 }
 
@@ -152,7 +197,6 @@
 .content-card {
     margin: 0 !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 40px;
 }
 
 .content-card:hover {
@@ -162,7 +206,7 @@
 /*--===Top Right ===-->*/
 .card_outer_top_right {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     top: 20px;
     right: 20px;
 }
@@ -254,7 +298,7 @@ div.card-head-image {
 /*--=== Card Head Avatar===-->*/
 .card-head-avatar {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     bottom: 0;
     right: 0;
     left: 0;
@@ -381,7 +425,7 @@ p.avatar-bottom-text{
 /*--=== Card Belt Icon Left ===-->*/
 .card-belt-icon-left {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     margin-top: -25px;
     left: 15px;
 
@@ -391,7 +435,7 @@ p.avatar-bottom-text{
 /*--=== Card Belt Icon Right===-->*/
 .card-belt-icon-right {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     margin-top: -25px;
     right: 15px;
     -webkit-border-radius: 50%;
@@ -432,9 +476,7 @@ p.avatar-bottom-text{
 .card__pullup a {
     color: #3498db !important;
 }
-p.card__pullup {
-    margin-bottom: 8px;
-}
+
 /* Make Text Reappear upon hover */
 .content-card:hover .card__pullup {
     opacity: 1;
@@ -471,7 +513,6 @@ p.card__pullup {
 /*--### Footer ###-->*/
 .card__footer {
     position: absolute;
-    bottom: 12px;
     width: 100%;
 }
 .foot-date {
@@ -487,7 +528,7 @@ p.card__pullup {
 .foot-comments {
     font-size: 12px;
     float: right;
-    padding-right: 22px;
+    padding-right: 18px;
 }
 
 .content-card:hover .foot-comments {
