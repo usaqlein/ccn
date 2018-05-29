@@ -14,66 +14,59 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 %}
 {% if card == true %}
 
+
 <!--*#*#*#*#*#*# Node Article Card *#*#*#*#*#*#-->
 <article{{ attributes.addClass(classes) }}>
 
-    <!--### Outer ###-->
 
-    <!--=== Top Right===-->
-    <div class="card_outer_top_right">
-        {{ content.content_sub_category }}
-    </div>
-    <!--=== End Top Right===-->
-
-    <!--=== Top Left===-->
-    <div class="card_outer_top_left"></div>
-    <!--=== End Top Left===-->
-
-    <!--=== Bottom Right===-->
-    <div class="card_outer_bottom_right"></div>
-    <!--=== End Bottom Right===-->
-
-    <!--=== Top Bottom Left===-->
-    <div class="card_outer_bottom_left"></div>
-    <!--=== End Bottom Left==-->
-
-    <!--### End Outer ###-->
+<!--=== Top Right===-->
+<div class="card-head-top-right content_type_category card-icons">
+    {{ content.content_sub_category }}
+</div>
+<!--=== End Top Right===-->
 
 <!--***********************************************************************************************************-->
 
-    <!--### Header ###-->
-    <!--=== Card Head===-->
-    <div class="post-image card-head">
-        <!-- Card Head Image-->
-        <div class="content-image card-head-image">
-            {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
-                {{ gva_iframe|raw }}
-            {% elseif post_format == 'gallery' and content.field_post_gallery %}
-                {{ content.field_post_gallery }}
-            {% else %}
-                {{ content.field_image }}
-            {% endif %}
-        </div>
-        <!-- End Card Head Image-->
-        <!-- Card Head Avatar-->
-        <div class="card-head-avatar">
-            {{ content.field_tax_embed_one }}
-            <!-- Card Head Avatar Hover -->
-            <div class="card-head-avatar-hover">
-                <div class="card-avatar-hover-icon">
-                    <a href="{{ url }}">
-                        {#<span class="icon icon-Twitter"></span>#}
-                        <span class="icon icon-Astronaut" style="color: #FFFFFF; font-weight: bold"></span>
-                        <p class="avatar-bottom-text">Read More</p>
-                    </a>
-                </div>
-            </div>
-            <!-- End Card Head Avatar Hover -->
-        </div>
-        <!--End Card Head Avatar-->
+<!--### Header ###-->
+<!--=== Card Head===-->
+<div class="post-image card-head">
+    <!-- Card Head Image-->
+    <div class="content-image card-head-image">
+        {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
+            {{ gva_iframe|raw }}
+        {% elseif post_format == 'gallery' and content.field_post_gallery %}
+            {{ content.field_post_gallery }}
+        {% else %}
+            {{ content.field_image }}
+        {% endif %}
     </div>
-    <!--=== End Card Head===-->
-    <!--### End Header ###-->
+    <!-- End Card Head Image-->
+    <!-- Card Head Avatar-->
+    <div class="card-head-avatar">
+
+        <!-- Card Head Avatar Default -->
+        <div class="card-head-avatar-default">
+            {{ content.field_tax_embed_one }}
+        </div>
+        <!-- End Card Head Avatar Default -->
+
+        <!-- Card Head Avatar Hover -->
+        <div class="card-head-avatar-hover">
+            <div class="card-avatar-hover-icon">
+                <a href="{{ url }}">
+                    {#<span class="icon icon-Twitter"></span>#}
+                    <span class="icon icon-Astronaut" style="color: #FFFFFF; font-weight: bold"></span>
+                    <p class="avatar-bottom-text">Read More</p>
+                </a>
+            </div>
+        </div>
+        <!-- End Card Head Avatar Hover -->
+
+    </div>
+    <!--End Card Head Avatar-->
+</div>
+<!--=== End Card Head===-->
+<!--### End Header ###-->
 
 <!--***********************************************************************************************************-->
 
@@ -82,8 +75,17 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         {{ content.field_content_category }}
     </div>
 
-    <div class="card-belt-icon-right">
-        {{ content.field_tax_embed_one }}
+    <div class="card-belt-icon-right belt-share-links">
+        <div class="pull-left text-left">
+            <ul class="inline">
+                <li class="message"><a target="_blank" href="#"><i class="fa fa-share-alt" style="color: #000000; font-size: 16px; cursor: default;"></i></a></li>
+                <li style="margin-left: 0;"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.youtube.com/watch?v=0URpDxIjZrQ"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/home?status=https%3A//www.youtube.com/watch?v=0URpDxIjZrQ"><i class="fa fa-twitter"></i></a></li>
+                {#todo steemit and pick one between reddit and pinteret #}
+                {#<li><a target="_blank" href="https://pinterest.com/pin/create/button/?url=&media=https%3A//www.youtube.com/watch?v=CZkUNPBlJIQ&description="><i class="fa fa-pinterest-p"></i></a></li>#}
+                {#<li><a target="_blank" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('https://www.youtube.com/watch?v=0URpDxIjZrQ'); return false"><i class="fa fa-reddit"></i></a></li>#}
+            </ul>
+        </div>
     </div>
     <!--### End Outer Body ###-->
 
@@ -91,7 +93,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Body ###-->
     <div class="card__body">
         <!--=== ===-->
-        <div class="card__special">
+        <div class="card__special article_card__special">
             <!--=== tags ===-->
             {{ content.field_tags }}
         </div>

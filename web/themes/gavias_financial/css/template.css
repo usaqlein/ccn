@@ -10291,3 +10291,74 @@ div.jquery-countdown-timer-note-countdowntimer{
   color: #5eb4e7;
   text-align: center;
 }
+
+.belt-share-links i {
+  color: #5eb4e7;
+  font-size: 14px;
+}
+
+/*.belt-share-links li.message i {*/
+  /*color: #000000;*/
+  /*font-size: 16px;*/
+/*}*/
+
+.belt-share-links ul {
+  list-style-type: none;
+}
+
+.belt-share-links li {
+
+}
+
+.belt-share-links a {
+  text-decoration: none;
+}
+
+/* STYLE for Tags on Card with class: "arrow_tag" */
+.arrow_tag {
+  background: #5eb4e7;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 20px;
+  position: relative;
+  margin: 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.arrow_tag::before {
+  background: #F6F6F6;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.arrow_tag::after {
+  background: #F6F6F6;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #5eb4e7;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.arrow_tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.arrow_tag:hover::after {
+  border-left-color: crimson;
+}
+
+/***************** END arrow_tag **********************/

@@ -204,7 +204,7 @@
 }
 
 /*--===Top Right ===-->*/
-.card_outer_top_right {
+.card-head-top-right {
     position: absolute;
     z-index: 10;
     top: 20px;
@@ -212,38 +212,27 @@
 }
 /*--===End Top Right ===-->*/
 
-/*--===Top Left ===-->*/
-.card_outer_top_left {
-}
-/*--===End Top Left ===-->*/
 
-/*--===Bottom Right ===-->*/
-.card_outer_bottom_right {
-}
-/*--===End Bottom Right ===-->*/
 
-/*--===Bottom Left ===-->*/
-.card_outer_bottom_left {
-}
-/*--===End Bottom Left ===-->*/
 
+/**************************( Turned OFF: Make Hover Show Sub Category Name )********************/
 /*--### End Outer ###-->*/
 
 /* Sub Category Hover States */
-.sub-category-logo {
-    display: block;
-}
-.sub-category-name {
-    display: none;
-}
+/*.sub-category-logo {*/
+    /*display: block;*/
+/*}*/
+/*.sub-category-name {*/
+    /*display: none;*/
+/*}*/
 
-.content-card:hover .sub-category-logo {
-    display: none;
-}
+/*.content-card:hover .sub-category-logo {*/
+    /*display: none;*/
+/*}*/
 
-.content-card:hover .sub-category-name {
-    display: block;
-}
+/*.content-card:hover .sub-category-name {*/
+    /*display: block;*/
+/*}*/
 
 /*****************************************************************************************************/
 
@@ -453,6 +442,9 @@ p.avatar-bottom-text{
 .card__body {
     padding: 5px;
     background-color: #F6F6F6;
+}
+.article_card__special {
+    margin-left: 10px;
 }
 /*--=== ===-->*/
 /* Make Text Disappear so it can only be shown during hover */
