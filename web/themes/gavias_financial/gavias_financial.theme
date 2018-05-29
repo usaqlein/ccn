@@ -394,5 +394,7 @@ function gavias_financial_theme_suggestions_taxonomy_term_alter(&$suggestions, $
 }
 
 function gavias_financial_preprocess_taxonomy_term(&$variables){
-$x = $variables;
+  /** @var \Drupal\taxonomy\Entity\Term $taxterm */
+  $taxterm = $variables['elements']['#taxonomy_term'];
+  $variables['tag_class'] = 'arrow_tag';
 }
