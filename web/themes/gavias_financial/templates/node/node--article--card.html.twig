@@ -14,7 +14,6 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 %}
 {% if card == true %}
 
-
 <!--*#*#*#*#*#*# Node Article Card *#*#*#*#*#*#-->
 <article{{ attributes.addClass(classes) }}>
 
@@ -79,8 +78,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         <div class="pull-left text-left">
             <ul class="inline">
                 <li class="message"><a target="_blank" href="#"><i class="fa fa-share-alt" style="color: #000000; font-size: 16px; cursor: default;"></i></a></li>
-                <li style="margin-left: 0;"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.youtube.com/watch?v=0URpDxIjZrQ"><i class="fa fa-facebook"></i></a></li>
-                <li><a target="_blank" href="https://twitter.com/home?status=https%3A//www.youtube.com/watch?v=0URpDxIjZrQ"><i class="fa fa-twitter"></i></a></li>
+                <li style="margin-left: 0;"><a target="_blank" href={{ fb_share }}><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href={{ twitter_share }}><i class="fa fa-twitter"></i></a></li>
                 {#todo steemit and pick one between reddit and pinteret #}
                 {#<li><a target="_blank" href="https://pinterest.com/pin/create/button/?url=&media=https%3A//www.youtube.com/watch?v=CZkUNPBlJIQ&description="><i class="fa fa-pinterest-p"></i></a></li>#}
                 {#<li><a target="_blank" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('https://www.youtube.com/watch?v=0URpDxIjZrQ'); return false"><i class="fa fa-reddit"></i></a></li>#}
@@ -110,33 +109,34 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             {{ content.field_punchline }}
         </div>
         <!--=== ===-->
-
-        <!--=== ===-->
-        <p class="card__pullup">
-            {#<span class="icon icon-Arrow-Forward2" style="color: #3498db; font-size: 20px;"></span>#}
-            <a href="{{ url }}">Read More</a>
-            <span class="icon icon-Cursor-Click2" style="color: #3498db; font-size: 20px;"></span>
-        </p>
-        <!--=== ===-->
     </div>
     <!--### End Body ###-->
 
 <!--***********************************************************************************************************-->
     <!--### Footer ###-->
-    <footer class="card__footer">
-        <!--=== ===-->
-        {#<span class="icon icon-clock"></span>#}
-        <span class="foot-date">
-            <span class="icon icon-Calendar-4" style="color: #3498db; font-size: 16px;"></span>
-            {{ date }}
-        </span>
-        <span class="foot-comments">
-            <span class="icon icon-Speach-Bubble" style="color: #3498db; font-size: 16px;"></span>
-            <a href="{{ url }}">
-                {{ comment_count }} Comments
-            </a>
-        </span>
-        <!--=== ===-->
+    <footer class="card-footer">
+        <!--=== div card__footer ===-->
+        <div class="card__footer">
+            <!--=== Default Date + Comments ===-->
+            <span class="foot-date">
+                <span class="icon icon-Calendar-4" style="color: #3498db; font-size: 16px;"></span>
+                {{ date }}
+            </span>
+            <span class="foot-comments">
+                <span class="icon icon-Speach-Bubble" style="color: #3498db; font-size: 16px;"></span>
+                <a href="{{ url }}">
+                    {{ comment_count }} Comments
+                </a>
+            </span>
+            <!--=== End  Default Date + Comments ===-->
+            <!--=== Hover Pull UP ===-->
+            <span class="card__pullup">
+                <a href="{{ url }}">Read More</a>
+                <span class="icon icon-Cursor-Click2" style="color: #3498db; font-size: 20px;"></span>
+            </span>
+            <!--=== End Hover Pullup ===-->
+        </div>
+        <!--=== END div card__footer ===-->
     </footer>
     <!--### End Footer###-->
 <!--***********************************************************************************************************-->
