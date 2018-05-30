@@ -14,6 +14,35 @@ function gavias_financial_preprocess_node(&$variables) {
   $variables['box'] = $variables['view_mode'] == 'box';
   $variables['text'] = $variables['view_mode'] == 'text';
 
+
+  $fullUrl = $variables['elements']['#node']->toUrl()->setAbsolute()->toString();
+
+  if(strpos($fullUrl, 'https://') !== false) {
+    $fullUrlArr = explode('https://', $fullUrl);
+    $fullUrlArr[0] = 'https%3A//';
+    $alterFullUrl = implode($fullUrlArr);
+  }
+
+  if (strpos($fullUrl, 'http://') !== false) {
+    $fullUrlArr = explode('http://', $fullUrl);
+    $fullUrlArr[0] = 'http%3A//';
+    $alterFullUrl = implode($fullUrlArr);
+  }
+
+  else {
+    $alterFullUrl = FALSE;
+  }
+
+  if($alterFullUrl) {
+    $variables['fb_share'] = 'https://www.facebook.com/sharer/sharer.php?u=' .$alterFullUrl . '';
+    $variables['twitter_share'] = 'https://twitter.com/home?status=' . $alterFullUrl . '';
+  }
+  else {
+    //hardcoded share site
+    $variables['fb_share'] = 'https://www.facebook.com/sharer/sharer.php?u=http%3A//crytunity.com';
+    $variables['twitter_share'] = 'https://twitter.com/home?status=http%3A//cryptunity.com';
+  }
+
   if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
   }
