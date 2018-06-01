@@ -1,0 +1,37 @@
+SYMBOL CONTROL CLASSES
+======================
+
+TAXONOMY
+--------
+
+1) content.field_content_category
+    {# themes/gavias_financial/templates/content/taxonomy-term--category--just-symbol.html.twig #}
+    {# themes/gavias_financial/templates/content/taxonomy-term--category--just-symbol.html.twig #}
+
+    TYPE = token  Content Classes = span.category-logo, span.category-name
+
+2) content.content_sub_category
+    {# themes/gavias_financial/templates/content/taxonomy-term--special-class-types--token.html.twig #}
+    {# themes/gavias_financial/templates/content/taxonomy-term--alpha-class-types--token.html.twig #}
+    {# themes/gavias_financial/templates/content/taxonomy-term--beta-class-types--token.html.twig #}
+    {# themes/gavias_financial/templates/content/taxonomy-term--charlie-class-types--token.html.twig #}
+    {# themes/gavias_financial/templates/content/taxonomy-term--delta-class-types--token.html.twig #}
+
+    TYPE = token  Content Classes = span.sub-category-logo, span.sub-category-name
+
+
+Assign Following Classes for Following outcomes
+    just-logo       = Only show logo
+    just-name       = Only show name
+    logo-then-name  = Show Logo ~ Replace with Name when hover
+    name-then-logo  = Show Name ~ Replace with Logo when hover
+
+
+EXAMPLE
+
+    <!--### Outer Body ###-->
+    <div class="card-belt-icon-left logo-then-name">
+        {{ content.field_content_category }}
+    </div>
+
+TODO Make remaining the same way

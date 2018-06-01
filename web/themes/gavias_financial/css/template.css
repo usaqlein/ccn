@@ -10362,3 +10362,208 @@ div.jquery-countdown-timer-note-countdowntimer{
 }
 
 /***************** END arrow_tag **********************/
+
+
+
+/********* Behavior: category-logo, sub-category-logo FOR  .just-logo (.content-card hover & steady)*****************/
+
+.just-logo  span.sub-category-logo {
+  display: block;
+}
+
+.just-logo  span.category-logo {
+  display: block;
+}
+
+.just-logo  span.sub-category-name {
+  display: none;
+}
+
+.just-logo  span.category-name {
+  display: none;
+}
+
+.content-card:hover .just-logo  span.sub-category-logo {
+  display: block;
+}
+
+.content-card:hover .just-logo  span.category-logo {
+  display: block;
+}
+
+.content-card:hover .just-logo  span.sub-category-name {
+  display: none;
+}
+
+.content-card:hover .just-logo  span.category-name {
+  display: none;
+}
+
+.content-box:hover .just-logo  span.sub-category-logo {
+  display: block;
+}
+
+.content-box:hover .just-logo  span.category-logo {
+  display: block;
+}
+
+.content-box:hover .just-logo  span.sub-category-name {
+  display: none;
+}
+
+.content-box:hover .just-logo  span.category-name {
+  display: none;
+}
+
+/********* Behavior: category-logo, sub-category-logo FOR  .just-name (.content-card hover & steady)*****************/
+
+.just-name  span.sub-category-logo {
+  display: none;
+}
+
+.just-name  span.category-logo {
+  display: none;
+}
+
+.just-name  span.sub-category-name {
+  display: block;
+}
+
+.just-name  span.category-name {
+  display: block;
+}
+
+.content-card:hover .just-name  span.sub-category-logo {
+  display: none;
+}
+
+.content-card:hover .just-name  span.category-logo {
+  display: none;
+}
+
+.content-card:hover .just-name  span.sub-category-name {
+  display: block;
+}
+
+.content-card:hover .just-name  span.category-name {
+  display: block;
+}
+
+.content-box:hover .just-name  span.sub-category-logo {
+  display: none;
+}
+
+.content-box:hover .just-name  span.category-logo {
+  display: none;
+}
+
+.content-box:hover .just-name  span.sub-category-name {
+  display: block;
+}
+
+.content-box:hover .just-name  span.category-name {
+  display: block;
+}
+
+/********* Behavior: category-logo, sub-category-logo FOR  .logo-then-name (.content-card hover & steady)*****************/
+
+.logo-then-name  span.sub-category-logo {
+  display: block;
+}
+
+.logo-then-name span.category-logo {
+  display: block;
+}
+
+.logo-then-name  span.sub-category-name {
+  display: none;
+}
+
+.logo-then-name  span.category-name {
+  display: none;
+}
+
+.content-card:hover .logo-then-name  span.sub-category-logo {
+  display: none;
+}
+
+.content-card:hover .logo-then-name span.category-logo {
+  display: none;
+}
+
+.content-card:hover .logo-then-name  span.sub-category-name {
+  display: block;
+}
+
+.content-card:hover .logo-then-name  span.category-name {
+  display: block;
+}
+
+.content-box:hover .logo-then-name  span.sub-category-logo {
+  display: none;
+}
+
+.content-box:hover .logo-then-name span.category-logo {
+  display: none;
+}
+
+.content-box:hover .logo-then-name  span.sub-category-name {
+  display: block;
+}
+
+.content-box:hover .logo-then-name  span.category-name {
+  display: block;
+}
+
+/********* Behavior: category-logo, sub-category-logo FOR  .name-then-logo (.content-card hover & steady)*****************/
+
+
+.name-then-logo  span.sub-category-logo {
+  display: none;
+}
+
+.name-then-logo  span.category-logo {
+  display: none;
+}
+
+.name-then-logo  span.sub-category-name {
+  display: block;
+}
+
+.name-then-logo  span.category-name {
+  display: block;
+}
+
+.content-card:hover .name-then-logo  span.sub-category-logo {
+  display: block;
+}
+
+.content-card:hover .name-then-logo  span.category-logo {
+  display: block;
+}
+
+.content-card:hover .name-then-logo  span.sub-category-name {
+  display: none;
+}
+
+.content-card:hover .name-then-logo  span.category-name {
+  display: none;
+}
+
+.content-box:hover .name-then-logo  span.sub-category-logo {
+  display: block;
+}
+
+.content-box:hover .name-then-logo  span.category-logo {
+  display: block;
+}
+
+.content-box:hover .name-then-logo  span.sub-category-name {
+  display: none;
+}
+
+.content-box:hover .name-then-logo  span.category-name {
+  display: none;
+}
+
+/********* Behaviors FOR TAX CLASSES SYMBOL VS NAMES *****************/

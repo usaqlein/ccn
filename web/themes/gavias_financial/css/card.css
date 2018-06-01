@@ -38,6 +38,9 @@
     .content-card {
         padding-bottom: 40px !important;
     }
+    /*.card-belt-icon-left {*/
+        /*font-size: 12px !important;*/
+    /*}*/
 }
 @media (min-width: 282px) {
     .card-head-image > iframe {
@@ -434,20 +437,20 @@ p.avatar-bottom-text{
 /*****************************************************************************************************/
 
 /* Category Hover States*/
-.category-logo {
-    display: block;
-}
-.category-name {
-    display: none;
-}
+/*.category-logo {*/
+    /*display: block;*/
+/*}*/
+/*.category-name {*/
+    /*display: none;*/
+/*}*/
 
-.content-card:hover .category-logo {
-    display: none;
-}
+/*.content-card:hover .category-logo {*/
+    /*display: none;*/
+/*}*/
 
-.content-card:hover .category-name {
-    display: block;
-}
+/*.content-card:hover .category-name {*/
+    /*display: block;*/
+/*}*/
 
 /* Crypto Token Hover states*/
 .crypto-token-logo {

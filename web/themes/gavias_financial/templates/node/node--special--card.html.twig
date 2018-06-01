@@ -20,7 +20,9 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
 
 <!--=== Top Right===-->
-<div class="card-head-top-right content_type_category card-icons">
+<div class="card-head-top-right content_type_category card-icons logo-then-name">
+    {# Read web/themes/gavias_financial/site-control-classes.txt #}
+    {# themes/gavias_financial/templates/content/taxonomy-term--special-class-types--token.html.twig #}
     {{ content.field_special_sub_category }}
 </div>
 <!--=== End Top Right===-->
@@ -65,8 +67,10 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
     <!--### Card Belt Icons ###-->
 
-    <div class="card-belt-icon-left">
-        {{ content.field_content_category }}
+    <div class="card-belt-icon-left name-then-logo">
+        {# Read web/themes/gavias_financial/site-control-classes.txt #}
+        {# themes/gavias_financial/templates/content/taxonomy-term--category--just-symbol.html.twig #}
+        <span class="post-categories">{{ content.field_content_category }}</span>
     </div>
 
     <div class="card-belt-icon-right belt-share-links">
