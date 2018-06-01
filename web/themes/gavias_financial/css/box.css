@@ -105,36 +105,36 @@ article.content-box.post-block {
 }
 
 /* Sub Category Hover States */
-.sub-category-logo {
-    display: block;
-}
-.sub-category-name {
-    display: none;
-}
+/*.sub-category-logo {*/
+    /*display: block;*/
+/*}*/
+/*.sub-category-name {*/
+    /*display: none;*/
+/*}*/
 
-.content-box:hover .sub-category-logo {
-    display: none;
-}
+/*.content-box:hover .sub-category-logo {*/
+    /*display: none;*/
+/*}*/
 
-.content-box:hover .sub-category-name {
-    display: block;
-}
+/*.content-box:hover .sub-category-name {*/
+    /*display: block;*/
+/*}*/
 
 /* Category Hover States*/
-.category-logo {
-    display: block;
-}
-.category-name {
-    display: none;
-}
+/*.category-logo {*/
+    /*display: block;*/
+/*}*/
+/*.category-name {*/
+    /*display: none;*/
+/*}*/
 
-.content-box:hover .category-logo {
-    display: none;
-}
+/*.content-box:hover .category-logo {*/
+    /*display: none;*/
+/*}*/
 
-.content-box:hover .category-name {
-    display: block;
-}
+/*.content-box:hover .category-name {*/
+    /*display: block;*/
+/*}*/
 
 /*--### End Outer ###-->*/
 
