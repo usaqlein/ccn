@@ -1,48 +1,268 @@
-/**#*#*#*#*#*# Card *#*#*#*#*#*#*/
-/*@media (max-width: 780px) {*/
-/*.box-head > iframe {*/
-/*min-height: 0 !important;*/
-/*max-height: 300px !important;*/
-/*}*/
-/*article.content-box {*/
-/*background-color: green !important;*/
-/*}*/
-/*}*/
-/*@media (max-width: 991px) {*/
-/*.box-head > iframe {*/
-/*min-height: 0 !important;*/
-/*max-height: 144px !important;*/
-/*}*/
-/*article.content-box {*/
-/*background-color: purple !important;*/
-/*}*/
-/*}*/
-/*@media (min-width: 991px) {*/
-/*.box-head > iframe {*/
-/*min-height: 0 !important;*/
-/*max-height: 152px !important;*/
-/*}*/
-/*article.content-box {*/
-/*background-color: green !important;*/
-/*}*/
-/*}*/
-/*@media (min-width: 1199px) {*/
-/*.box-head > iframe {*/
-/*min-height: 0 !important;*/
-/*max-height: 191px !important;*/
-/*}*/
-/*article.content-box {*/
-/*background-color: blue !important;*/
-/*}*/
-/*}*/
+/**#*#*#*#*#*# BOX COLUMNS *#*#*#*#*#*#*/
+@media (max-width: 281px) {
+    /*.card-head-image > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 300px !important;*/
+    /*}*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 100% !important;
+    }
+    /*.grid-cols-4 {*/
+        /*padding: 10px !important;*/
+        /*width: 100% !important;*/
+    /*}*/
+    /*.card__special {*/
+        /*height: 35px;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
+        /*font-size: 9px !important;*/
+    /*}*/
+    /*.jquery-countdown-timer-note-countdowntimer {*/
+        /*font-size: 8px !important;*/
+        /*margin-top: -4px !important;*/
+    /*}*/
+    /*.card__title {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.card__punchline {*/
+        /*font-size: 12px !important;*/
+    /*}*/
+    /*.foot-date {*/
+        /*font-size: 8px !important;*/
+    /*}*/
+    /*.foot-comments {*/
+        /*font-size: 8px !important;*/
+    /*}*/
+    /*.content-card {*/
+        /*padding-bottom: 40px !important;*/
+    /*}*/
+}
+@media (min-width: 282px) {
+    /*.card-head-image > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 300px !important;*/
+    /*}*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 100% !important;
+    }
+    /*.grid-cols-4 {*/
+        /*padding: 10px !important;*/
+        /*width: 100% !important;*/
+    /*}*/
+    /*.card__special {*/
+        /*height: 55px;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
+        /*font-size: 18px !important;*/
+    /*}*/
+    /*.jquery-countdown-timer-note-countdowntimer {*/
+        /*font-size: 14px !important;*/
+        /*margin-top: -10px !important;*/
+    /*}*/
+    /*.card__title {*/
+        /*font-size: 22px;*/
+    /*}*/
+    /*.card__punchline {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.card__footer {*/
+    /*}*/
+    /*.foot-date {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.foot-comments {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.content-card {*/
+        /*padding-bottom: 40px !important;*/
+    /*}*/
+}
+@media (min-width: 501px) {
+    /*.card-head-image > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 400px !important;*/
+    /*}*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 100% !important;
+    }
+    /*.grid-cols-4 {*/
+        /*padding: 10px !important;*/
+        /*width: 100% !important;*/
+    /*}*/
+    /*.card__special {*/
+        /*height: 60px;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
+        /*font-size: 20px !important;*/
+    /*}*/
+    /*.jquery-countdown-timer-note-countdowntimer {*/
+        /*font-size: 14px !important;*/
+        /*margin-top: -10px !important;*/
+    /*}*/
+    /*.card__title {*/
+        /*font-size: 22px;*/
+    /*}*/
+    /*.card__punchline {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.card__footer {*/
+    /*}*/
+    /*.foot-date {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.foot-comments {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.content-card {*/
+        /*padding-bottom: 50px !important;*/
+    /*}*/
+}
+@media (min-width: 768px) {
+    /*.card-head-image > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 160px !important;*/
+    /*}*/
+    /*.card-head-image {*/
+        /*min-height: 160px !important;*/
+        /*max-height: 160px !important;*/
+    /*}*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 33.3333% !important;
+    }
+    /*.grid-cols-4 {*/
+        /*padding: 10px !important;*/
+        /*width: 50% !important;*/
+    /*}*/
+    /*.card__special {*/
+        /*height: 50px;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
+        /*font-size: 15px !important;*/
+    /*}*/
+    /*.jquery-countdown-timer-note-countdowntimer {*/
+        /*font-size: 12px !important;*/
+        /*margin-top: -10px !important;*/
+    /*}*/
+    /*.card__punchline {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.card__footer {*/
+    /*}*/
+    /*.foot-date {*/
+        /*font-size: 12px !important;*/
+    /*}*/
+    /*.foot-comments {*/
+        /*font-size: 12px !important;*/
+    /*}*/
+    /*.content-card {*/
+        /*padding-bottom: 40px !important;*/
+    /*}*/
+}
+@media (min-width: 992px) {
+    /*.card-head-image > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 155px !important;*/
+    /*}*/
+    /*.card-head-image {*/
+        /*min-height: 155px !important;*/
+        /*max-height: 155px !important;*/
+    /*}*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 33.3333% !important;
+    }
+    /*.grid-cols-4 {*/
+        /*padding: 5px !important;*/
+        /*width: 25% !important;*/
+    /*}*/
+    /*.card__special {*/
+        /*height: 40px;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.jquery-countdown-timer-note-countdowntimer {*/
+        /*font-size: 11px !important;*/
+        /*margin-top: -10px !important;*/
+    /*}*/
+    /*.card__punchline {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.card__footer {*/
+    /*}*/
+    /*.foot-date {*/
+        /*font-size: 13px !important;*/
+    /*}*/
+    /*.foot-comments {*/
+        /*font-size: 13px !important;*/
+    /*}*/
+    /*.content-card {*/
+        /*padding-bottom: 40px !important;*/
+    /*}*/
+}
+@media (min-width: 1200px) {
+    /*.card-head-image > iframe {*/
+        /*min-height: 0 !important;*/
+        /*max-height: 193px !important;*/
+    /*}*/
+    /*.card-head-image {*/
+        /*min-height: 193px !important;*/
+        /*max-height: 193px !important;*/
+    /*}*/
+    .grid-cols-3 {
+        padding: 5px !important;
+        width: 33.3333% !important;
+    }
+    /*.grid-cols-4 {*/
+        /*padding: 5px !important;*/
+        /*width: 25% !important;*/
+    /*}*/
+    /*.card__special {*/
+        /*height: 50px;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
+        /*font-size: 16px !important;*/
+    /*}*/
+    /*.jquery-countdown-timer-note-countdowntimer {*/
+        /*font-size: 12px !important;*/
+        /*margin-top: -10px !important;*/
+    /*}*/
+    /*.card__punchline {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.card__footer {*/
+    /*}*/
+    /*.foot-date {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.foot-comments {*/
+        /*font-size: 14px !important;*/
+    /*}*/
+    /*.content-card {*/
+        /*padding-bottom: 40px !important;*/
+    /*}*/
+}
+
+/**#*#*#*#*#*# BOX *#*#*#*#*#*#*/
+
 .d-flex {
     display:flex;
 }
 
 article.content-box.post-block {
-    padding-bottom: 0 !important;
-    height: 300px !important;
-    width: 270px !important;
+    /*padding-bottom: 0 !important;*/
+    /*height: 300px !important;*/
+    /*width: 270px !important;*/
 }
 /*--*#*#*#*#*#*#  Card *#*#*#*#*#*#-->*/
 
