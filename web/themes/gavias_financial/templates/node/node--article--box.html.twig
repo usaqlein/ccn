@@ -26,27 +26,19 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Outer ###-->
 
     <!--=== Top Right===-->
-    <div class="box_outer_top_right">
-        {{ content.field_tax_embed_one }}
+    <div class="box_outer_top_right logo-then-name">
+        {{ content.content_sub_category }}
     </div>
     <!--=== End Top Right===-->
 
     <!--=== Top Left===-->
-    <div class="box_outer_top_left">
-        {{ content.content_sub_category }}
+    <div class="box_outer_top_left logo-then-name">
+        {{ content.field_content_category }}
     </div>
     <!--=== End Top Left===-->
 
-    <!--=== Bottom Right===-->
-    <div class="box_outer_bottom_right">
-        {{ content.field_content_category }}
-    </div>
-    <!--=== End Bottom Right===-->
-
     <!--=== Top Bottom Left===-->
-    <div class="box_outer_bottom_left">
-
-    </div>
+    <div class="box_outer_bottom_left"></div>
     <!--=== End Bottom Left==-->
 
     <!--### End Outer ###-->
@@ -56,13 +48,16 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Header ###-->
     <!--=== Box Head ===-->
     <div class="post-image box-head">
-        {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
-            {{ gva_iframe|raw }}
-        {% elseif post_format == 'gallery' and content.field_post_gallery %}
-            {{ content.field_post_gallery }}
-        {% else %}
-            {{ content.field_image }}
-        {% endif %}
+        <!-- Box Head Image-->
+        <div class="content-image box-head-image">
+            {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
+                {{ gva_iframe|raw }}
+            {% elseif post_format == 'gallery' and content.field_post_gallery %}
+                {{ content.field_post_gallery }}
+            {% else %}
+                {{ content.field_image }}
+            {% endif %}
+        </div>
     </div>
     <!--=== End Box Head===-->
     <!--### End Header ###-->
@@ -70,18 +65,19 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <!--***********************************************************************************************************-->
 
     <!--### Body ###-->
-    <div class="box-body">
+    <div class="box__body">
         <!--=== ===-->
-        <div class="box-main">
-            {{ content.field_punchline }}
+        <div class="box__special article_box__special">
+            <!--=== tags ===-->
+            {{ content.field_tags }}
         </div>
         <!--=== ===-->
         <!--=== ===-->
-        <div class="box-title">
-            <h3><a href="{{ url }}">{{ label }}</a></h3>
+        <div class="box__body_bottom">
+            <div class="pull-left just-logo mini-space">{{ content.field_tax_embed_one }}</div>
+            <div class="pull-left box__title"><a href="{{ url }}">{{ label }}</a></div>
         </div>
         <!--=== ===-->
-
     </div>
     <!--### End Body ###-->
 

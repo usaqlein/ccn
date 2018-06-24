@@ -26,23 +26,16 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Outer ###-->
 
     <!--=== Top Right===-->
-    <div class="box_outer_top_right">
-        {{ content.field_tax_embed_one }}
+    <div class="box_outer_top_right logo-then-name">
+        {{ content.field_special_sub_category }}
     </div>
     <!--=== End Top Right===-->
 
     <!--=== Top Left===-->
-    <div class="box_outer_top_left">
-        {{ content.field_special_sub_category }}
-    </div>
-    <!--=== End Top Left===-->
-
-    <!--=== Bottom Right===-->
-    <div class="box_outer_bottom_right">
+    <div class="box_outer_top_left logo-then-name">
         {{ content.field_content_category }}
     </div>
-    <!--=== End Bottom Right===-->
-
+    <!--=== End Top Left===-->
     <!--=== Top Bottom Left===-->
     <div class="box_outer_bottom_left"></div>
     <!--=== End Bottom Left==-->
@@ -54,7 +47,10 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Header ###-->
     <!--=== Box Head===-->
     <div class="post-image box-head">
-        {{ content.field_special_image }}
+        <!-- Box Head Image-->
+        <div class="content-image box-head-image">
+            {{ content.field_special_image }}
+        </div>
     </div>
     <!--=== End Box Head===-->
     <!--### End Header ###-->
@@ -62,15 +58,16 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <!--***********************************************************************************************************-->
 
     <!--### Body ###-->
-    <div class="box-body">
+    <div class="box__body">
         <!--=== ===-->
-        <div class="box-main">
+        <div class="box__special special_box__special">
             {{ content.field_block_one }}
         </div>
         <!--=== ===-->
         <!--=== ===-->
-        <div class="box-title">
-            <h3><a href="{{ url }}">{{ label }}</a></h3>
+        <div class="box__body_bottom">
+            <div class="pull-left just-logo mini-space">{{ content.field_tax_embed_one }}</div>
+            <div class="pull-left box__title"><a href="{{ url }}">{{ label }}</a></div>
         </div>
         <!--=== ===-->
     </div>

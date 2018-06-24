@@ -1,256 +1,158 @@
 /**#*#*#*#*#*# BOX COLUMNS *#*#*#*#*#*#*/
 @media (max-width: 281px) {
-    /*.card-head-image > iframe {*/
-        /*min-height: 0 !important;*/
-        /*max-height: 300px !important;*/
-    /*}*/
+    .box-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 300px !important;
+    }
     .grid-cols-3 {
         padding: 5px !important;
         width: 100% !important;
     }
-    /*.grid-cols-4 {*/
-        /*padding: 10px !important;*/
-        /*width: 100% !important;*/
-    /*}*/
-    /*.card__special {*/
-        /*height: 35px;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
-        /*font-size: 9px !important;*/
-    /*}*/
-    /*.jquery-countdown-timer-note-countdowntimer {*/
-        /*font-size: 8px !important;*/
-        /*margin-top: -4px !important;*/
-    /*}*/
-    /*.card__title {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.card__punchline {*/
-        /*font-size: 12px !important;*/
-    /*}*/
-    /*.foot-date {*/
-        /*font-size: 8px !important;*/
-    /*}*/
-    /*.foot-comments {*/
-        /*font-size: 8px !important;*/
-    /*}*/
-    /*.content-card {*/
-        /*padding-bottom: 40px !important;*/
-    /*}*/
+    .box__special {
+        height: 35px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 9px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 8px !important;
+        margin-top: -4px !important;
+    }
+    .box__title {
+        font-size: 14px !important;
+        height: 35px;
+        overflow: hidden;
+    }
 }
 @media (min-width: 282px) {
-    /*.card-head-image > iframe {*/
-        /*min-height: 0 !important;*/
-        /*max-height: 300px !important;*/
-    /*}*/
+    .box-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 300px !important;
+    }
     .grid-cols-3 {
         padding: 5px !important;
         width: 100% !important;
     }
-    /*.grid-cols-4 {*/
-        /*padding: 10px !important;*/
-        /*width: 100% !important;*/
-    /*}*/
-    /*.card__special {*/
-        /*height: 55px;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
-        /*font-size: 18px !important;*/
-    /*}*/
-    /*.jquery-countdown-timer-note-countdowntimer {*/
-        /*font-size: 14px !important;*/
-        /*margin-top: -10px !important;*/
-    /*}*/
-    /*.card__title {*/
-        /*font-size: 22px;*/
-    /*}*/
-    /*.card__punchline {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.card__footer {*/
-    /*}*/
-    /*.foot-date {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.foot-comments {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.content-card {*/
-        /*padding-bottom: 40px !important;*/
-    /*}*/
+    .box__special {
+        height: 55px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 18px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 14px !important;
+        margin-top: -10px !important;
+    }
+    .box__title {
+        font-size: 22px;
+    }
 }
 @media (min-width: 501px) {
-    /*.card-head-image > iframe {*/
-        /*min-height: 0 !important;*/
-        /*max-height: 400px !important;*/
-    /*}*/
+    .box-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 400px !important;
+    }
     .grid-cols-3 {
         padding: 5px !important;
         width: 100% !important;
     }
-    /*.grid-cols-4 {*/
-        /*padding: 10px !important;*/
-        /*width: 100% !important;*/
-    /*}*/
-    /*.card__special {*/
-        /*height: 60px;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
-        /*font-size: 20px !important;*/
-    /*}*/
-    /*.jquery-countdown-timer-note-countdowntimer {*/
-        /*font-size: 14px !important;*/
-        /*margin-top: -10px !important;*/
-    /*}*/
-    /*.card__title {*/
-        /*font-size: 22px;*/
-    /*}*/
-    /*.card__punchline {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.card__footer {*/
-    /*}*/
-    /*.foot-date {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.foot-comments {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.content-card {*/
-        /*padding-bottom: 50px !important;*/
-    /*}*/
+
+    .box__special {
+        height: 60px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 14px !important;
+        margin-top: -10px !important;
+    }
+    .box__title {
+        font-size: 22px;
+    }
+
 }
 @media (min-width: 768px) {
-    /*.card-head-image > iframe {*/
-        /*min-height: 0 !important;*/
-        /*max-height: 160px !important;*/
-    /*}*/
-    /*.card-head-image {*/
-        /*min-height: 160px !important;*/
-        /*max-height: 160px !important;*/
-    /*}*/
+    .box-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 160px !important;
+    }
+    .box-head-image {
+        min-height: 160px !important;
+        max-height: 160px !important;
+    }
     .grid-cols-3 {
         padding: 5px !important;
         width: 33.3333% !important;
     }
-    /*.grid-cols-4 {*/
-        /*padding: 10px !important;*/
-        /*width: 50% !important;*/
-    /*}*/
-    /*.card__special {*/
-        /*height: 50px;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
-        /*font-size: 15px !important;*/
-    /*}*/
-    /*.jquery-countdown-timer-note-countdowntimer {*/
-        /*font-size: 12px !important;*/
-        /*margin-top: -10px !important;*/
-    /*}*/
-    /*.card__punchline {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.card__footer {*/
-    /*}*/
-    /*.foot-date {*/
-        /*font-size: 12px !important;*/
-    /*}*/
-    /*.foot-comments {*/
-        /*font-size: 12px !important;*/
-    /*}*/
-    /*.content-card {*/
-        /*padding-bottom: 40px !important;*/
-    /*}*/
+    .box__special {
+        height: 50px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 15px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 12px !important;
+        margin-top: -10px !important;
+    }
 }
 @media (min-width: 992px) {
-    /*.card-head-image > iframe {*/
-        /*min-height: 0 !important;*/
-        /*max-height: 155px !important;*/
-    /*}*/
-    /*.card-head-image {*/
-        /*min-height: 155px !important;*/
-        /*max-height: 155px !important;*/
-    /*}*/
+    .box-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 155px !important;
+    }
+    .box-head-image {
+        min-height: 155px !important;
+        max-height: 155px !important;
+    }
     .grid-cols-3 {
         padding: 5px !important;
         width: 33.3333% !important;
     }
-    /*.grid-cols-4 {*/
-        /*padding: 5px !important;*/
-        /*width: 25% !important;*/
-    /*}*/
-    /*.card__special {*/
-        /*height: 40px;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.jquery-countdown-timer-note-countdowntimer {*/
-        /*font-size: 11px !important;*/
-        /*margin-top: -10px !important;*/
-    /*}*/
-    /*.card__punchline {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.card__footer {*/
-    /*}*/
-    /*.foot-date {*/
-        /*font-size: 13px !important;*/
-    /*}*/
-    /*.foot-comments {*/
-        /*font-size: 13px !important;*/
-    /*}*/
-    /*.content-card {*/
-        /*padding-bottom: 40px !important;*/
-    /*}*/
+    .box__special {
+        height: 40px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 14px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 11px !important;
+        margin-top: -10px !important;
+    }
 }
 @media (min-width: 1200px) {
-    /*.card-head-image > iframe {*/
-        /*min-height: 0 !important;*/
-        /*max-height: 193px !important;*/
-    /*}*/
-    /*.card-head-image {*/
-        /*min-height: 193px !important;*/
-        /*max-height: 193px !important;*/
-    /*}*/
+    .box-head-image > iframe {
+        min-height: 0 !important;
+        max-height: 193px !important;
+    }
+    .box-head-image {
+        min-height: 193px !important;
+        max-height: 193px !important;
+    }
     .grid-cols-3 {
         padding: 5px !important;
         width: 33.3333% !important;
     }
-    /*.grid-cols-4 {*/
-        /*padding: 5px !important;*/
-        /*width: 25% !important;*/
-    /*}*/
-    /*.card__special {*/
-        /*height: 50px;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*.jquery-countdown-timer-countdowntimer.countdownHolder {*/
-        /*font-size: 16px !important;*/
-    /*}*/
-    /*.jquery-countdown-timer-note-countdowntimer {*/
-        /*font-size: 12px !important;*/
-        /*margin-top: -10px !important;*/
-    /*}*/
-    /*.card__punchline {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.card__footer {*/
-    /*}*/
-    /*.foot-date {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.foot-comments {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.content-card {*/
-        /*padding-bottom: 40px !important;*/
-    /*}*/
+    .box__special {
+        height: 50px;
+        overflow: hidden;
+    }
+    .box__body_bottom {
+        height: 35px;
+        overflow: hidden;
+    }
+    .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 16px !important;
+    }
+    .jquery-countdown-timer-note-countdowntimer {
+        font-size: 12px !important;
+        margin-top: -10px !important;
+    }
 }
 
 /**#*#*#*#*#*# BOX *#*#*#*#*#*#*/
@@ -259,10 +161,9 @@
     display:flex;
 }
 
-article.content-box.post-block {
-    /*padding-bottom: 0 !important;*/
-    /*height: 300px !important;*/
-    /*width: 270px !important;*/
+/** Card outermost boundary **/
+article.node--type-article, article.node--type-special {
+    padding-bottom: 0 !important;
 }
 /*--*#*#*#*#*#*#  Card *#*#*#*#*#*#-->*/
 
@@ -280,16 +181,17 @@ article.content-box.post-block {
 /*--===Top Right ===-->*/
 .box_outer_top_right {
     position: absolute;
-    z-index: 100;
+    z-index: 25;
     top: 20px;
     right: 20px;
 }
 /*--===End Top Right ===-->*/
 
+
 /*--===Top Left ===-->*/
 .box_outer_top_left {
     position: absolute;
-    z-index: 100;
+    z-index: 25;
     top: 20px;
     left: 20px;
 }
@@ -298,7 +200,7 @@ article.content-box.post-block {
 /*--===Bottom Right ===-->*/
 .box_outer_bottom_right {
     position: absolute;
-    z-index: 100;
+    z-index: 25;
     bottom: 5px;
     right: 20px;
 }
@@ -309,52 +211,7 @@ article.content-box.post-block {
 }
 /*--===End Bottom Left ===-->*/
 
-/* Crypto Token Hover states*/
-.crypto-token-logo {
-    display: block;
-}
-.crypto-token-name {
-    display: none;
-}
 
-.content-box:hover span.crypto-token-logo {
-    display: none;
-}
-.content-box:hover span.crypto-token-name {
-    display: block;
-}
-
-/* Sub Category Hover States */
-/*.sub-category-logo {*/
-    /*display: block;*/
-/*}*/
-/*.sub-category-name {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-box:hover .sub-category-logo {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-box:hover .sub-category-name {*/
-    /*display: block;*/
-/*}*/
-
-/* Category Hover States*/
-/*.category-logo {*/
-    /*display: block;*/
-/*}*/
-/*.category-name {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-box:hover .category-logo {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-box:hover .category-name {*/
-    /*display: block;*/
-/*}*/
 
 /*--### End Outer ###-->*/
 
@@ -363,33 +220,42 @@ article.content-box.post-block {
 /*--### Header ###-->*/
 /*--=== Box Head===-->*/
 .box-head {
-    height: 59% !important;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .box-head iframe {
-    height: 59% !important;
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    max-width: 100%;
+    min-height: 0 !important;
+    background-color: black;
 }
 /*--=== End Box Head===-->*/
 /*--### End Header ###-->*/
+/*
+
+
 
 /*****************************************************************************************************/
 
 /*--### Body ###-->*/
-.box-body {
-    height: 28% !important;
-    background-color: #00c99a;
-    overflow: hidden;
+.box__body {
+    padding: 5px;
+    background-color: #F6F6F6;
 }
-/*--=== Box Main ===-->*/
-.box-main{
-    height: 60%;
-    overflow: hidden;
-    background-color: yellow;
+
+.article_box__special {
+    /*margin-left: 10px;*/
 }
+
+.special_box__special {
+    /*margin-left: 10px;*/
+}
+
 /*-- -->*/
 div.jquery-countdown-timer-countdowntimer{
     padding-top: 5px;
@@ -400,15 +266,16 @@ div.jquery-countdown-timer-countdowntimer{
 /*-- -->*/
 /*--=== End Box Main===-->*/
 
-/*--=== Box Title ===-->*/
-.box-title h3{
-    color: green;
-    text-align: center;
+/*--=== Box Title===-->*/
+.box__title {
+    width:75%;
+    margin: 1px 0;
+    /*text-align: center;*/
+    font-size: 18px;
+    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    /*margin: 0 !important;*/
-    margin-top: -7px;
 }
 /*-- -->*/
 
@@ -432,5 +299,4 @@ li.box-footer-link a{
 }
 /*--=== ===-->*/
 /*--### End Footer ###-->*/
-
 /*****************************************************************************************************/

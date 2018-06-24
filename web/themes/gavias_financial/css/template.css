@@ -10363,6 +10363,28 @@ div.jquery-countdown-timer-note-countdowntimer{
 
 /***************** END arrow_tag **********************/
 
+/******************* Spaces ***********************************/
+.micro-space {
+  padding-right: 2px;
+}
+.mini-space {
+  padding-right: 5px;
+}
+.small-space {
+  padding-right: 10px;
+}
+.medium-space {
+  padding-right: 25px;
+}
+.large-space {
+  padding-right: 100px;
+}
+.xlarge-space {
+  padding-right: 500px;
+}
+
+/******************* END Spaces ***********************************/
+
 
 
 /********* Behavior: category-logo, sub-category-logo FOR  .just-logo (.content-card hover & steady)*****************/
@@ -10567,3 +10589,119 @@ div.jquery-countdown-timer-note-countdowntimer{
 }
 
 /********* Behaviors FOR TAX CLASSES SYMBOL VS NAMES *****************/
+
+/******************* TAX EMBED ONE ***********************************/
+.content-card .just-logo .crypto-token-logo {
+  display: block;
+}
+.content-card:hover .just-logo .crypto-token-logo {
+  display: block;
+}
+.content-box .just-logo .crypto-token-logo {
+  display: block;
+}
+.content-box:hover .just-logo .crypto-token-logo {
+  display: block;
+}
+
+.content-card .just-logo .crypto-token-name {
+  display: none;
+}
+.content-card:hover .just-logo .crypto-token-name {
+  display: none;
+}
+.content-box .just-logo .crypto-token-name{
+  display: none;
+}
+.content-box:hover .just-logo .crypto-token-nane {
+  display: none;
+}
+
+
+
+
+.content-card .just-name .crypto-token-logo {
+  display: none;
+}
+.content-card:hover .just-name .crypto-token-logo {
+  display: none;
+}
+.content-box .just-name .crypto-token-logo {
+  display: none;
+}
+.content-box:hover .just-name .crypto-token-logo {
+  display: none;
+}
+
+.content-card .just-name .crypto-token-name {
+  display: block;
+}
+.content-card:hover .just-name .crypto-token-name {
+  display: block;
+}
+.content-box .just-name .crypto-token-name{
+  display: block;
+}
+.content-box:hover .just-name .crypto-token-nane {
+  display: block;
+}
+
+
+
+
+.content-card .logo-then-name .crypto-token-logo {
+  display: block;
+}
+.content-card:hover .logo-then-name .crypto-token-logo {
+  display: none;
+}
+.content-box .logo-then-name .crypto-token-logo {
+  display: block;
+}
+.content-box:hover .logo-then-name .crypto-token-logo {
+  display: none;
+}
+
+.content-card .logo-then-name .crypto-token-name {
+  display: none;
+}
+.content-card:hover .logo-then-name .crypto-token-name {
+  display: block;
+}
+.content-box .logo-then-name .crypto-token-name{
+  display: none;
+}
+.content-box:hover .logo-then-name .crypto-token-nane {
+  display: block;
+}
+
+
+
+
+.content-card .name-then-logo .crypto-token-logo {
+  display: none;
+}
+.content-card:hover .name-then-logo .crypto-token-logo {
+  display: none;
+}
+.content-box .name-then-logo .crypto-token-logo {
+  display: none;
+}
+.content-box:hover .name-then-logo .crypto-token-logo {
+  display: none;
+}
+
+.content-card .name-then-logo .crypto-token-name {
+  display: block;
+}
+.content-card:hover .name-then-logo .crypto-token-name {
+  display: block;
+}
+.content-box .name-then-logo .crypto-token-name{
+  display: block;
+}
+.content-box:hover .name-then-logo .crypto-token-nane {
+  display: block;
+}
+
+/******************* Custom Additions ***********************************/
