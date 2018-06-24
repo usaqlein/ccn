@@ -1,4 +1,4 @@
-/**#*#*#*#*#*# Card *#*#*#*#*#*#*/
+/**#*#*#*#*#*# Card COLUMNS *#*#*#*#*#*#*/
 @media (max-width: 281px) {
     .card-head-image > iframe {
         min-height: 0 !important;
@@ -494,6 +494,10 @@ p.avatar-bottom-text{
     background-color: #F6F6F6;
 }
 .article_card__special {
+    /*margin-left: 10px;*/
+}
+
+.special_card__special {
     /*margin-left: 10px;*/
 }
 
