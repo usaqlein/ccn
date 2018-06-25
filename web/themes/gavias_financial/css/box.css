@@ -12,10 +12,22 @@
         height: 35px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .box__punchline {
+        height: 35px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
+    }
+    .box__body_bottom {
+        height: 37px !important;
+        overflow: hidden;
+    }
+    .box__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 9px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .box__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 8px !important;
         margin-top: -4px !important;
     }
@@ -23,6 +35,12 @@
         font-size: 14px !important;
         height: 35px;
         overflow: hidden;
+    }
+    li.box-footer-link a{
+        font-size: 13px;
+    }
+    .box__read_more {
+        font-size: 13px;
     }
 }
 @media (min-width: 282px) {
@@ -38,15 +56,33 @@
         height: 55px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .box__punchline {
+        height: 55px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
+    }
+    .box__body_bottom {
+        height: 37px !important;
+        overflow: hidden;
+    }
+    .box__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 18px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .box__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 14px !important;
         margin-top: -10px !important;
     }
     .box__title {
         font-size: 22px;
+    }
+    li.box-footer-link a{
+        font-size: 15px;
+    }
+    .box__read_more {
+        font-size: 15px;
     }
 }
 @media (min-width: 501px) {
@@ -63,15 +99,33 @@
         height: 60px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .box__punchline {
+        height: 60px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
+    }
+    .box__body_bottom {
+        height: 37px !important;
+        overflow: hidden;
+    }
+    .box__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 20px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .box__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 14px !important;
         margin-top: -10px !important;
     }
     .box__title {
         font-size: 22px;
+    }
+    li.box-footer-link a{
+        font-size: 13px;
+    }
+    .box__read_more {
+        font-size: 13px;
     }
 
 }
@@ -92,12 +146,33 @@
         height: 50px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 15px !important;
+    .box__punchline {
+        height: 50px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
     }
-    .jquery-countdown-timer-note-countdowntimer {
-        font-size: 12px !important;
+    .box__body_bottom {
+        height: 37px !important;
+        overflow: hidden;
+    }
+    .box__special .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 11px !important;
+    }
+    .box__special .jquery-countdown-timer-note-countdowntimer {
+        font-size: 11px !important;
         margin-top: -10px !important;
+    }
+    .box__title {
+        width:80%;
+    }
+    li.box-footer-link a{
+        font-size: 11px !important;
+    }
+    .box__read_more {
+        font-size: 11px!important;
     }
 }
 @media (min-width: 992px) {
@@ -117,15 +192,36 @@
         height: 40px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 14px !important;
+    .box__punchline {
+        height: 40px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .box__body_bottom {
+        height: 33px !important;
+        overflow: hidden;
+    }
+    .box__special.jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 13px !important;
+    }
+    .box__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 11px !important;
         margin-top: -10px !important;
     }
+    li.box-footer-link a{
+        font-size: 11px !important;
+    }
+    .box__read_more {
+        font-size: 11px !important;
+    }
 }
 @media (min-width: 1200px) {
+    .box__head {
+        hight: 191px !important;
+    }
     .box-head-image > iframe {
         min-height: 0 !important;
         max-height: 193px !important;
@@ -142,16 +238,30 @@
         height: 50px;
         overflow: hidden;
     }
+    .box__punchline {
+        height: 50px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.6em;
+    }
     .box__body_bottom {
-        height: 35px;
+        height: 37px !important;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .box__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 16px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .box__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 12px !important;
         margin-top: -10px !important;
+    }
+    li.box-footer-link a{
+        font-size: 13px !important;
+    }
+    .box__read_more {
+        font-size: 13px !important;
     }
 }
 
@@ -195,6 +305,25 @@ article.node--type-article, article.node--type-special {
     top: 20px;
     left: 20px;
 }
+.box_outer_top_right .sub-category-name a{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #ffffaa;
+    padding: 2px;
+}
+
+.box_outer_top_left .category-name a{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #ffffaa;
+    padding: 2px;
+}
+.box_outer_top_left .category-logo .icon{
+    font-size: 18px;
+    font-weight: bold;
+}
 /*--===End Top Left ===-->*/
 
 /*--===Bottom Right ===-->*/
@@ -223,6 +352,7 @@ article.node--type-article, article.node--type-special {
     display: block;
     overflow: hidden;
     position: relative;
+    background-color: #000000 !important;
     -moz-border-radius-topleft: 8px;
     -webkit-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
@@ -232,8 +362,11 @@ article.node--type-article, article.node--type-special {
 }
 .box-head iframe {
     min-height: 0 !important;
-    background-color: black;
+    background-color: #000000 !important;
 }
+/*.box-head-image {*/
+    /*background-color: #000000 !important;*/
+/*}*/
 /*--=== End Box Head===-->*/
 /*--### End Header ###-->*/
 /*
@@ -246,17 +379,9 @@ article.node--type-article, article.node--type-special {
 .box__body {
     padding: 5px;
     background-color: #F6F6F6;
+    /*background-color: #ffffaa;*/
 }
 
-.article_box__special {
-    /*margin-left: 10px;*/
-}
-
-.special_box__special {
-    /*margin-left: 10px;*/
-}
-
-/*-- -->*/
 div.jquery-countdown-timer-countdowntimer{
     padding-top: 5px;
 }
@@ -268,9 +393,8 @@ div.jquery-countdown-timer-countdowntimer{
 
 /*--=== Box Title===-->*/
 .box__title {
-    width:75%;
     margin: 1px 0;
-    /*text-align: center;*/
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     white-space: nowrap;
@@ -288,15 +412,33 @@ div.jquery-countdown-timer-countdowntimer{
 
 /*--### Footer ###-->*/
 .box-footer {
-    height: 13% !important;
+    clear: both;
     background-color: #ffffaa;
 }
-/*--=== ===-->*/
+
 li.box-footer-link a{
-    padding: 10px 0 2px 35px !important;
+    color: #000000 !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0 !important;
     background: transparent !important;
     border: none !important;
 }
+
+.category-list .item-list ul li a:after {
+/*.category-list .item-list ul li a:hover,*/
+/*.category-list .item-list ul li a:focus{*/
+    top: 5px !important;
+}
+.item-list ul li.view-list-item.box-footer-link {
+    margin-bottom: 0 !important;
+}
+
+.box__read_more {
+    color:  #5eb4e7 !important;
+    font-weight: bold;
+}
+
 /*--=== ===-->*/
 /*--### End Footer ###-->*/
 /*****************************************************************************************************/

@@ -51,6 +51,25 @@ function gavias_financial_preprocess_page(&$variables) {
   $variables['register_link'] = \Drupal::url('user.register');
 }
 
+function gavias_financial_preprocess_field(&$variables) {
+//  $name = $variables['field_name'];
+//  $x = 'here';
+//  if ($name == 'field_tags') {
+//
+//  }
+//  if ($name == 'field_tax_embed_one') {
+//    $x = 'ther';
+//  }
+//  if (is_array($variables['items']) && count($variables['items']) > 0) {
+//    $variables['has_tags'] = TRUE;
+//  } else {
+//    $variables['has_tags'] = FALSE;
+//  }
+//
+//  $variables['usman'] = 'usman';
+//  //field_tax_embed_one
+}
+
 function gavias_financial_preprocess_image(&$variables) {
   if (isset($variables['attributes']['width']) && isset($variables['attributes']['height'])) {
     unset($variables['attributes']['width']);

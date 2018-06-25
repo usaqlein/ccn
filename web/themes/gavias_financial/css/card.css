@@ -16,10 +16,10 @@
         height: 35px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 9px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 8px !important;
         margin-top: -4px !important;
     }
@@ -59,10 +59,10 @@
         height: 55px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 18px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 14px !important;
         margin-top: -10px !important;
     }
@@ -101,10 +101,10 @@
         height: 60px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 20px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 14px !important;
         margin-top: -10px !important;
     }
@@ -147,10 +147,10 @@
         height: 50px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 15px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 12px !important;
         margin-top: -10px !important;
     }
@@ -190,10 +190,10 @@
         height: 40px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 14px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 11px !important;
         margin-top: -10px !important;
     }
@@ -233,10 +233,10 @@
         height: 50px;
         overflow: hidden;
     }
-    .jquery-countdown-timer-countdowntimer.countdownHolder {
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
         font-size: 16px !important;
     }
-    .jquery-countdown-timer-note-countdowntimer {
+    .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 12px !important;
         margin-top: -10px !important;
     }
