@@ -60,9 +60,20 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--### Body ###-->
     <div class="box__body">
         <!--=== ===-->
-        <div class="box__special special_box__special">
-            {{ content.field_block_one }}
-        </div>
+        {% if content.field_block_one['#items'] is not empty %}
+            <div class="box__special special_box__special">
+                {{ content.field_block_one }}
+            </div>
+        {% else %}
+            <div class="box__punchline">
+                {{ content.field_punchline }}
+            </div>
+        {% endif %}
+
+
+        {#<div class="box__punchline">#}
+        {#{{ content.field_punchline }}#}
+        {#</div>#}
         <!--=== ===-->
         <!--=== ===-->
         <div class="box__body_bottom">
@@ -80,7 +91,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         <div class="category-list item-list countdown-card-readmore">
             <!-- -->
             <div class="item-list">
-                <ul><li class="view-list-item card-read-more box-footer-link"><a href="{{ url }}" hreflang="en"><span class="text-theme">Read More</span> | {{ date }}</a></li></ul>
+                <ul><li class="view-list-item card-read-more box-footer-link"><a href="{{ url }}" hreflang="en"><span class="text-theme box__read_more">Read More</span> | {{ date }}</a></li></ul>
             </div>
             <!-- -->
         </div>
