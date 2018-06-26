@@ -13,41 +13,37 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ]
 %}
 {% if card == true %}
-
-
-<!--*#*#*#*#*#*# Node Special Card *#*#*#*#*#*#-->
+<!--*********************************************| Object level |****************************************************-->
 <article{{ attributes.addClass(classes) }}>
-
-
+<!--************************************************| ICONS |**************************************************-->
 <!--=== Top Right===-->
-<div class="card-head-top-right content_type_category card-icons logo-then-name">
+<div class="card-icon-top-right logo-then-name">
     {# Read web/themes/gavias_financial/site-control-classes.txt #}
     {# themes/gavias_financial/templates/content/taxonomy-term--special-class-types--token.html.twig #}
     {{ content.field_special_sub_category }}
 </div>
 <!--=== End Top Right===-->
-
-<!--***********************************************************************************************************-->
+<!--************************************************| HEADER |**************************************************-->
 
 <!--### Header ###-->
 <!--=== Card Head===-->
-<div class="post-image card-head">
+<div class="card__head post-image">
     <!-- Card Head Image -->
-    <div class="content-image card-head-image">
+    <div class="card__head_image">
         {{ content.field_special_image }}
     </div>
     <!-- End Card Head Image-->
     <!-- Card Head Avatar Hover -->
-    <div class="card-head-avatar">
+    <div class="card__head_avatar">
 
         <!-- Card Head Avatar Default -->
-        <div class="card-head-avatar-default">
+        <div class="card__head_avatar_default">
             {{ content.field_tax_embed_one }}
         </div>
         <!-- End Card Head Avatar Default -->
 
         <!-- Card Head Avatar Hover -->
-        <div class="card-head-avatar-hover">
+        <div class="card__head_avatar_hover">
             <div class="card-avatar-hover-icon">
                 <a href="{{ url }}">
                     <span class="icon icon-Twitter"></span>
@@ -63,7 +59,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <!--=== End Card Head===-->
 <!--### End Header ###-->
 
-<!--***********************************************************************************************************-->
+<!--************************************************| BELT |**************************************************-->
 
     <!--### Card Belt Icons ###-->
 
@@ -88,7 +84,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
     <!--### End Card Belt Icons ###-->
 
-<!--***********************************************************************************************************-->
+<!--************************************************| BODY |**************************************************-->
     <!--### Body ###-->
     <div class="card__body">
         <!--=== ===-->
@@ -111,7 +107,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     </div>
     <!--### End Body ###-->
 
-<!--***********************************************************************************************************-->
+<!--************************************************| FOOTER |**************************************************-->
     <!--### Footer ###-->
     <footer class="card-footer">
         <!--=== div card__footer ===-->
@@ -138,8 +134,5 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         <!--=== END div card__footer ===-->
     </footer>
     <!--### End Footer###-->
-<!--***********************************************************************************************************-->
-
 </article>
-<!--*#*#*#*#*#*#  Node Special Card *#*#*#*#*#*#-->
 {% endif %}

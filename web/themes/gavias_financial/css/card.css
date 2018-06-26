@@ -1,27 +1,20 @@
-/**#*#*#*#*#*# Card COLUMNS *#*#*#*#*#*#*/
+/******************************************* /** Screen Sizes  /*******************************************************/
 @media (max-width: 281px) {
-    .card-head-image > iframe {
+    .card__head_image > iframe {
         min-height: 0 !important;
         max-height: 300px !important;
     }
-    .grid-cols-3 {
+    .card .grid-cols-3 {
         padding: 5px !important;
         width: 100% !important;
     }
-    .grid-cols-4 {
+    .card .special_class_types, .card .alpha_class_types, .card .beta_class_types, .card .charlie_class_types, .card .delta_class_types {
+        padding: 5px !important;
+        width: 33.33% !important;
+    }
+    .card .grid-grid_caro_all .grid-cols-4 {
         padding: 10px !important;
         width: 100% !important;
-    }
-    .card__special {
-        height: 35px;
-        overflow: hidden;
-    }
-    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 9px !important;
-    }
-    .card__special .jquery-countdown-timer-note-countdowntimer {
-        font-size: 8px !important;
-        margin-top: -4px !important;
     }
     .card__title {
         font-size: 14px !important;
@@ -38,23 +31,6 @@
     .content-card {
         padding-bottom: 40px !important;
     }
-    /*.card-belt-icon-left {*/
-        /*font-size: 12px !important;*/
-    /*}*/
-}
-@media (min-width: 282px) {
-    .card-head-image > iframe {
-        min-height: 0 !important;
-        max-height: 300px !important;
-    }
-    .grid-cols-3 {
-        padding: 5px !important;
-        width: 100% !important;
-    }
-    .grid-cols-4 {
-        padding: 10px !important;
-        width: 100% !important;
-    }
     .card__special {
         height: 55px;
         overflow: hidden;
@@ -65,6 +41,20 @@
     .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 14px !important;
         margin-top: -10px !important;
+    }
+}
+@media (min-width: 282px) {
+    .card__head_image > iframe {
+        min-height: 0 !important;
+        max-height: 300px !important;
+    }
+    .card .grid-cols-3 {
+        padding: 5px !important;
+        width: 100% !important;
+    }
+    .card .grid-cols-4 {
+        padding: 10px !important;
+        width: 100% !important;
     }
     .card__title {
         font-size: 22px;
@@ -83,30 +73,30 @@
     .content-card {
         padding-bottom: 40px !important;
     }
-}
-@media (min-width: 501px) {
-    .card-head-image > iframe {
-        min-height: 0 !important;
-        max-height: 400px !important;
-    }
-    .grid-cols-3 {
-        padding: 5px !important;
-        width: 100% !important;
-    }
-    .grid-cols-4 {
-        padding: 10px !important;
-        width: 100% !important;
-    }
     .card__special {
-        height: 60px;
+        height: 55px;
         overflow: hidden;
     }
     .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
     .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 14px !important;
         margin-top: -10px !important;
+    }
+}
+@media (min-width: 501px) {
+    .card__head_image > iframe {
+        min-height: 0 !important;
+        max-height: 400px !important;
+    }
+    .card .grid-cols-3 {
+        padding: 5px !important;
+        width: 100% !important;
+    }
+    .card .grid-cols-4 {
+        padding: 10px !important;
+        width: 100% !important;
     }
     .card__title {
         font-size: 22px;
@@ -125,23 +115,48 @@
     .content-card {
         padding-bottom: 50px !important;
     }
+    .card__special {
+        height: 60px;
+        overflow: hidden;
+    }
+    .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .card__special .jquery-countdown-timer-note-countdowntimer {
+        font-size: 14px !important;
+        margin-top: -10px !important;
+    }
 }
 @media (min-width: 768px) {
-    .card-head-image > iframe {
+    .card__head_image > iframe {
         min-height: 0 !important;
         max-height: 160px !important;
     }
-    .card-head-image {
+    .card__head_image {
         min-height: 160px !important;
         max-height: 160px !important;
     }
-    .grid-cols-3 {
+    .card .grid-cols-3 {
         padding: 5px !important;
         width: 33.3333% !important;
     }
-    .grid-cols-4 {
+    .card .grid-cols-4 {
         padding: 10px !important;
         width: 50% !important;
+    }
+    .card__punchline {
+        font-size: 14px !important;
+    }
+    .card__footer {
+    }
+    .foot-date {
+        font-size: 12px !important;
+    }
+    .foot-comments {
+        font-size: 12px !important;
+    }
+    .content-card {
+        padding-bottom: 40px !important;
     }
     .card__special {
         height: 50px;
@@ -154,37 +169,37 @@
         font-size: 12px !important;
         margin-top: -10px !important;
     }
+}
+@media (min-width: 992px) {
+    .card__head_image > iframe {
+        min-height: 0 !important;
+        max-height: 155px !important;
+    }
+    .card__head_image {
+        min-height: 155px !important;
+        max-height: 155px !important;
+    }
+    .card .grid-cols-3 {
+        padding: 5px !important;
+        width: 33.3333% !important;
+    }
+    .card .grid-cols-4 {
+        padding: 5px !important;
+        width: 25% !important;
+    }
     .card__punchline {
         font-size: 14px !important;
     }
     .card__footer {
     }
     .foot-date {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
     .foot-comments {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
     .content-card {
         padding-bottom: 40px !important;
-    }
-}
-@media (min-width: 992px) {
-    .card-head-image > iframe {
-        min-height: 0 !important;
-        max-height: 155px !important;
-    }
-    .card-head-image {
-        min-height: 155px !important;
-        max-height: 155px !important;
-    }
-    .grid-cols-3 {
-        padding: 5px !important;
-        width: 33.3333% !important;
-    }
-    .grid-cols-4 {
-        padding: 5px !important;
-        width: 25% !important;
     }
     .card__special {
         height: 40px;
@@ -197,37 +212,37 @@
         font-size: 11px !important;
         margin-top: -10px !important;
     }
+}
+@media (min-width: 1200px) {
+    .card__head_image > iframe {
+        min-height: 0 !important;
+        max-height: 193px !important;
+    }
+    .card__head_image {
+        min-height: 193px !important;
+        max-height: 193px !important;
+    }
+    .card .grid-cols-3 {
+        padding: 5px !important;
+        width: 33.3333% !important;
+    }
+    .card .grid-cols-4 {
+        padding: 5px !important;
+        width: 25% !important;
+    }
     .card__punchline {
         font-size: 14px !important;
     }
     .card__footer {
     }
     .foot-date {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
     .foot-comments {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
     .content-card {
         padding-bottom: 40px !important;
-    }
-}
-@media (min-width: 1200px) {
-    .card-head-image > iframe {
-        min-height: 0 !important;
-        max-height: 193px !important;
-    }
-    .card-head-image {
-        min-height: 193px !important;
-        max-height: 193px !important;
-    }
-    .grid-cols-3 {
-        padding: 5px !important;
-        width: 33.3333% !important;
-    }
-    .grid-cols-4 {
-        padding: 5px !important;
-        width: 25% !important;
     }
     .card__special {
         height: 50px;
@@ -240,29 +255,9 @@
         font-size: 12px !important;
         margin-top: -10px !important;
     }
-    .card__punchline {
-        font-size: 14px !important;
-    }
-    .card__footer {
-    }
-    .foot-date {
-        font-size: 14px !important;
-    }
-    .foot-comments {
-        font-size: 14px !important;
-    }
-    .content-card {
-        padding-bottom: 40px !important;
-    }
 }
 
-
-/*--*#*#*#*#*#*#  Card *#*#*#*#*#*#-->*/
-
-/*--### Outer ###-->*/
-.grid-grid_caro_all {
-
-}
+/******************************************* /** Object level  /*******************************************************/
 
 /** Card outermost boundary **/
 article.node--type-article, article.node--type-special {
@@ -279,41 +274,16 @@ article.node--type-article, article.node--type-special {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*--===Top Right ===-->*/
-.card-head-top-right {
+/******************************************* /** ICONS         /*******************************************************/
+.card_icon_top_right {
     position: absolute;
     z-index: 10;
     top: 20px;
     right: 20px;
 }
-/*--===End Top Right ===-->*/
+/******************************************* /** HEADER        /*******************************************************/
 
-
-
-
-/**************************( Turned OFF: Make Hover Show Sub Category Name )********************/
-/*--### End Outer ###-->*/
-
-/* Sub Category Hover States */
-/*.sub-category-logo {*/
-    /*display: block;*/
-/*}*/
-/*.sub-category-name {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-card:hover .sub-category-logo {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-card:hover .sub-category-name {*/
-    /*display: block;*/
-/*}*/
-
-/*****************************************************************************************************/
-
-/*--### Header ###-->*/
-.card-head {
+.card__head {
     display: block;
     overflow: hidden;
     position: relative;
@@ -328,31 +298,31 @@ article.node--type-article, article.node--type-special {
 
 }
 
-.card-head iframe {
+.card__head iframe {
     min-height: 0 !important;
     background-color: black;
 }
 /*--=== Card Head Image===-->*/
-.card-head-image{
+.card__head_image{
     overflow: hidden;
 }
-.card-head-image img{
+.card__head_image img{
     margin-bottom: 0;
     height: 100%;
 }
-.content-card:hover .card-head-image img {
+.content-card:hover .card__head_image img {
     opacity: 0.8;
     transform: scale(1.2);
 }
 
 /* border */
-div.card-head-image {
+div.card__head_image {
     margin: 0 !important;
 }
 /*--=== End Card Head Image===-->*/
 
 /*--=== Card Head Avatar===-->*/
-.card-head-avatar {
+.card__head_avatar {
     position: absolute;
     z-index: 10;
     bottom: 0;
@@ -372,13 +342,13 @@ div.card-head-image {
 }
 
 /*-- Card Head Avatar Default -->*/
-.card-head-avatar-default {
+.card__head_avatar_default {
 
 }
 /*-- END Card Head Avatar Default -->*/
 
 /*-- Card Head Avatar Hover-->*/
-.card-head-avatar-hover {
+.card__head_avatar_hover {
     position: absolute;
     cursor: pointer;
     width: 100%;
@@ -411,7 +381,7 @@ div.card-head-image {
     transition-timing-function: ease;
 }
 
-.content-card:hover .card-head-avatar-hover {
+.content-card:hover .card__head_avatar_hover {
     opacity: 1;
 }
 
@@ -429,43 +399,7 @@ p.avatar-bottom-text{
     color: #ffffff !important;
 }
 
-/*-- End Card Head Avatar Hover-->*/
-
-/*--=== End Card Head Avatar===-->*/
-/*--### End Header ###-->*/
-
-/*****************************************************************************************************/
-
-/* Category Hover States*/
-/*.category-logo {*/
-    /*display: block;*/
-/*}*/
-/*.category-name {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-card:hover .category-logo {*/
-    /*display: none;*/
-/*}*/
-
-/*.content-card:hover .category-name {*/
-    /*display: block;*/
-/*}*/
-
-/* Crypto Token Hover states*/
-.crypto-token-logo {
-    display: block;
-}
-.crypto-token-name {
-    display: none;
-}
-
-.content-card:hover span.crypto-token-logo {
-    display: none;
-}
-.content-card:hover .card-belt-icon-right span.crypto-token-name {
-    display: block;
-}
+/******************************************* /** BELT    /*************************************************************/
 
 /*--=== Card Belt Icon Left ===-->*/
 .card-belt-icon-left {
@@ -486,9 +420,22 @@ p.avatar-bottom-text{
 }
 /*--=== End Card Belt Icon Right===-->*/
 
-/*****************************************************************************************************/
+/* Deprecated Hover @todo Remove */
+.crypto-token-logo {
+    display: block;
+}
+.crypto-token-name {
+    display: none;
+}
 
-/*--### Body ###-->*/
+.content-card:hover span.crypto-token-logo {
+    display: none;
+}
+.content-card:hover .card-belt-icon-right span.crypto-token-name {
+    display: block;
+}
+/******************************************* /** BODY    /*************************************************************/
+
 .card__body {
     padding: 5px;
     background-color: #F6F6F6;
@@ -522,9 +469,8 @@ p.avatar-bottom-text{
     -webkit-box-orient: vertical;
     line-height: 1.5em;
 }
-/*--=== End Card Punchline===-->*/
-/*****************************************************************************************************/
 
+/******************************************* /** FOOTER        /*******************************************************/
 /*--### Footer ###-->*/
 footer.card-footer{
     height: 35px;
@@ -584,12 +530,5 @@ footer.card-footer{
     transform: translateY(0);
     transition-delay: 0.2s;
 }
-/*-- END card-footer spans hover action -->*/
-/*--=== End Card Footer===-->*/
-/*--### End Footer ###-->*/
-/*****************************************************************************************************/
 
-/*SPARE*/
-/*-- -->*/
-/*--=== ===-->*/
-/*--###  ###-->*/
+/******************************************* /** SPECIAL       /*******************************************************/
