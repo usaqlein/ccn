@@ -17,7 +17,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <article{{ attributes.addClass(classes) }}>
 <!--************************************************| ICONS |**************************************************-->
 <!--=== Top Right===-->
-<div class="card_icon_top_right logo-then-name">
+<div class="card_icon_top_right card-icons logo-then-name">
     {# Read web/themes/gavias_financial/site-control-classes.txt #}
     {# themes/gavias_financial/templates/content/taxonomy-term--alpha-class-types--token.html.twig #}
     {# themes/gavias_financial/templates/content/taxonomy-term--beta-class-types--token.html.twig #}
@@ -60,20 +60,19 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             </div>
         </div>
         <!-- End Card Head Avatar Hover -->
-
     </div>
     <!--End Card Head Avatar-->
 </div>
 <!--=== End Card Head===-->
 <!--************************************************| BELT |**************************************************-->
     <!--### Card Belt Icons ###-->
-    <div class="card-belt-icon-left name-then-logo">
+    <div class="card_icon_belt_left card-icons name-then-logo">
         {# Read web/themes/gavias_financial/site-control-classes.txt #}
         {# themes/gavias_financial/templates/content/taxonomy-term--category--just-symbol.html.twig #}
         <span class="post-categories">{{ content.field_content_category }}</span>
     </div>
 
-    <div class="card-belt-icon-right belt-share-links">
+    <div class="card_icon_belt_right belt-share-links">
         <div class="pull-left text-left">
             <ul class="inline">
                 <li class="message"><a target="_blank" href="#"><i class="fa fa-share-alt" style="color: #000000; font-size: 16px; cursor: default;"></i></a></li>

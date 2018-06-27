@@ -210,6 +210,14 @@ jQuery(document).ready(function () {
     $('#menu-bar').removeClass('show-view');
   });
 
+    /*========== Close Menu upon click Event ==========*/
+
+    $('.gva-offcanvas-mobile .gva-navigation a').on('click', function(){
+       $(this).parents('.gva-offcanvas-mobile').removeClass('show-view');
+       $('#menu-bar').removeClass('show-view');
+    })
+
+
     /*========== Click Show Sub Menu ==========*/
    
     $('.gva-navigation a').on('click','.nav-plus',function(){
