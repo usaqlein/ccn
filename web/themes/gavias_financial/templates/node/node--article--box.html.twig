@@ -13,43 +13,25 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ]
 %}
 {% if box == true %}
-    <!--### ###-->
-    <!--=== ===-->
-    <!-- -->
-    <!-- -->
-    <!--=== ===-->
-    <!--### ###-->
 
-<!--*#*#*#*#*#*# Node Article Box *#*#*#*#*#*#-->
+<!--*********************************************| Object level |****************************************************-->
 <article{{ attributes.addClass(classes) }}>
-
-    <!--### Outer ###-->
-
+<!--************************************************| ICONS |**************************************************-->
     <!--=== Top Right===-->
-    <div class="box_outer_top_right logo-then-name">
+    <div class="box_icon_top_right box-icons logo-then-name">
         {{ content.content_sub_category }}
     </div>
     <!--=== End Top Right===-->
-
     <!--=== Top Left===-->
-    <div class="box_outer_top_left logo-then-name">
+    <div class="box_icon_top_left box-icons logo-then-name">
         {{ content.field_content_category }}
     </div>
     <!--=== End Top Left===-->
-
-    <!--=== Top Bottom Left===-->
-    <div class="box_outer_bottom_left"></div>
-    <!--=== End Bottom Left==-->
-
-    <!--### End Outer ###-->
-
-<!--***********************************************************************************************************-->
-
-    <!--### Header ###-->
+<!--************************************************| HEADER |**************************************************-->
     <!--=== Box Head ===-->
-    <div class="post-image box-head">
+    <div class="box__head post-image">
         <!-- Box Head Image-->
-        <div class="content-image box-head-image">
+        <div class="box__head_image">
             {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
                 {{ gva_iframe|raw }}
             {% elseif post_format == 'gallery' and content.field_post_gallery %}
@@ -60,11 +42,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         </div>
     </div>
     <!--=== End Box Head===-->
-    <!--### End Header ###-->
+<!--************************************************| BODY |**************************************************-->
 
-<!--***********************************************************************************************************-->
-
-    <!--### Body ###-->
     <div class="box__body">
         <!--=== ===-->
         {% if content.field_tags['#items'] is not empty %}
@@ -77,25 +56,23 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                 {{ content.field_punchline }}
             </div>
         {% endif %}
-
         <!--=== ===-->
         <!--=== ===-->
         <div class="box__body_bottom">
-            <div class="pull-left just-logo mini-space">{{ content.field_tax_embed_one }}</div>
+            <div class="pull-left box_icon_title_left just-logo mini-space">{{ content.field_tax_embed_one }}</div>
             <div class="pull-left box__title"><a href="{{ url }}">{{ label }}</a></div>
         </div>
         <!--=== ===-->
     </div>
-    <!--### End Body ###-->
 
 <!--***********************************************************************************************************-->
     <!--### Footer ###-->
-    <div class="card-foot countdown-card-foot box-footer">
+    <div class="box__footer">
         <!--=== ===-->
-        <div class="category-list item-list countdown-card-readmore">
+        <div class="box__footer_date_more category-list item-list">
             <!-- -->
             <div class="item-list">
-                <ul><li class="view-list-item card-read-more box-footer-link"><a href="{{ url }}" hreflang="en"><span class="text-theme box__read_more">Read More</span> | {{ date }}</a></li></ul>
+                <ul><li class="box__footer_link view-list-item"><a href="{{ url }}" hreflang="en"><span class="box__read_more text-theme">Read More</span> | {{ date }}</a></li></ul>
             </div>
             <!-- -->
         </div>
@@ -103,7 +80,5 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     </div>
     <!--### End Footer###-->
 <!--***********************************************************************************************************-->
-
 </article>
-<!--*#*#*#*#*#*#  Node Article Box *#*#*#*#*#*#-->
 {% endif %}
