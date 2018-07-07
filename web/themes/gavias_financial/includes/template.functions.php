@@ -95,61 +95,149 @@ function gavias_financial_preprocess_node__special(&$variables){
 
 
 function gavias_financial_preprocess_node__article__card(&$variables){
-  /* Drupal\taxonomy\Entity\Term $tax_term */
-  $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term'];
 
+  $content = $variables['content']['_layout_builder'][0]['content'];
 
-  if($tax_term->getName()){
-    //$sub_category = $variables['content']['field_content_category'][0]['#title'];
+  foreach ($content as $content_number) {
+    if(is_array($content_number) && array_key_exists('#plugin_id', $content_number)) {
+      switch ($content_number['#plugin_id']) {
+        case 'field_block:node:article:field_content_category':
+          $variables['content']['field_content_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_image':
+          $variables['content']['field_image'] = $content_number;
+          break;
+        case 'field_block:node:article:field_tags':
+          $variables['content']['field_tags'] = $content_number;
+          break;
+        case 'field_block:node:article:field_punchline':
+          $variables['content']['field_punchline'] = $content_number;
+          break;
+        case 'field_block:node:article:field_tax_embed_one':
+          $variables['content']['field_tax_embed_one'] = $content_number;
+          break;
+        case 'field_block:node:article:field_post_gallery':
+          $variables['content']['field_post_gallery'] = $content_number;
+          break;
+        case 'field_block:node:article:field_alpha_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_beta_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_charlie_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_delta_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+      }
+    }
+  }
+}
+function gavias_financial_preprocess_node__special__card(&$variables){
 
-    switch ($tax_term->getName()) {
-      case "Alpha":
-        $variables['content']['content_sub_category'] = $variables['content']['field_alpha_sub_category'];
-        break;
-      case "Beta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_beta_sub_category'];
-        break;
-      case "Charlie":
-        $variables['content']['content_sub_category'] = $variables['content']['field_charlie_sub_category'];
-        break;
-      case "Delta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
-        break;
-      case "Special":
-        $variables['content']['content_sub_category'] = $variables['content']['field_special_sub_category'];
-        break;
-      default:
-        $variables['content']['content_sub_category'] = null;
+  $content = $variables['content']['_layout_builder'][0]['content'];
+
+  foreach ($content as $content_number) {
+    if(is_array($content_number) && array_key_exists('#plugin_id', $content_number)) {
+      switch ($content_number['#plugin_id']) {
+        case 'field_block:node:special:field_content_category':
+          $variables['content']['field_content_category'] = $content_number;
+          break;
+        case 'field_block:node:special:field_special_image':
+          $variables['content']['field_special_image'] = $content_number;
+          break;
+        case 'field_block:node:special:field_tags':
+          $variables['content']['field_tags'] = $content_number;
+          break;
+        case 'field_block:node:special:field_punchline':
+          $variables['content']['field_punchline'] = $content_number;
+          break;
+        case 'field_block:node:special:field_tax_embed_one':
+          $variables['content']['field_tax_embed_one'] = $content_number;
+          break;
+        case 'field_block:node:special:field_block_one':
+          $variables['content']['field_block_one'] = $content_number;
+          break;
+        case 'field_block:node:special:field_special_sub_category':
+          $variables['content']['field_special_sub_category'] = $content_number;
+          break;
+      }
+    }
+  }
+}
+function gavias_financial_preprocess_node__special__box(&$variables){
+
+  $content = $variables['content']['_layout_builder'][0]['content'];
+
+  foreach ($content as $content_number) {
+    if(is_array($content_number) && array_key_exists('#plugin_id', $content_number)) {
+      switch ($content_number['#plugin_id']) {
+        case 'field_block:node:special:field_content_category':
+          $variables['content']['field_content_category'] = $content_number;
+          break;
+        case 'field_block:node:special:field_special_image':
+          $variables['content']['field_special_image'] = $content_number;
+          break;
+        case 'field_block:node:special:field_tags':
+          $variables['content']['field_tags'] = $content_number;
+          break;
+        case 'field_block:node:special:field_punchline':
+          $variables['content']['field_punchline'] = $content_number;
+          break;
+        case 'field_block:node:special:field_tax_embed_one':
+          $variables['content']['field_tax_embed_one'] = $content_number;
+          break;
+        case 'field_block:node:special:field_block_one':
+          $variables['content']['field_block_one'] = $content_number;
+          break;
+        case 'field_block:node:special:field_special_sub_category':
+          $variables['content']['field_special_sub_category'] = $content_number;
+          break;
+      }
     }
   }
 }
 
 function gavias_financial_preprocess_node__article__box(&$variables){
-  /* Drupal\taxonomy\Entity\Term $tax_term */
-  $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term'];
 
+  $content = $variables['content']['_layout_builder'][0]['content'];
 
-  if($tax_term->getName()){
-    //$sub_category = $variables['content']['field_content_category'][0]['#title'];
-
-    switch ($tax_term->getName()) {
-      case "Alpha":
-        $variables['content']['content_sub_category'] = $variables['content']['field_alpha_sub_category'];
-        break;
-      case "Beta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_beta_sub_category'];
-        break;
-      case "Charlie":
-        $variables['content']['content_sub_category'] = $variables['content']['field_charlie_sub_category'];
-        break;
-      case "Delta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
-        break;
-      case "Special":
-        $variables['content']['content_sub_category'] = $variables['content']['field_special_sub_category'];
-        break;
-      default:
-        $variables['content']['content_sub_category'] = null;
+  foreach ($content as $content_number) {
+    if(is_array($content_number) && array_key_exists('#plugin_id', $content_number)) {
+      switch ($content_number['#plugin_id']) {
+        case 'field_block:node:article:field_content_category':
+          $variables['content']['field_content_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_image':
+          $variables['content']['field_image'] = $content_number;
+          break;
+        case 'field_block:node:article:field_tags':
+          $variables['content']['field_tags'] = $content_number;
+          break;
+        case 'field_block:node:article:field_punchline':
+          $variables['content']['field_punchline'] = $content_number;
+          break;
+        case 'field_block:node:article:field_tax_embed_one':
+          $variables['content']['field_tax_embed_one'] = $content_number;
+          break;
+        case 'field_block:node:article:field_post_gallery':
+          $variables['content']['field_post_gallery'] = $content_number;
+          break;
+        case 'field_block:node:article:field_alpha_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_beta_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_charlie_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+        case 'field_block:node:article:field_delta_sub_category':
+          $variables['content']['content_sub_category'] = $content_number;
+          break;
+      }
     }
   }
 }

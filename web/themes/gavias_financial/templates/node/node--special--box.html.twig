@@ -18,7 +18,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <article{{ attributes.addClass(classes) }}>
 <!--************************************************| ICONS |**************************************************-->
     <!--=== Top Right===-->
-    <div class="box_icon_top_right box-icons logo-then-name">
+    <div class="box_icon_top_right box-icons just-name">
         {{ content.field_special_sub_category }}
     </div>
     <!--=== End Top Right===-->
@@ -39,15 +39,15 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
     <div class="box__body">
         <!--=== ===-->
-        {% if content.field_block_one['#items'] is not empty %}
+        {#{% if content.field_block_one['#items'] is not empty %}#}
             <div class="box__special special_box__special">
                 {{ content.field_block_one }}
             </div>
-        {% else %}
-            <div class="box__punchline">
-                {{ content.field_punchline }}
-            </div>
-        {% endif %}
+        {#{% else %}#}
+            {#<div class="box__punchline">#}
+                {#{{ content.field_punchline }}#}
+            {#</div>#}
+        {#{% endif %}#}
         <!--=== ===-->
         <!--=== ===-->
         <div class="box__body_bottom">
