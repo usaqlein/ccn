@@ -143,6 +143,30 @@ gavias_financial.skin.yellow:
       css/skins/yellow/bootstrap.css: {}
       css/skins/yellow/template.css: {}
 
+# Custom Display Type CARD
+gavias-card:
+  version: VERSION
+  css:
+    theme:
+      css/displays/card.css: {}
+  js:
+    js/displays/card.js: {}
+# Custom Display Type BOX
+gavias-box:
+  version: VERSION
+  css:
+    theme:
+      css/displays/box.css: {}
+  js:
+    js/displays/box.js: {}
+# Custom Display Type FULL
+gavias-full:
+  version: VERSION
+  css:
+    theme:
+      css/displays/full.css: {}
+  js:
+    js/displays/full.js: {}
 
 gavias-financial-admin:
   version: VERSION
@@ -150,9 +174,7 @@ gavias-financial-admin:
     theme: 
       css/theme-settings.css: {}
       css/article.css: {}
-      css/card.css: {}
       css/special.css: {}
-      css/box.css: {}
       vendor/colorpicker/css/colorpicker.css: {}
       vendor/codemirror/lib/codemirror.css: {}
       vendor/codemirror/lib/codemirror.css: {}

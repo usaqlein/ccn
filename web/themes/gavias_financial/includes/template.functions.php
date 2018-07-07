@@ -13,7 +13,19 @@ function gavias_financial_preprocess_node(&$variables) {
   $variables['card'] = $variables['view_mode'] == 'card';
   $variables['box'] = $variables['view_mode'] == 'box';
   $variables['text'] = $variables['view_mode'] == 'text';
+  $variables['full'] = $variables['view_mode'] == 'full';
 
+  switch ($variables['view_mode']) {
+    case 'box':
+      $variables['#attached']['library'][] = 'gavias_financial/gavias-box';
+      break;
+    case 'card':
+      $variables['#attached']['library'][] = 'gavias_financial/gavias-card';
+      break;
+    case 'full':
+      $variables['#attached']['library'][] = 'gavias_financial/gavias-full';
+      break;
+  }
 
   $fullUrl = $variables['elements']['#node']->toUrl()->setAbsolute()->toString();
 
