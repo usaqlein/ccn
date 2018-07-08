@@ -35,3 +35,9 @@ EXAMPLE
     </div>
 
 TODO Make remaining the same way
+
+TO REMOVE THE PANELS
+will need to revert manually PR # 42 node_full_layout_manager_panels OR start over work from IMAC QA which will be kept at just before panels
+
+TODO TAX CLEAN UP
+Clean up tax and try re implementing sub categories rather same way the main categories are implemented.. delete double tax, make them consistent name and fields wise.
