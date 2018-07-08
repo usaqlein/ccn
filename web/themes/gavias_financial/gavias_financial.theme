@@ -21,6 +21,13 @@ include_once $theme_path . '/customize/fonts.php';
 function gavias_financial_preprocess_page(&$variables) {
   global $base_url;
   $theme_path = drupal_get_path('theme', 'gavias_financial');
+  // Might need them later.
+  $route_match = \Drupal::routeMatch();
+  $route_name = $route_match->getRouteName();
+  $current_path = \Drupal::service('path.current')->getPath();
+  $current_path_alias = \Drupal::service('path.alias_manager')
+    ->getAliasByPath($current_path);
+
   $variables['sticky_menu'] = theme_get_setting('sticky_menu');
   $variables['footer_first_size'] = theme_get_setting('footer_first_size');
   $variables['footer_second_size'] = theme_get_setting('footer_second_size');
@@ -394,6 +401,21 @@ function gavias_financial_preprocess_views_view(&$variables){
     if(is_numeric(strpos($view->current_display, 'page'))){
       $variables['attributes']['class'][] = "view-page";
     }
+//    This only works on Listing Pages.. (not node pages) can try if more preferment.
+//    if(isset($variables['rows'][0]['#rows'][0]['#view_mode'])) {
+//      $view_mode = $variables['rows'][0]['#rows'][0]['#view_mode'];
+//      switch ($view_mode) {
+//        case 'box':
+//          $variables['#attached']['library'][] = 'gavias_financial/gavias-box';
+//          break;
+//        case 'card':
+//          $variables['#attached']['library'][] = 'gavias_financial/gavias-card';
+//          break;
+//        case 'full':
+//          $variables['#attached']['library'][] = 'gavias_financial/gavias-full';
+//          break;
+//      }
+//    }
 }
 
 /**
