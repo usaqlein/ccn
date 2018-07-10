@@ -27,6 +27,38 @@ function gavias_financial_preprocess_node(&$variables) {
       break;
   }
 
+  // Assign a single sub content variable weather it's alpha beta charlie or delta.
+  if (isset($variables['content']['field_content_category'])) {
+    if(is_object($variables['content']['field_content_category'][0]['#taxonomy_term'])){
+      $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term']->getName();
+    }
+  }
+
+  if (isset($tax_term)){
+
+    switch ($tax_term) {
+      case "Alpha":
+        $variables['content']['content_sub_category'] = isset($variables['content']['field_alpha_sub_category'])  ? $variables['content']['field_alpha_sub_category'] : 'Alpha';
+        break;
+      case "Beta":
+        $variables['content']['content_sub_category'] = isset($variables['content']['field_beta_sub_category'])  ? $variables['content']['field_beta_sub_category'] : 'Beta';
+        break;
+      case "Charlie":
+        $variables['content']['content_sub_category'] = isset($variables['content']['field_charlie_sub_category'])  ? $variables['content']['field_charlie_sub_category'] : 'Charlie';
+        break;
+      case "Delta":
+        $variables['content']['content_sub_category'] = isset($variables['content']['field_delta_sub_category'])  ? $variables['content']['field_delta_sub_category'] : 'Delta';
+        break;
+      case "Special":
+        $variables['content']['content_sub_category'] = isset($variables['content']['field_special_sub_category'])  ? $variables['content']['field_special_sub_category'] : 'Special';
+        break;
+      default:
+        $variables['content']['content_sub_category'] = null;
+    }
+  }
+
+
+
   $fullUrl = $variables['elements']['#node']->toUrl()->setAbsolute()->toString();
 
   if(strpos($fullUrl, 'https://') !== false) {
@@ -35,7 +67,7 @@ function gavias_financial_preprocess_node(&$variables) {
     $alterFullUrl = implode($fullUrlArr);
   }
 
-  if (strpos($fullUrl, 'http://') !== false) {
+  elseif (strpos($fullUrl, 'http://') !== false) {
     $fullUrlArr = explode('http://', $fullUrl);
     $fullUrlArr[0] = 'http%3A//';
     $alterFullUrl = implode($fullUrlArr);
@@ -97,74 +129,32 @@ function gavias_financial_preprocess_node(&$variables) {
   $variables['field_names'] = implode(', ', array_keys($variables['content']));
 }
 
-function gavias_financial_preprocess_node__article(&$variables){
-  $x = 'i am here';
-}
-
-function gavias_financial_preprocess_node__special(&$variables){
-  $x = 'i am here';
-}
-
-
-function gavias_financial_preprocess_node__article__card(&$variables){
-  /* Drupal\taxonomy\Entity\Term $tax_term */
-  $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term'];
-
-
-  if($tax_term->getName()){
-    //$sub_category = $variables['content']['field_content_category'][0]['#title'];
-
-    switch ($tax_term->getName()) {
-      case "Alpha":
-        $variables['content']['content_sub_category'] = $variables['content']['field_alpha_sub_category'];
-        break;
-      case "Beta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_beta_sub_category'];
-        break;
-      case "Charlie":
-        $variables['content']['content_sub_category'] = $variables['content']['field_charlie_sub_category'];
-        break;
-      case "Delta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
-        break;
-      case "Special":
-        $variables['content']['content_sub_category'] = $variables['content']['field_special_sub_category'];
-        break;
-      default:
-        $variables['content']['content_sub_category'] = null;
-    }
-  }
-}
-
-function gavias_financial_preprocess_node__article__box(&$variables){
-  /* Drupal\taxonomy\Entity\Term $tax_term */
-  $tax_term = $variables['content']['field_content_category'][0]['#taxonomy_term'];
-
-
-  if($tax_term->getName()){
-    //$sub_category = $variables['content']['field_content_category'][0]['#title'];
-
-    switch ($tax_term->getName()) {
-      case "Alpha":
-        $variables['content']['content_sub_category'] = $variables['content']['field_alpha_sub_category'];
-        break;
-      case "Beta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_beta_sub_category'];
-        break;
-      case "Charlie":
-        $variables['content']['content_sub_category'] = $variables['content']['field_charlie_sub_category'];
-        break;
-      case "Delta":
-        $variables['content']['content_sub_category'] = $variables['content']['field_delta_sub_category'];
-        break;
-      case "Special":
-        $variables['content']['content_sub_category'] = $variables['content']['field_special_sub_category'];
-        break;
-      default:
-        $variables['content']['content_sub_category'] = null;
-    }
-  }
-}
+//function gavias_financial_preprocess_node__article__card(&$variables){
+//
+//}
+//
+//function gavias_financial_preprocess_node__article__box(&$variables){
+//
+//
+//}
+//
+//function gavias_financial_preprocess_node__article__full(&$variables){
+//
+//
+//}
+//function gavias_financial_preprocess_node__special__card(&$variables){
+//
+//}
+//
+//function gavias_financial_preprocess_node__special__box(&$variables){
+//
+//
+//}
+//
+//function gavias_financial_preprocess_node__special__full(&$variables){
+//
+//
+//}
 
 function gavias_financial_preprocess_node__portfolio(&$variables){
   $node = $variables['node'];

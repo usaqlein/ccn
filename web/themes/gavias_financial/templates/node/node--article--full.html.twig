@@ -1,6 +1,8 @@
 {%
 set classes = [
 'node',
+'full__content',
+'full__content_article',
 'node-detail',
 'node--type-' ~ node.bundle|clean_class,
 node.isPromoted() ? 'node--promoted',
@@ -13,10 +15,9 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
 
 <article{{ attributes.addClass(classes) }}>
-    <h3>node-article-full</h3>
-    <div class="post-block">
-
-        <div class="post-thumbnail post-{{ post_format }}">
+<!--*********************************************| HEAD |****************************************************-->
+    <div class="full__head" style="background:red; min-height: 50px">
+        <div class="full__media post-thumbnail post-{{ post_format }}">
             {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
                 {{ gva_iframe|raw }}
             {% elseif post_format == 'gallery' and content.field_post_gallery %}
@@ -25,40 +26,167 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                 {{ content.field_image }}
             {% endif %}
         </div>
-
-        <div class="post-content">
-            {{ title_prefix }}
-            <h1{{ title_attributes.addClass('post-title') }}>{{ label }}</h1>
-            {{ title_suffix }}
-            <div class="post-meta">
-                <span class="post-categories">{{ content.field_post_category }}</span> /
-                <span class="post-created"> {{date }} </span> /
-                <span class="post-comment">
-      <a href="{{url}}/#comments">{{ comment_count }} Comments</a>
-    </span> /
-                <span>{{ author_name }}</span>
-            </div>
-
-            {% if display_submitted %}
-                <div class="node__meta hidden">
-                    {{ author_picture }}
-                    <span{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-      </span>
-                    {{ metadata }}
-                </div>
-            {% endif %}
-
-            <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-                {{ content|without('field_image','field_post_category', 'field_post_format', 'field_post_type', 'field_post_embed', 'field_post_gallery', 'comment') }}
-            </div>
-            <div id="node-single-comment">
-                {{ content.comment }}
-            </div>
-
-        </div>
-
     </div>
 
+    <div class="widget gsc-heading  align-center style-5 full__title" style="padding-bottom: 0 !important; margin-bottom: 0 !important;">
+
+        <h2 class="title">
+            <span>{{ label }} </span><span class="title-icon"><span><i class="fa fa-diamond"></i></span></span>
+        </h2>
+        <div class="full__title_info">
+            <span class="post-created"> {{date }} </span> /
+            <span class="post-comment"> {{ comment_count }} Comments</span> /
+            <span class="author-name">{{ author_name }}</span>
+        </div>
+        <div class="line">
+            <span class="one"></span>
+            <span class="second"></span>
+            <span class="three"></span>
+        </div>
+    </div>
+    <div class="full__tags">
+        {{ content.field_tags }}
+    </div>
+<!--*********************************************| BODY |****************************************************-->
+    <div class="full__body">
+        <!--(*******************************) body middle left (************************)-->
+        <div class="full__body_left" style="background:orange">
+        </div>
+        <!--(*******************************) body middle center (************************)-->
+        <div class="full__body_center">
+
+            <div class="full__body_center_top" style="min-height: 45px">
+                <div class="full__main" style="clear: both">
+                    {{ content.field_block_one }}
+                </div>
+            </div>
+
+            <div class="full__body_center_middle" style="background:yellow;">
+
+                <div class="widget gsc-quote-text  wow fadeInDown" style="visibility: visible; animation-name: fadeInDown; padding: 10px 10px 10px 50px">
+                    <div class="widget-content style-two">
+                        <i class="icon fa fa-quote-left"></i>
+                        <span class="dropcap dropcap-default">A</span>
+                        I have found that, in the composition of the human body as compared with the bodies of animals, the organs of sense are duller and coarser. Thus, it is composed of less ingenious instruments, and of spaces less capacious for receiving the faculties of sense.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 full__body_center_bottom">
+                <div class="gsc-tabs">
+                    <div class="tabs_wrapper tabs_vertical">
+                        <ul class="nav nav-tabs" style="padding: 10px">
+                            <li class="active">
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-1">Setion 1</a>
+                            </li>
+                            <li>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-2">Setion 2</a>
+                            </li>
+                            <li>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-3">Setion 3</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 10px 10px 10px 0;">
+                            <div id="567800qy7-1" class="tab-pane fade active in style-two" style="padding: 5px !important;">
+                                Section 1 sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            </div>
+                            <div id="567800qy7-2" class="tab-pane fade style-two" style="padding: 5px !important;">
+                                Section 2 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            </div>
+                            <div id="567800qy7-3" class="tab-pane fade style-two" style="padding: 5px !important;">
+                                Section 3 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--(*******************************) body middle right (************************)-->
+        <div class="full__body_right" style="background:orange">
+        </div>
+    </div>
+<!--*********************************************| FOOT |****************************************************-->
+    <div class="full__foot">
+        <div class="col-md-12 col-sm-12 full__foot_inner" style="padding: 0; margin-bottom: 20px">
+            <div class="gsc-tabs ">
+                <div class="tabs_wrapper tabs_horizontal">
+                    <ul class="nav nav-tabs">
+                        <li class="">
+                            <a data-toggle="tab" href="#56787ohpu-1" class="heading-three">Section 1</a>
+                        </li>
+                        <li class="active">
+                            <a data-toggle="tab" href="#56787ohpu-2" class="heading-three">Section 2</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="tab" href="#56787ohpu-3" class="heading-three">Section 3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="56787ohpu-1" class="tab-pane fade style-three">
+                            <span class="dropcap border-dropcap">A</span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                        </div>
+                        <div id="56787ohpu-2" class="tab-pane fade active in style-three">
+                            <span class="dropcap bg-dropcap">A</span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                        </div>
+                        <div id="56787ohpu-3" class="tab-pane fade style-three">
+                            <span class="dropcap circle-dropcap">A</span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--*********************************************| END FULL |****************************************************-->
 </article>
+    {#<h3>node-article-full</h3>#}
+    {#<div class="post-block">#}
+
+        {#<div class="post-thumbnail post-{{ post_format }}">#}
+            {#{% if post_format == 'video' or post_format == 'audio' and gva_iframe %}#}
+                {#{{ gva_iframe|raw }}#}
+            {#{% elseif post_format == 'gallery' and content.field_post_gallery %}#}
+                {#{{ content.field_post_gallery }}#}
+            {#{% else %}#}
+                {#{{ content.field_image }}#}
+            {#{% endif %}#}
+        {#</div>#}
+
+        {#<div class="post-content">#}
+            {#{{ title_prefix }}#}
+            {#<h1{{ title_attributes.addClass('post-title') }}>{{ label }}</h1>#}
+            {#{{ title_suffix }}#}
+            {#<div class="post-meta">#}
+                {#<span class="post-categories">{{ content.field_post_category }}</span> /#}
+                {#<span class="post-created"> {{date }} </span> /#}
+                {#<span class="post-comment"> {{ comment_count }} Comments</span> /#}
+                {#<span>{{ author_name }}</span>#}
+            {#</div>#}
+        {#{% if display_submitted %}#}
+            {#<div class="node__meta hidden">#}
+                {#{{ author_picture }}#}
+                {#<span{{ author_attributes }}>Submitted by {{ author_name }} on {{ date }}</span>#}
+                {#{{ metadata }}#}
+            {#</div>#}
+        {#{% endif %}#}
+
+
+            {#<div{{ content_attributes.addClass('node__content', 'clearfix') }}>#}
+                {#{{ content|without('field_image','field_post_category', 'field_post_format', 'field_post_type', 'field_post_embed', 'field_post_gallery', 'comment') }}#}
+            {#</div>#}
+            {#<div id="node-single-comment">#}
+                {#{{ content.comment }}#}
+            {#</div>#}
+
+        {#</div>#}
+
+    {#</div>#}
+
+
 
