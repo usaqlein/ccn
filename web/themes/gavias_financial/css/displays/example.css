@@ -1,0 +1,232 @@
+/******************************************* /** Screen Sizes  /*******************************************************/
+@media (max-width: 281px) {
+    .example__head {
+
+    }
+    .example__body {
+
+    }
+    .example__body_left {
+
+    }
+    .example__body_center {
+
+    }
+    .example__body_center_top {
+
+    }
+    .example__body_center_middle {
+
+    }
+    .example__body_center_bottom {
+
+    }
+    .example__body_right {
+
+    }
+    .example_foot {
+
+    }
+}
+/***************************| 282 - 500 |*************************/
+@media (min-width: 282px) {
+    .example__head {
+
+    }
+    .example__body {
+
+    }
+    .example__body_left {
+
+    }
+    .example__body_center {
+
+    }
+    .example__body_center_top {
+
+    }
+    .example__body_center_middle {
+
+    }
+    .example__body_center_bottom {
+
+    }
+    .example__body_right {
+
+    }
+    .example_foot {
+
+    }
+}
+/***************************| 500 - 786  |*************************/
+@media (min-width: 501px) {
+    .example__head {
+
+    }
+    .example__body {
+
+    }
+    .example__body_left {
+
+    }
+    .example__body_center {
+
+    }
+    .example__body_center_top {
+
+    }
+    .example__body_center_middle {
+
+    }
+    .example__body_center_bottom {
+
+    }
+    .example__body_right {
+
+    }
+    .example_foot {
+
+    }
+}
+/***************************| 786 - 992  |*************************/
+@media (min-width: 768px) {
+    .example__head {
+
+    }
+    .example__body {
+
+    }
+    .example__body_left {
+
+    }
+    .example__body_center {
+
+    }
+    .example__body_center_top {
+
+    }
+    .example__body_center_middle {
+
+    }
+    .example__body_center_bottom {
+
+    }
+    .example__body_right {
+
+    }
+    .example_foot {
+
+    }
+}
+/***************************| 992 - 1200  |*************************/
+@media (min-width: 992px) {
+    .example__head {
+
+    }
+    .example__body {
+
+    }
+    .example__body_left {
+
+    }
+    .example__body_center {
+
+    }
+    .example__body_center_top {
+
+    }
+    .example__body_center_middle {
+
+    }
+    .example__body_center_bottom {
+
+    }
+    .example__body_right {
+
+    }
+    .example_foot {
+
+    }
+}
+/***************************| 1200+  |*************************/
+@media (min-width: 1200px) {
+    .example__head {
+
+    }
+    .example__body {
+
+    }
+    .example__body_left {
+
+    }
+    .example__body_center {
+
+    }
+    .example__body_center_top {
+
+    }
+    .example__body_center_middle {
+
+    }
+    .example__body_center_bottom {
+
+    }
+    .example__body_right {
+
+    }
+    .example_foot {
+
+    }
+}
+/******************************************* MAP  /*******************************************************
+
+[ example Head (example__head)]
+[ example Body (example__body)]
+        | example Body Left (example__body_left) |
+        | example Body Center (example__body_center)
+                | example Body Center Top (example__body_center_top) | example Body Center Middle (example__body_center_middle) | example Body Center Bottom (example__body_center_bottom)
+        | example Body Right(example__body_right)|
+[ example Foot (example__foot) ]
+
+******************************************* /** Screen Sizes  /******************************************************/
+
+
+
+/**<*********************************************| HEAD |******************************************************/
+.example__head {
+
+}
+/**<*********************************************| BODY |******************************************************/
+.example__body {
+
+}
+/************************************> Body Header<***************************/
+.example__body_left {
+
+}
+/************************************> Body Middle <**************************/
+.example__body_center {
+
+}
+/**(******) body middle left (*********)**/
+.example__body_center_top {
+
+}
+/**(*****) body middle center (********)**/
+.example__body_center_middle {
+
+}
+/**(*****) body middle right (*********)**/
+.example__body_center_bottom {
+
+}
+/***********************************> Body Footer <**************************/
+.example__body_right {
+
+}
+
+/***********************************************| FOOT |******************************************************/
+.example_foot {
+
+}
+/**<*********************************************| END |******************************************************/

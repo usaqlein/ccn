@@ -178,7 +178,7 @@ if(!class_exists('gsc_tabs')):
             'title' => 'Tab title',
          ), $attr));
 
-         $tabs_array[] = array(
+         $tabs_array = array(
             'title' => $title,
             'content' => do_shortcode( $content )
          );

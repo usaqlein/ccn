@@ -1,3 +1,516 @@
-img {
-    /*width: 100% !important;*/
+/******************************************* /** Screen Sizes  /*******************************************************/
+@media (max-width: 281px) {
+    .full__head {
+
+    }
+    .full__title .title {
+        font-size: 8px !important;
+    }
+    .full__title_info {
+        font-size: 6px !important;
+    }
+    .full__body {
+
+    }
+    .full__body_left {
+        width: 35% !important;
+    }
+    .full__body_center {
+        width: 65% !important;
+    }
+    .full__body_center_top {
+
+    }
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 6px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 7px !important;
+        margin-top: -2px !important;
+    }
+    .full__body_center_middle .icon{
+        display: none;
+    }
+    .full__body_center_middle {
+
+    }
+    .full__body_center_bottom {
+
+    }
+    .full__body_right {
+        display: none;
+
+    }
+    .full_foot {
+
+    }
+    .full__content .style-one{
+    }
+    .full__content .style-two{
+        font-size: 12px !important;
+        padding: 5px !important;
+    }
+    .full__content .style-three{
+        font-size: 14px;
+        padding: 10px !important;
+    }
+    .full__content .heading-one {
+    }
+    .full__content .heading-two {
+        font-size: 6px !important;
+        padding: 2px 1px !important;
+    }
+    .full__content .heading-three {
+        font-size: 12px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 14px !important;
+        height: 26px;
+    }
 }
+/***************************| 282 - 500 |*************************/
+@media (min-width: 282px) {
+    .full__head {
+
+    }
+    .full__title .title {
+        font-size: 10px !important;
+    }
+    .full__title_info {
+        font-size: 10px !important;
+    }
+    .full__body {
+
+    }
+    .full__body_left {
+        width: 25% !important;
+    }
+    .full__body_center {
+        width: 75% !important;
+    }
+    .full__body_center_top {
+
+    }
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 10px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 10px !important;
+        margin-top: -8px !important;
+    }
+    .full__body_center_middle .icon{
+        display: none;
+    }
+    .full__body_center_bottom {
+
+    }
+    .full__body_right {
+        display: none;
+    }
+    .full_foot {
+
+    }
+    .full__content .style-one{
+    }
+    .full__content .style-two{
+        font-size: 12px !important;
+        padding: 5px !important;
+    }
+    .full__content .style-three{
+        font-size: 14px;
+        padding: 10px !important;
+    }
+    .full__content .heading-one {
+    }
+    .full__content .heading-two {
+        font-size: 8px !important;
+        padding: 2px 1px !important;
+    }
+    .full__content .heading-three {
+        font-size: 10px !important;
+        padding: 2px 8px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 14px !important;
+        height: 26px;
+    }
+}
+/***************************| 500 - 786  |*************************/
+@media (min-width: 501px) {
+    .full__head {
+
+    }
+    .full__title .title {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+    .full__title_info {
+        font-size: 14px !important;
+    }
+    .full__body {
+
+    }
+    .full__body_left {
+        width: 12% !important;
+
+    }
+    .full__body_center {
+        width: 58% !important;
+    }
+    .full__body_center_top {
+
+    }
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 15px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 12px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_center_middle .icon{
+        display: block;
+    }
+    .full__body_center_bottom {
+
+    }
+    .full__body_right {
+        width: 30% !important;
+
+    }
+    .full_foot {
+
+    }
+    .full__content .style-one{
+    }
+    .full__content .style-two{
+        font-size: 12px !important;
+        padding: 5px !important;
+    }
+    .full__content .style-three{
+        font-size: 14px;
+        padding: 10px !important;
+    }
+    .full__content .heading-one {
+    }
+    .full__content .heading-two {
+        font-size: 10px !important;
+        padding: 2px 1px !important;
+    }
+    .full__content .heading-three {
+        font-size: 12px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 14px !important;
+        height: 26px;
+    }
+}
+/***************************| 786 - 992  |*************************/
+@media (min-width: 768px) {
+    .full__head {
+
+    }
+    .full__title .title {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    .full__title_info {
+        font-size: 14px !important;
+    }
+    .full__body {
+
+    }
+    .full__body_left {
+        width: 10% !important;
+    }
+    .full__body_center {
+        width: 65% !important;
+    }
+    .full__body_center_top {
+
+    }
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 15px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_center_middle .icon{
+        display: block;
+    }
+    .full__body_center_bottom {
+
+    }
+    .full__body_right {
+        width: 25% !important;
+    }
+    .full_foot {
+
+    }
+    .full__content .style-one{
+    }
+    .full__content .style-two{
+        font-size: 14px !important;
+        padding: 10px !important;
+    }
+    .full__content .style-three{
+        font-size: 14px;
+        padding: 10px !important;
+    }
+    .full__content .heading-one {
+    }
+    .full__content .heading-two {
+        font-size: 12px !important;
+        padding: 5px 5px !important;
+    }
+    .full__content .heading-three {
+        font-size: 13px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 14px !important;
+        height: 26px;
+    }
+}
+/***************************| 992 - 1200  |*************************/
+@media (min-width: 992px) {
+    .full__head {
+
+    }
+    .full__title .title {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    .full__title_info {
+        font-size: 14px !important;
+    }
+    .full__body {
+
+    }
+    .full__body_left {
+        width: 12% !important;
+    }
+    .full__body_center {
+        width: 63% !important;
+    }
+    .full__body_center_top {
+
+    }
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 18px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 15px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_center_middle .icon{
+        display: block;
+    }
+    .full__body_center_bottom {
+
+    }
+    .full__body_right {
+        width: 25% !important;
+    }
+    .full_foot {
+
+    }
+    .full__content .style-one{
+    }
+    .full__content .style-two{
+        font-size: 14px !important;
+        padding: 10px !important;
+    }
+    .full__content .style-three{
+        font-size: 14px;
+        padding: 10px !important;
+    }
+    .full__content .heading-one {
+    }
+    .full__content .heading-two {
+        font-size: 12px !important;
+        padding: 5px 5px !important;
+    }
+    .full__content .heading-three {
+        font-size: 13px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 14px !important;
+        height: 26px;
+    }
+}
+/***************************| 1200+  |*************************/
+@media (min-width: 1200px) {
+    .full__head {
+
+    }
+    .full__title .title {
+        font-size: 22px !important;
+        font-weight: bold;
+    }
+    .full__title_info {
+        font-size: 15px !important;
+    }
+    .full__body {
+
+    }
+    .full__body_left {
+        width: 10% !important;
+    }
+    .full__body_center {
+        width: 65% !important;
+    }
+    .full__body_center_top {
+
+    }
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 22px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 18px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_center_middle .icon{
+        display: block;
+    }
+    .full__body_center_bottom {
+
+    }
+    .full__body_right {
+        width: 25% !important;
+    }
+    .full_foot {
+
+    }
+    .full__content .style-one{
+    }
+    .full__content .style-two{
+        font-size: 16px !important;
+        padding: 10px !important;
+    }
+    .full__content .style-three{
+        font-size: 14px;
+        padding: 10px !important;
+    }
+    .full__content .heading-one {
+    }
+    .full__content .heading-two {
+        font-size: 13px !important;
+        padding: 5px 8px !important;
+    }
+    .full__content .heading-three {
+        font-size: 14px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 14px !important;
+        height: 26px;
+    }
+}
+/******************************************* MAP  /*******************************************************
+
+[ Full Head (full__head)]
+[ Full Body (full__body)]
+        | Full Body Left (full__body_left) |
+        | Full Body Center (full__body_center)
+                | Full Body Center Top (full__body_center_top) | Full Body Center Middle (full__body_center_middle) | Full Body Center Bottom (full__body_center_bottom)
+        | Full Body Right(full__body_right)|
+[ Full Foot (full__foot) ]
+
+******************************************* /** Screen Sizes  /******************************************************/
+
+
+
+/**<*********************************************| HEAD |******************************************************/
+.full__head {
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 11px 6px -6px #777;
+    -moz-box-shadow: 5px 11px 6px -6px #777;
+    box-shadow: 5px 11px 6px -6px #777;
+}
+.full__head:hover {
+    /*border: 2px solid #777;*/
+}
+.full__media {
+    margin-bottom: 0 !important;
+}
+.full__media img{
+    width: 100% !important;
+}
+.full__media .owl-prev {
+    border: 1px solid #777;
+}
+.full__media .owl-next {
+    border: 1px solid #777;
+}
+
+.full__title .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.full__title_info {
+    margin-top: -10px;
+    font-size: 12px;
+}
+.full__title .line {
+    margin-top: -10px;
+}
+.full__tags {
+    height: 30px !important;
+    overflow: hidden;
+}
+.full__tags .arrow_tag {
+    margin: 0px 0px !important;
+}
+
+/**<*********************************************| BODY |******************************************************/
+.full__body {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/************************************> Body Left <***************************/
+.full__body_left {
+    width: 10%;
+    display: table-cell;
+}
+/************************************> Body Center <**************************/
+.full__body_center {
+    width: 65%;
+    display: table-cell;
+}
+/**(******) body center top (*********)**/
+.full__body_center_top {
+    width: 100%;
+    padding: 5px;
+}
+/**(*****) body center middle (********)**/
+.full__body_center_middle {
+    width: 100%;
+}
+/**(*****) body center bottom (*********)**/
+.full__body_center_bottom {
+    width: 100%;
+    padding: 0 !important;
+}
+/***********************************> Body Right <**************************/
+.full__body_right {
+    width: 25%;
+    display: table-cell;
+}
+
+/***********************************************| FOOT |******************************************************/
+.full__foot {
+    width: 100%;
+    margin-bottom: 20px !important;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*.full__foot .gsc-tabs {*/
+    /*margin-top: -5px;*/
+/*}*/
+/**<*********************************************| END |******************************************************/
