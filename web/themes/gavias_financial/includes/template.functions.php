@@ -90,6 +90,7 @@ function gavias_financial_preprocess_node(&$variables) {
   if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
   }
+  $variables['getType'] = $variables['node']->getType();
   if ($variables['node']->getType() == 'article') {
       $node = $variables['node'];
       $variables['comment_count'] = $node->get('comment')->comment_count;
