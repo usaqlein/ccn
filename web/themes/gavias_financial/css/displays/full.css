@@ -29,7 +29,7 @@
         margin-top: -2px !important;
     }
     .full__body_center_middle .icon{
-        display: none;
+        display: block;
     }
     .full__body_center_middle {
 
@@ -99,7 +99,7 @@
         margin-top: -8px !important;
     }
     .full__body_center_middle .icon{
-        display: none;
+        display: block;
     }
     .full__body_center_bottom {
 
@@ -472,24 +472,24 @@
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/************************************> Body Left <***************************/
+/************************************> body middle left <***************************/
 .full__body_left {
     width: 10%;
     display: table-cell;
     background-color: #F6F6F6;
 }
-/************************************> Body Center <**************************/
+/************************************> body middle center <**************************/
 .full__body_center {
     width: 65%;
     display: table-cell;
 }
-/**(******) body center top (*********)**/
+/**(******) full__body_center_top (*********)**/
 .full__body_center_top {
     width: 100%;
     padding: 0 5px;
     background-color: #F6F6F6;
 }
-/**(*****) body center middle (********)**/
+/**(*****) full__body_center_middle (********)**/
 .full__body_center_middle {
     width: 100%;
 }
@@ -497,14 +497,26 @@
     padding: 0 !important;
     font-style: italic; !important;
 }
+.full__body_center_middle_summary {
 
+}
+.full__body_center_left {
+    margin-top: 10px;
+}
+.full__body_center_center {
+    margin-top: 10px;
+}
+.full__body_center_right {
+    margin-top: 10px;
+}
 /**(*****) body center bottom (*********)**/
+
 .full__body_center_bottom {
     width: 100%;
     padding: 0 !important;
     background-color: #F6F6F6;
 }
-/***********************************> Body Right <**************************/
+/***********************************> body middle right <**************************/
 .full__body_right {
     width: 25%;
     display: table-cell;
