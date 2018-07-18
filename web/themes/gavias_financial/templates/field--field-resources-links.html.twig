@@ -47,11 +47,11 @@
 %}
 <div style="text-align: center">
   <h3 style="margin: 0; font-style: italic">Sources</h3>
-
+</div>
   {% for item in items %}
-    <div class="custom__link_title" style="font-weight: bold;"><a style="color: #5eb4e7;" href="{{ item.content['#url'] }}">{{ item.content['#title'] }}</a></div>
+    <div class="custom__link_title" style="font-weight: bold;">{{ item.content['#title'] }}</div>
     <div class="custom__link_url" style="height: 20px; overflow: hidden; font-size: 12px; font-style: italic"><a href="{{ item.content['#url'] }}">{{ item.content['#url'] }}</a></div>
     <div style="border-bottom: 2px solid #ccc;padding-bottom: 5px; margin-bottom: 5px;"></div>
   {% endfor %}
 
-</div>
+
