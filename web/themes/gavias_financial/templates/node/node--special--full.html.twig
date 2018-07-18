@@ -140,24 +140,24 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                     <div class="tabs_wrapper tabs_vertical">
                         <ul class="nav nav-tabs" style="padding: 10px">
                             <li class="active">
-                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-1">Class</a>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-1">Feedback</a>
                             </li>
                             <li>
                                 <a  class="heading-two" data-toggle="tab" href="#567800qy7-2">Links</a>
                             </li>
                             <li>
-                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-3">Credits</a>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-3">Sources</a>
                             </li>
                         </ul>
                         <div class="tab-content" style="padding: 10px 10px 10px 0;">
-                            <div id="567800qy7-1" class="tab-pane fade active in style-two" style="padding: 5px !important;">
-                                Section 3 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            <div id="567800qy7-1" class="tab-pane fade" style="padding: 5px !important;">
+                                {{ content.field_feedback_comment }}
                             </div>
-                            <div id="567800qy7-2" class="tab-pane fade style-two" style="padding: 5px !important;">
-                                Section 2 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            <div id="567800qy7-2" class="tab-pane fade active in" style="padding: 5px !important;">
+                                {{ content.field_referral_link }}
                             </div>
-                            <div id="567800qy7-3" class="tab-pane fade style-two" style="padding: 5px !important;">
-                                Section 3 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            <div id="567800qy7-3" class="tab-pane fade" style="padding: 5px !important;">
+                                {{ content.field_resources_links }}
                             </div>
                         </div>
                     </div>
