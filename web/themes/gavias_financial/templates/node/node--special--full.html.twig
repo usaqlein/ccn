@@ -45,27 +45,38 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <div class="full__body">
         <!--(*******************************) body middle left (************************)-->
         <div class="full__body_left">
-
-            <div class="widget gsc-heading align-center">
-                <div class="title-icon">
-                    <span><i class="fa fa-share-alt"></i></span>
+            <div class="widget gsc-heading align-center" style="padding: 0 !important;">
+                {{ content.field_tax_embed_one }}
+            </div>
+            <div class="widget gsc-heading align-center" style="padding: 0 !important;">
+                <div class="title-square">
+                    <span style="padding: 3px">Share<i class="fa fa-share-alt"></i></span>
                 </div>
             </div>
-            <div class="widget gsc-heading align-center">
+            <div class="widget gsc-heading align-center" style="padding: 0 !important;">
                 <a target="_blank" href={{ fb_share }}>
                     <div class="title-icon">
                         <span><i class="fa fa-facebook"></i></span>
                     </div>
                 </a>
             </div>
-            <div class="widget gsc-heading align-center">
+            <div class="widget gsc-heading align-center" style="padding: 0 !important;">
                 <a target="_blank" href={{ twitter_share }}>
                     <div class="title-icon">
                         <span><i class="fa fa-twitter"></i></span>
                     </div>
                 </a>
             </div>
-
+            <div class="widget gsc-heading align-center" style="padding: 0 !important;">
+                <div class="title-square">
+                    <span style="padding: 3px">Views<div class="node-views">457</div></span>
+                </div>
+            </div>
+            <div class="widget gsc-heading align-center" style="padding: 0 !important;">
+                <div class="title-square">
+                    <span style="padding: 3px">Shares<div class="node-views">175</div></span>
+                </div>
+            </div>
         </div>
         <!--(*******************************) body middle center (************************)-->
         <div class="full__body_center">
@@ -140,9 +151,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                         </ul>
                         <div class="tab-content" style="padding: 10px 10px 10px 0;">
                             <div id="567800qy7-1" class="tab-pane fade active in style-two" style="padding: 5px !important;">
-                                {{ content.field_content_category }}
-                                {{ content.field_tax_embed_one }}
-                                {{ content.content_sub_category }}
+                                Section 3 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
                             </div>
                             <div id="567800qy7-2" class="tab-pane fade style-two" style="padding: 5px !important;">
                                 Section 2 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.

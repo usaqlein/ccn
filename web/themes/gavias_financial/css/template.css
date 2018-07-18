@@ -6547,13 +6547,26 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
 .widget.gsc-heading .title-icon {
   color: #5eb4e7;
 }
+.widget.gsc-heading .title-square {
+  /*color: #5eb4e7;*/
+}
 .widget.gsc-heading .title-icon i {
+  font-size: 22px;
+}
+.widget.gsc-heading .title-square i {
   font-size: 22px;
 }
 .widget.gsc-heading .title-icon i.fa {
   margin-top: 5px;
 }
+.widget.gsc-heading .title-square i.fa {
+  margin-top: 0px;
+}
 .widget.gsc-heading .title-icon span {
+  position: relative;
+  padding: 0 5px;
+}
+.widget.gsc-heading .title-square span {
   position: relative;
   padding: 0 5px;
 }
@@ -6596,6 +6609,10 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
   color: #5eb4e7;
   margin-bottom: 10px;
 }
+.widget.gsc-heading.align-center .title-square {
+  /*color: #5eb4e7;*/
+  margin-bottom: 10px;
+}
 .widget.gsc-heading.align-center .title-icon span {
   width: 60px;
   height: 60px;
@@ -6611,6 +6628,17 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.widget.gsc-heading.align-center .title-square span {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  position: relative;
+  padding: 15px;
+  display: inline-block;
+  line-height: 28px;
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .widget.gsc-heading.align-left {
   text-align: left;
@@ -6732,6 +6760,9 @@ ul[data-drupal-views-infinite-scroll-pager].pager a:hover, ul[data-drupal-views-
   color: rgba(255, 255, 255, 0.9);
 }
 .widget.text-light .title-icon span:after, .widget.text-light .title-icon span:before {
+  background: rgba(255, 255, 255, 0.1);
+}
+.widget.text-light .title-square span:after, .widget.text-light .title-square span:before {
   background: rgba(255, 255, 255, 0.1);
 }
 .widget.text-light .title-desc {
