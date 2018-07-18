@@ -10711,6 +10711,11 @@ div.jquery-countdown-timer-note-countdowntimer{
 }
 
 /******************* Custom Additions ***********************************/
+.bg-text-kind {
+  font-size: 09px !important;
+  line-height: 17px !important;
+  padding-top: 7px !important;
+}
 
 /******************************************* /** Screen Sizes  /*******************************************************/
 /******************************************* /** Object level  /*******************************************************/

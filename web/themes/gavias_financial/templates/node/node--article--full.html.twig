@@ -16,7 +16,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
 <article{{ attributes.addClass(classes) }}>
 <!--*********************************************| HEAD |****************************************************-->
-    <div class="full__head" style="background:red; min-height: 50px">
+    <div class="full__head" style="min-height: 50px">
         <div class="full__media post-thumbnail post-{{ post_format }}">
             {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
                 {{ gva_iframe|raw }}
@@ -44,52 +44,112 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             <span class="three"></span>
         </div>
     </div>
-    <div class="full__tags">
+    <div class="full__tags widget gsc-heading  align-center">
         {{ content.field_tags }}
     </div>
 <!--*********************************************| BODY |****************************************************-->
     <div class="full__body">
         <!--(*******************************) body middle left (************************)-->
-        <div class="full__body_left" style="background:orange">
+        <div class="full__body_left">
+
+            <div class="widget gsc-heading align-center">
+                <div class="title-icon">
+                    <span><i class="fa fa-share-alt"></i></span>
+                </div>
+            </div>
+            <div class="widget gsc-heading align-center">
+                <a target="_blank" href={{ fb_share }}>
+                    <div class="title-icon">
+                        <span><i class="fa fa-facebook"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="widget gsc-heading align-center">
+                <a target="_blank" href={{ twitter_share }}>
+                    <div class="title-icon">
+                        <span><i class="fa fa-twitter"></i></span>
+                    </div>
+                </a>
+            </div>
+
         </div>
         <!--(*******************************) body middle center (************************)-->
         <div class="full__body_center">
 
-            <div class="full__body_center_top" style="min-height: 45px">
+            <div class="full__body_center_top">
                 <div class="full__main" style="clear: both">
                     {{ content.field_block_one }}
                 </div>
             </div>
 
-            <div class="full__body_center_middle" style="background:yellow;">
-
-                <div class="widget gsc-quote-text  wow fadeInDown" style="visibility: visible; animation-name: fadeInDown; padding: 10px 10px 10px 50px">
-                    <div class="widget-content style-two">
+            <div class="full__body_center_middle">
+                <div class="widget gsc-quote-text  wow fadeInDown full__body_center_middle_summary" style="visibility: visible; animation-name: fadeInDown; padding: 10px 10px 10px 50px">
+                    <div class="widget-content style-two full__short_summary" style="padding: 0 !important;">
                         <i class="icon fa fa-quote-left"></i>
-                        <span class="dropcap dropcap-default">A</span>
-                        I have found that, in the composition of the human body as compared with the bodies of animals, the organs of sense are duller and coarser. Thus, it is composed of less ingenious instruments, and of spaces less capacious for receiving the faculties of sense.
+                        <span class="dropcap bg-dropcap bg-text-kind">Short<br>Summary</span>
+                        {% if content.field_punchline['#items'] is not empty %}
+                            {{ content.field_punchline }}
+                        {% else %}
+                            See full details below..
+                        {% endif %}
+                    </div>
+                </div>
 
+                <div class="col-md-4 col-sm-4 col-xs-12 full__body_center_left" style="clear: both;">
+                    <div class="widget gsc-heading align-center" style="padding: 0 !important; clear: both">
+                        {{ content.field_content_category }}
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 full__body_center_center">
+                    {# tax embed one #}
+                    {#<div class="widget gsc-heading align-center" style="padding: 0 !important; clear: both">#}
+                    {#{{ content.field_tax_embed_one }}#}
+                    {#</div>#}
+
+                    {# Style 2 Read More Circle #}
+                    {#<div class="widget gsc-heading align-center" style="padding: 0 !important; clear: both; margin-bottom: -50px; z-index: 50">#}
+                    {#<a href="#full__body">#}
+                    {#<div class="title-icon">#}
+                    {#<span style="padding-top: 9px; font-size: 8px">More<i class="fa icon-Arrow-Down2" style="margin-top: -2px; font-weight: bold;"></i></span>#}
+                    {#</div>#}
+                    {#</a>#}
+                    {#</div>#}
+
+                    {#Style 3 Read More No Circle#}
+                    <div class="full-read-more" style="text-align: center; clear: both; padding-top: 15px">
+                        <div class="full-read-more-text" style="font-size: 8px; margin-bottom: -5px">Read More</div>
+                        <div class="full-read-more-icon" style="margin-bottom: -10px"><a href="#full__body"><i class="fa icon-Arrow-Down2" style="font-size: 32px;"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 full__body_center_right">
+                    <div class="widget gsc-heading align-center" style="padding: 0 !important; clear: both">
+                        {{ content.content_sub_category }}
                     </div>
                 </div>
             </div>
+
 
             <div class="col-md-12 col-sm-12 full__body_center_bottom">
                 <div class="gsc-tabs">
                     <div class="tabs_wrapper tabs_vertical">
                         <ul class="nav nav-tabs" style="padding: 10px">
                             <li class="active">
-                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-1">Setion 1</a>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-1">Class</a>
                             </li>
                             <li>
-                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-2">Setion 2</a>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-2">Links</a>
                             </li>
                             <li>
-                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-3">Setion 3</a>
+                                <a  class="heading-two" data-toggle="tab" href="#567800qy7-3">Credits</a>
                             </li>
                         </ul>
                         <div class="tab-content" style="padding: 10px 10px 10px 0;">
                             <div id="567800qy7-1" class="tab-pane fade active in style-two" style="padding: 5px !important;">
-                                Section 1 sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                                {{ content.field_content_category }}
+                                {{ content.field_tax_embed_one }}
+                                {{ content.content_sub_category }}
                             </div>
                             <div id="567800qy7-2" class="tab-pane fade style-two" style="padding: 5px !important;">
                                 Section 2 dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
@@ -107,36 +167,33 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         </div>
     </div>
 <!--*********************************************| FOOT |****************************************************-->
-    <div class="full__foot">
+    <div id="full__body" class="full__foot">
         <div class="col-md-12 col-sm-12 full__foot_inner" style="padding: 0; margin-bottom: 20px">
             <div class="gsc-tabs ">
                 <div class="tabs_wrapper tabs_horizontal">
                     <ul class="nav nav-tabs">
-                        <li class="">
-                            <a data-toggle="tab" href="#56787ohpu-1" class="heading-three">Section 1</a>
-                        </li>
                         <li class="active">
-                            <a data-toggle="tab" href="#56787ohpu-2" class="heading-three">Section 2</a>
+                            <a data-toggle="tab" href="#full__foot_body_tab" class="heading-three">Body</a>
                         </li>
                         <li class="">
-                            <a data-toggle="tab" href="#56787ohpu-3" class="heading-three">Section 3</a>
+                            <a data-toggle="tab" href="#full__foot_comments_tab" class="heading-three">Comments</a>
+                        </li>
+
+                        <li class="">
+                            <a data-toggle="tab" href="#full__foot_disclaimer_tab" class="heading-three">Disclaimer</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div id="56787ohpu-1" class="tab-pane fade style-three">
+                        <div id="full__foot_body_tab" class="tab-pane fade active in style-three">
                             <span class="dropcap border-dropcap">A</span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                            {{ content.body }}
                         </div>
-                        <div id="56787ohpu-2" class="tab-pane fade active in style-three">
-                            <span class="dropcap bg-dropcap">A</span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+                        <div id="full__foot_comments_tab" class="tab-pane fade style-three">
+                            {{ content.comment }}
                         </div>
-                        <div id="56787ohpu-3" class="tab-pane fade style-three">
-                            <span class="dropcap circle-dropcap">A</span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit metus erat, quis varius nibh malesuada ut. In et nunc massa. Pellentesque augue dolor, bibendum id leo sit amet, viverra aliquam sapien. Sed vitae tellus facilisis. stra, per inceptos himenaeos.
+
+                        <div id="full__foot_disclaimer_tab" class="tab-pane fade style-three">
+                            {% include '@gavias_financial/page/parts/disclaimer.html.twig' with {'type' : getType|default('Content') } %}
                         </div>
                     </div>
                 </div>
