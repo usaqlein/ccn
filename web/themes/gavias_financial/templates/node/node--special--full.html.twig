@@ -150,10 +150,10 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                             </li>
                         </ul>
                         <div class="tab-content" style="padding: 10px 10px 10px 0;">
-                            <div id="567800qy7-1" class="tab-pane fade" style="padding: 5px !important;">
-                                {{ content.field_feedback_comment }}
+                            <div id="567800qy7-1" class="tab-pane fade active in" style="padding: 5px !important;">
+                                {{ content.field_voting }}
                             </div>
-                            <div id="567800qy7-2" class="tab-pane fade active in" style="padding: 5px !important;">
+                            <div id="567800qy7-2" class="tab-pane fade" style="padding: 5px !important;">
                                 {{ content.field_referral_link }}
                             </div>
                             <div id="567800qy7-3" class="tab-pane fade" style="padding: 5px !important;">
@@ -191,7 +191,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                             {{ content.body }}
                         </div>
                         <div id="full__foot_comments_tab" class="tab-pane fade style-three">
-                            {{ content.comment }}
+                            {#{{ content.comment }}#}
+                            {{ content.field_feedback }}
                         </div>
 
                         <div id="full__foot_disclaimer_tab" class="tab-pane fade style-three">
