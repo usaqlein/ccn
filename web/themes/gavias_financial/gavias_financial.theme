@@ -258,6 +258,12 @@ function gavias_financial_preprocess_block(&$variables) {
     $tmp_logo = theme_get_setting('logo');
     $variables['setting_logo'] = $tmp_logo['use_default'];
   }
+  if ($variables['plugin_id'] == 'vote_test_1') {
+
+  }
+  if ($variables['plugin_id'] == 'vote_test_1') {
+
+  }
 } 
 
 function gavias_financial_preprocess_block__system_breadcrumb_block(&$variables){

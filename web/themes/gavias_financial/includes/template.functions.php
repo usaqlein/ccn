@@ -5,6 +5,20 @@ function gavias_financial_base_url(){
   return $base_url . '/' . $theme_path . '/';
 }
 
+function gavias_financial_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  $x = 'here';
+  if($variables['elements']['content']) {
+    if (isset($variables['elements']['content']['#block_content'])) {
+      /** \Drupal\block_content\Entity\BlockContent $block_content */
+      $block_content = is_object($variables['elements']['content']['#block_content']) ? $variables['elements']['content']['#block_content'] : NULL;
+      $bundle = ($block_content) ? $block_content->bundle() : NULL;
+      if ($bundle) {
+        $suggestions[] = 'block__' . $bundle;
+      }
+    }
+  }
+}
+
 function gavias_financial_preprocess_node(&$variables) {
   $date = $variables['node']->getCreatedTime();
   $variables['date'] = date( 'j F Y', $date);
