@@ -6,7 +6,6 @@ function gavias_financial_base_url(){
 }
 
 function gavias_financial_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-  $x = 'here';
   if($variables['elements']['content']) {
     if (isset($variables['elements']['content']['#block_content'])) {
       /** \Drupal\block_content\Entity\BlockContent $block_content */
@@ -18,6 +17,10 @@ function gavias_financial_theme_suggestions_block_alter(array &$suggestions, arr
     }
   }
 }
+
+//function gavias_financial_theme_suggestions_view_alter(array &$suggestions, array $variables) {
+//  $x = 'stop';
+//}
 
 function gavias_financial_preprocess_node(&$variables) {
   $date = $variables['node']->getCreatedTime();

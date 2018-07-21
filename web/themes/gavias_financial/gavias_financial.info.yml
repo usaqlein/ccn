@@ -40,6 +40,7 @@ regions:
   other: 'Other'
   countdown: 'Countdowns'
   votes: 'Votes'
+  views: 'Views'
 
 version: '8.x'
 core: '8.x'

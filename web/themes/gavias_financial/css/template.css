@@ -10761,6 +10761,19 @@ div.jquery-countdown-timer-note-countdowntimer{
   border-color: #5EB4E7;
 }
 
+.sidepanel-no-hover {
+  display: block;
+}
+.sidepanel-hover {
+  display: none;
+}
+
+.sidepanel-block:hover .sidepanel-no-hover {
+  display: none;
+}
+.sidepanel-block:hover .sidepanel-hover {
+  display: block;
+}
 /******************************************* /** Screen Sizes  /*******************************************************/
 /******************************************* /** Object level  /*******************************************************/
 /******************************************* /** ICONS         /*******************************************************/

@@ -1,0 +1,26 @@
+<div class="post-block sidepanel-block" style="border: 1px solid red">
+    <div class="post-image">
+        {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
+            {{ content.field_video_default }}
+        {% elseif post_format == 'gallery' and content.field_post_gallery %}
+            {{ content.field_slideshow_default }}
+        {% elseif content.field_special_image %}
+            {{ content.field_special_image }}
+        {% else %}
+            {{ content.field_image }}
+        {% endif %}
+    </div>
+    <div class="post-content text-left" style="background-color:rgba(0, 0, 0, 0.8); position: absolute; top: 0; text-align: center; padding: 5px">
+        <div class="sidepanel-no-hover">
+            {% set text = label|render|striptags %}
+            <div class="post-side-title" style="font-size: 8px; overflow: hidden; color: #FFFFFF">{{ text|length > 25 ? text|slice(0, 25)|raw ~ '...' : text|raw }}</div>
+            <span class="post-created" style="font-size: 7px; color: red;">{{ date }} </span>
+        </div>
+        <div class="sidepanel-hover">
+            <div class="post-summary" style="overflow: hidden; color: #FFFFFF">
+                {% set summary = content.field_punchline|render|striptags %}
+                <div class="post-summary" style="font-size: 8px; overflow: hidden; color: #FFFFFF">{{ summary|length > 40 ? summary|slice(0, 40)|raw ~ '...' : summary|raw }}</div>
+            </div>
+        </div>
+    </div>
+</div>
