@@ -1,0 +1,14 @@
+{% if title %}
+    <h3>{{ title }}</h3>
+{% endif %}
+<div class="view-content-wrap">
+    {% set i = 0 %}
+    {% for row in rows %}
+        {% set i = i + 1 %}
+        {% if i % 2 == 1 %}<div class="row">{% endif %}
+            <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0 !important;">
+                {{ row.content }}
+            </div>
+        {% if i % 2 == 0 %}</div>{% endif %}
+    {% endfor %}
+</div>

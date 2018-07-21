@@ -91,11 +91,11 @@ author_id and author_id == commented_entity.getOwnerId() ? 'by-' ~ commented_ent
         <p class="comment__author">{{ author }}</p>
         <p class="comment__time">{{ created }}</p>
         <p class="comment__permalink">{{ permalink }}</p>
-        {#
-          Indicate the semantic relationship between parent and child comments
-          for accessibility. The list is difficult to navigate in a screen
-          reader without this information.
-        #}
+
+          {#Indicate the semantic relationship between parent and child comments#}
+          {#for accessibility. The list is difficult to navigate in a screen#}
+          {#reader without this information.#}
+
         {% if parent %}
             <p class="visually-hidden">{{ parent }}</p>
         {% endif %}

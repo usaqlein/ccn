@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation for field collection items.
+ *
+ * Available variables:
+ * - content: An array of comment items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {% hide(content.field_example) %} to temporarily suppress the printing
+ *   of a given element.
+ * - title: The (sanitized) field collection item label.
+ * - url: Direct url of the current entity if specified.
+ * - page: Flag for the full page state.
+ * - attributes: HTML attributes for the surrounding element.
+ *    Attributes include the 'class' information.
+ * - content_attributes: HTML attributes for the content element.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+set classes = [
+'field-collection-item',
+'field-collection-item--name-' ~ field_collection_item.name|clean_class,
+'field-collection-item--view-mode-' ~ field_collection_item.view_mode|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+    <div class="content"{{ content_attributes }}>
+          {#ALL OF THESE ALSO WORK FOR REDERING CLEAN TEXT OUTPUT SO IT CAN BE PLUGGED INTO ICON CODE#}
+        {#<span class="icon {{ content.field_block_vote_icon|render|striptags }}" style=""></span>#}
+        {#<span class="icon {{ content.field_block_vote_icon[0] }}" style=""></span>#}
+        {#<span class="icon {{ content.field_block_vote_icon[0]|render }}" style=""></span>#}
+        {#<span class="icon {{ content.field_block_vote_icon[0]['#context'].value }}" style=""></span>#}
+
+        <div class="row margin-bottom-10">
+            <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 7px 0 5px 10px;">
+                {% if content.field_block_vote_tax['#object'] %}
+                    {{ content.field_block_vote_tax }}
+                {% elseif content.field_block_vote_image['#object'] %}
+                    {{ content.field_block_vote_image }}
+                {% else %}
+                    <span class="icon {{ content.field_block_vote_icon[0]['#context']['value'] }}" style="font-size: 30px"></span>
+                {% endif %}
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                {{ content.field_block_vote_option }}
+                {{ content.like_and_dislike }}
+                <div style="border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-right: 25%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
