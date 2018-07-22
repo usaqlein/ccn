@@ -10774,6 +10774,11 @@ div.jquery-countdown-timer-note-countdowntimer{
 .sidepanel-block:hover .sidepanel-hover {
   display: block;
 }
+
+
+
+
+
 /******************************************* /** Screen Sizes  /*******************************************************/
 /******************************************* /** Object level  /*******************************************************/
 /******************************************* /** ICONS         /*******************************************************/
@@ -10783,4 +10788,36 @@ div.jquery-countdown-timer-note-countdowntimer{
 /************************************* /** BODY MIDDLE /**/
 /************************************* /** BODY Bottom /**/
 /******************************************* /** FOOTER        /*******************************************************/
-/******************************************* /** SPECIAL       /*******************************************************/
+/******************************************* /** SPECIAL  Tools    /*******************************************************/
+.island {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow_a1 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back_light {
+  background-color: #ffffff;
+}
+.back_gray {
+  background-color: #F6F6F6;
+}
+.back_black {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.back_theme {
+  background-color: #5EB4E7;
+  color: #FFFFFF;
+}
+.tax-embed-middle .crypto-token {
+  text-align: center !important;
+}

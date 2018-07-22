@@ -1,0 +1,176 @@
+{%
+set classes = [
+'node',
+'full__content',
+'full__content_article',
+'node-detail',
+'node--type-' ~ node.bundle|clean_class,
+node.isPromoted() ? 'node--promoted',
+node.isSticky() ? 'node--sticky',
+not node.isPublished() ? 'node--unpublished',
+view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+'clearfix',
+]
+%}
+{% set type = getType %}
+<article{{ attributes.addClass(classes) }}>
+    <!--*********************************************| HEAD Media |****************************************************-->
+    <div class="full__head">
+        <div class="full__media post-thumbnail post-{{ post_format }}">
+            {% if post_format == 'video' or post_format == 'audio' and gva_iframe %}
+                {{ gva_iframe|raw }}
+            {% elseif post_format == 'gallery' and content.field_post_gallery %}
+                {{ content.field_post_gallery }}
+            {% elseif content.field_special_image %}
+                {{ content.field_special_image }}
+            {% else %}
+                {{ content.field_image }}
+            {% endif %}
+        </div>
+    </div>
+    <!--*********************************************| Head Title |****************************************************-->
+    <div class="col-md-2 col-sm-2 tax-embed-middle full__title_tax_icon">
+        <div class="full__tax_border shadow_a1">
+            <span>{{ content.field_tax_embed_one }}</span>
+        </div>
+    </div>
+    <!--*************| Head Title:title|*********-->
+    <div class="col-md-10 col-sm-10 col-xs-12">
+        <div class="widget gsc-heading  align-center style-5 full__title" style="padding-bottom: 0 !important; margin-bottom: 0 !important;">
+            <div class="line">
+                <span class="one"></span>
+                <span class="second"></span>
+                <span class="three"></span>
+            </div>
+            <div class="title">
+                <span>{{ label }}</span>
+            </div>
+            <div class="full__title_info">
+                <span class="post-created"> {{ date }} </span> /
+                <span class="post-comment"> {{ comment_count }} Comments</span> /
+                <span class="author-name">{{ author_name }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="full__tags widget gsc-heading  align-center">
+        {{ content.field_tags }}
+    </div>
+    <!--*********************************************| Body Head |****************************************************-->
+    <div class="island back_gray full__body_head">
+        <div class="col-md-2 col-sm-2 tax-embed-middle full__body_tax_icon">
+            <div class="full__tax_border shadow_a1" style="border-radius: 50%; background-color: #ffffff">
+                <span>{{ content.field_tax_embed_one }}</span>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-12">
+            <!--*************| Body Head:main |*********-->
+            {% if type == 'special' %}
+                <div class="full__main">
+                    {{ content.field_block_one }}
+                </div>
+            <!--*************| Body Head:summary |*********-->
+            {% else %}
+                <div class="widget gsc-quote-text  wow fadeInDown full__top_summary" style="visibility: visible; animation-name: fadeInDown; padding: 10px 10px 10px 50px">
+                    <div class="widget-content full__short_summary">
+                        <i class="icon fa fa-quote-left"></i>
+                        <span class="dropcap bg-dropcap bg-text-kind">Short<br>Summary</span>
+                        {% if content.field_punchline['#items'] is not empty %}
+                            {{ content.field_punchline }}
+                        {% else %}
+                            See full details below..
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <!--*********************************************| Body Meta |****************************************************-->
+    <div class="full__body shadow_a1">
+        <div class="full__body_center">
+
+            <div class="full__body_center_middle">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_left" style="clear: both;">
+                    <div class="widget gsc-heading align-center" style="padding: 0 !important; clear: both">
+                        {{ content.field_content_category }}
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_center">
+                    <div class="full-read-more" style="text-align: center; clear: both;">
+                        <div class="full-read-more-text" style="line-height: 1.2; font-size: 10px;">Scroll Down To<br>Full Article</div>
+                        <div class="full-read-more-icon" style="margin-bottom: -10px"><a href="#full__body"><i class="fa icon-Arrow-Down2" style="font-size: 32px; color: #5EB4E7; font-weight: bold"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_right">
+                    <div class="widget gsc-heading align-center" style="padding: 0 !important; clear: both">
+                        {{ content.content_sub_category }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 full__body_center_bottom">
+                <div class="gsc-tabs">
+                    <div class="tabs_wrapper tabs_vertical">
+                        <ul class="nav nav-tabs" style="padding: 10px">
+                            <li class="active"><a  class="heading-two" data-toggle="tab" href="#567800qy7-1" style="text-align: center;">Related</a></li>
+                            <li><a  class="heading-two" data-toggle="tab" href="#567800qy7-2" style="text-align: center;">Links</a></li>
+                            <li><a  class="heading-two" data-toggle="tab" href="#567800qy7-3" style="text-align: center;">Sources</a></li>
+                        </ul>
+                        <div class="tab-content" style="padding: 10px 10px 10px 0;">
+                            <div id="567800qy7-1" class="tab-pane fade active in style-two" style="padding: 5px !important;">
+                                {{ content.field_side_embed }}
+                            </div>
+                            <div id="567800qy7-2" class="tab-pane fade style-two" style="padding: 5px !important;">
+                                {{ content.field_referral_link }}
+                            </div>
+                            <div id="567800qy7-3" class="tab-pane fade style-two" style="padding: 5px !important;">
+                                {{ content.field_resources_links }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*********************************************| Body Body |****************************************************-->
+    <div id="full__body" class="full__body_body" style="margin-bottom: 20px">
+        <div class="col-md-12 col-sm-12 full__foot_inner" style="padding: 0; margin-bottom: 20px">
+            <div class="gsc-tabs ">
+                <div class="tabs_wrapper tabs_horizontal">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#full__foot_body_tab" class="heading-two">Body</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="tab" href="#full__foot_feedback_tab" class="heading-two">Feedback</a>
+                        </li>
+
+                        <li class="">
+                            <a data-toggle="tab" href="#full__foot_disclaimer_tab" class="heading-two">Disclaimer</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="full__foot_body_tab" class="tab-pane fade active in style-two">
+                            <span class="dropcap border-dropcap">A</span>
+                            {{ content.body }}
+                        </div>
+                        <div id="full__foot_feedback_tab" class="tab-pane fade style-two">
+                            {{ content.field_vote_block_embed }}
+                        </div>
+                        <div id="full__foot_disclaimer_tab" class="tab-pane fade style-two">
+                            {% include '@gavias_financial/page/parts/disclaimer.html.twig' with {'type' : getType|default('Content') } %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*********************************************| Footer Comments |****************************************************-->
+    <div class="island back_gray full__comments" style="clear: both">
+        {{ content.comment }}
+    </div>
+    <!--*********************************************| END FULL |****************************************************-->
+</article>
+
+
+
+

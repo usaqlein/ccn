@@ -50,8 +50,8 @@
   {% for item in items %}
     <a href="{{ item.content['#url'] }}">
       <div class="custom__link_button">
-        <div class="custom__link_title" style="font-weight: bold;">{{ item.content['#title'] }}</div>
-        <div class="custom__link_url" style="height: 20px; overflow: hidden; font-size: 12px; font-style: italic">{{ item.content['#url'] }}</div>
+        <div class="custom__link_title style-two" style="font-weight: bold;">{{ item.content['#title'] }}</div>
+        <div class="custom__link_url style-two" style="height: 20px; overflow: hidden; font-style: italic">{{ item.content['#url'] }}</div>
       </div>
     </a>
   {% endfor %}

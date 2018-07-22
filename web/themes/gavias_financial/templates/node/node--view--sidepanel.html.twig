@@ -13,13 +13,13 @@
     <div class="post-content text-left" style="background-color:rgba(0, 0, 0, 0.8); position: absolute; top: 0; text-align: center; padding: 5px">
         <div class="sidepanel-no-hover">
             {% set text = label|render|striptags %}
-            <div class="post-side-title" style="font-size: 8px; overflow: hidden; color: #FFFFFF">{{ text|length > 25 ? text|slice(0, 25)|raw ~ '...' : text|raw }}</div>
+            <div class="post-side-title" style="font-size: 8px; overflow: hidden; color: #FFFFFF">{{ text|length > 45 ? text|slice(0, 45)|raw ~ '...' : text|raw }}</div>
             <span class="post-created" style="font-size: 7px; color: red;">{{ date }} </span>
         </div>
         <div class="sidepanel-hover">
             <div class="post-summary" style="overflow: hidden; color: #FFFFFF">
                 {% set summary = content.field_punchline|render|striptags %}
-                <div class="post-summary" style="font-size: 8px; overflow: hidden; color: #FFFFFF">{{ summary|length > 40 ? summary|slice(0, 40)|raw ~ '...' : summary|raw }}</div>
+                <div class="post-summary" style="font-size: 8px; overflow: hidden; color: #FFFFFF">{{ summary|length > 75 ? summary|slice(0, 75)|raw ~ '...' : summary|raw }}</div>
             </div>
         </div>
     </div>
