@@ -35,15 +35,6 @@
     body {
         font-size: 8px !important;
     }
-    /*.sidepanel-block .post-side-title {*/
-    /*font-size: 8px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-created {*/
-    /*font-size: 6px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-summary {*/
-    /*font-size: 8px !important;*/
-    /*}*/
     .full-read-more-text {
         font-size: 6px !important;
     }
@@ -63,11 +54,15 @@
         font-size: 6px !important;
         height: 26px !important;
     }
-    .full__content .padding-two {
-        margin-right: 10px !important;
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 1px !important;
     }
-    .full__content .padding-three {
-        padding: 0 !important;
+    .fullbuttpadding {
+        padding: 4px 1px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 5px !important;
     }
     /**********| HEAD Title|*********/
     .full__title .title {
@@ -88,9 +83,6 @@
         min-height: 80px !important;
     }
     /**********| Body Meta|**********/
-    .full__body_center_middle {
-        min-height: 70px !important;
-    }
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
     .comment__meta {
@@ -137,15 +129,6 @@
     body {
         font-size: 10px !important;
     }
-    /*.sidepanel-block .post-side-title {*/
-        /*font-size: 8px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-created {*/
-        /*font-size: 6px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-summary {*/
-        /*font-size: 8px !important;*/
-    /*}*/
     .full-read-more-text {
         font-size: 7px !important;
     }
@@ -165,18 +148,22 @@
         font-size: 8px !important;
         height: 26px !important;
     }
-    .full__content .padding-two {
-        margin-right: 15px !important;
-    }
-    .full__content .padding-three {
-        padding: 0 !important;
-    }
     /**********| HEAD Title|*********/
     .full__title .title {
         font-size: 10px !important;
     }
     .full__title_info {
         font-size: 10px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 5px !important;
+    }
+    .fullbuttpadding {
+        padding: 5px 5px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 10px !important;
     }
     /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
@@ -190,9 +177,6 @@
         min-height: 80px !important;
     }
     /**********| Body Meta|**********/
-    .full__body_center_middle {
-        min-height: 70px !important;
-    }
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
     .comment__meta {
@@ -239,15 +223,6 @@
     body {
         font-size: 14px !important;
     }
-    /*.sidepanel-block .post-side-title {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-created {*/
-        /*font-size: 12px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-summary {*/
-        /*font-size: 14px !important;*/
-    /*}*/
     .full-read-more-text {
         font-size: 10px !important;
     }
@@ -267,12 +242,6 @@
         font-size: 14px !important;
         height: 26px !important;
     }
-    .full__content .padding-two {
-        margin-right: 25px !important;
-    }
-    .full__content .padding-three {
-        padding: 5px 0 !important;
-    }
     /**********| HEAD Title|*********/
     .full__title .title {
         font-size: 26px !important;
@@ -280,6 +249,16 @@
     }
     .full__title_info {
         font-size: 14px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 10px !important;
+    }
+    .fullbuttpadding {
+        padding: 5px 15px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 10px !important;
     }
     /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
@@ -293,9 +272,6 @@
         min-height: 85px !important;
     }
     /**********| Body Meta|**********/
-    .full__body_center_middle {
-        min-height: 75px !important;
-    }
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
     .comment__meta {
@@ -305,7 +281,7 @@
         display: none !important;
     }
 }
-/***************************| 786 - 992  small|******************************************************************************/
+/***************************| 768 - 992  small|******************************************************************************/
 @media (min-width: 768px) {
     .column-content-inner {
         top: 0 !important;
@@ -342,17 +318,8 @@
     body {
         font-size: 16px !important;
     }
-    /*.sidepanel-block .post-side-title {*/
-        /*font-size: 18px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-created {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-summary {*/
-        /*font-size: 16px !important;*/
-    /*}*/
     .full-read-more-text {
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
     .full__content .style-two{
         font-size: 16px !important;
@@ -370,12 +337,6 @@
         font-size: 14px !important;
         height: 26px !important;
     }
-    .full__content .padding-two {
-        margin-right: 20px !important;
-    }
-    .full__content .padding-three {
-        padding: 5px 10px !important;
-    }
     /**********| HEAD Title|*********/
     .full__title .title {
         font-size: 33px !important;
@@ -383,6 +344,16 @@
     }
     .full__title_info {
         font-size: 14px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 10px !important;
+    }
+    .fullbuttpadding {
+        padding: 8px 15px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 20px !important;
     }
     /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
@@ -393,12 +364,9 @@
         margin-top: -10px !important;
     }
     .full__body_head {
-        min-height: 85px !important;
+        min-height: 95px !important;
     }
     /**********| Body Meta|**********/
-    .full__body_center_middle {
-        min-height: 80px !important;
-    }
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
     .comment__meta {
@@ -445,17 +413,8 @@
     body {
         font-size: 14px !important;
     }
-    /*.sidepanel-block .post-side-title {*/
-        /*font-size: 16px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-created {*/
-        /*font-size: 12px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-summary {*/
-        /*font-size: 14px !important;*/
-    /*}*/
     .full-read-more-text {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
     .full__content .style-two{
         font-size: 14px !important;
@@ -473,12 +432,6 @@
         font-size: 14px !important;
         height: 26px !important;
     }
-    .full__content .padding-two {
-        margin-right: 25px !important;
-    }
-    .full__content .padding-three {
-        padding: 5px 10px !important;
-    }
     /**********| HEAD Title|*********/
     .full__title .title {
         font-size: 34px !important;
@@ -486,6 +439,16 @@
     }
     .full__title_info {
         font-size: 18px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 10px !important;
+    }
+    .fullbuttpadding {
+        padding: 8px 15px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 15px !important;
     }
     /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
@@ -499,9 +462,6 @@
         min-height: 85px !important;
     }
     /**********| Body Meta|**********/
-    .full__body_center_middle {
-        min-height: 75px !important;
-    }
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
     .comment__meta {
@@ -548,15 +508,6 @@
     body {
         font-size: 16px !important;
     }
-    /*.sidepanel-block .post-side-title {*/
-        /*font-size: 18px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-created {*/
-        /*font-size: 14px !important;*/
-    /*}*/
-    /*.sidepanel-block .post-summary {*/
-        /*font-size: 16px !important;*/
-    /*}*/
     .full-read-more-text {
         font-size: 12px !important;
     }
@@ -572,12 +523,6 @@
     .full__content .heading-three {
         font-size: 28px !important;
     }
-    .full__content .padding-two {
-        margin-right: 20px !important;
-    }
-    .full__content .padding-three {
-        padding: 5px 10px !important;
-    }
     .full__tags .arrow_tag {
         font-size: 16px !important;
         height: 26px !important;
@@ -589,6 +534,16 @@
     }
     .full__title_info {
         font-size: 18px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 15px !important;
+    }
+    .fullbuttpadding {
+        padding: 8px 18px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 25px !important;
     }
     /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
@@ -602,9 +557,6 @@
         min-height: 85px !important;
     }
     /**********| Body Meta|**********/
-    .full__body_center_middle {
-        min-height: 80px !important;
-    }
     /**********| Body Body|**********/
     /**********| Foot Comments|******/
     .comment__meta {
@@ -685,16 +637,6 @@
     min-height: 50px;
 }
 /************************************************| Body Meta|**********************************************************/
-.full__body_center {
-    width: 100%;
-    display: table-cell;
-    background-color: #FFFFFF;
-}
-.full__body_center_middle {
-    margin-top: 10px;
-    width: 100%;
-    background-color: #FFFFFF;
-}
 .full__body_center_bottom {
     width: 100%;
     background-color: #F6F6F6;

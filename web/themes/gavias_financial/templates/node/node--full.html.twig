@@ -31,7 +31,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <!--*********************************************| Head Title |****************************************************-->
 
     <!--*************| Head Title:title|*********-->
-    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12 full-boot-padding">
         <div class="widget gsc-heading  align-center style-5 full__title" style="padding-bottom: 0 !important; margin-bottom: 0 !important;">
             <div class="line">
                 <span class="one"></span>
@@ -53,11 +53,11 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     </div>
     <!--*********************************************| Body Head |****************************************************-->
     <div class="island back_gray full__body_head">
-        <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0 1px !important; text-align: center; margin-top: 10px">
+        <div class="col-md-2 col-sm-2 col-xs-2 full-boot-padding" style="text-align: center; margin-top: 10px">
             <div class="full-read-more-text" style="color:red; line-height: 1.2; font-size: 10px;">Scroll Down To<br>Full Article</div>
             <div class="full-read-more-icon" style="margin-bottom: -10px"><a href="#full__body"><i class="fa icon-Arrow-Down2" style="font-size: 32px; color: #5EB4E7; font-weight: bold"></i></a></div>
         </div>
-        <div class="col-md-10 col-sm-10 col-xs-10">
+        <div class="col-md-10 col-sm-10 col-xs-10 full-boot-padding">
             <!--*************| Body Head:main |*********-->
             {% if type == 'special' %}
                 <div class="full__main">
@@ -80,55 +80,57 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         </div>
     </div>
     <!--*********************************************| Body Meta |****************************************************-->
-    <div class="full__body_meta island">
-        <div class="full__body_center">
-
-            <div class="full__body_center_middle">
-                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_left">
-                    <div class="widget gsc-heading align-center shadow_a1" style="padding: 5px 0 0 0 !important; clear: both">
+    <div class="full__body_meta back_gray island">
+        <div class="container">
+            <div class="full__body_center_top">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_left full-boot-padding">
+                    <div class="widget gsc-heading align-center shadow_a1 back_light" style="padding: 5px 0 0 0 !important; clear: both">
                         {{ content.field_content_category }}
                     </div>
                 </div>
 
 
-                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_center">
-                    <div class="widget gsc-heading align-center shadow_a1" style="padding: 5px 0 0 0 !important; clear: both">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_center full-boot-padding">
+                    <div class="widget gsc-heading align-center shadow_a1 back_light" style="padding: 5px 0 0 0 !important; clear: both">
                         {{ content.field_tax_embed_one }}
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_right">
-                    <div class="widget gsc-heading align-center shadow_a1" style="padding: 5px 0 0 0 !important; clear: both">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_right full-boot-padding">
+                    <div class="widget gsc-heading align-center shadow_a1 back_light" style="padding: 5px 0 0 0 !important; clear: both">
                         {{ content.content_sub_category }}
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-12 col-sm-12 full__body_center_bottom">
+        </div>
+        <div class="container">
+            <div class="full__body_center_bottom">
                 <div class="gsc-tabs">
                     <div class="tabs_wrapper tabs_vertical">
-                        <ul class="nav nav-tabs" style="padding: 10px">
-                            <li class="active"><a  class="heading-two padding-three" data-toggle="tab" href="#567800qy7-1" style="text-align: center;">Related</a></li>
-                            <li><a  class="heading-two padding-three" data-toggle="tab" href="#567800qy7-2" style="text-align: center;">Links</a></li>
-                            <li><a  class="heading-two padding-three" data-toggle="tab" href="#567800qy7-3" style="text-align: center;">Sources</a></li>
+                        <ul class="nav nav-tabs" style="padding: 10px 5px 0 0">
+                            <li class="active"><a  class="heading-two fullbuttpadding" data-toggle="tab" href="#567800qy7-1" style="text-align: center;">Related</a></li>
+                            <li><a class="heading-two fullbuttpadding" data-toggle="tab" href="#567800qy7-2" style="text-align: center;">Links</a></li>
+                            <li><a class="heading-two fullbuttpadding" data-toggle="tab" href="#567800qy7-3" style="text-align: center;">Sources</a></li>
                         </ul>
-                        <div class="tab-content" style="padding: 10px 10px 10px 0;">
+                        <div class="tab-content" style="padding: 10px 0 10px 0;">
                             <div id="567800qy7-1" class="tab-pane fade active in style-two" style="padding: 5px !important;">
-                                {#side view template web/themes/gavias_financial/templates/views/post/block/views-view-unformatted--sidepanel.html.twig#}
+                                {#side view template web/themes/gavias_financial/templates/views/post/block/views-view-unformatted--sidepanel.html.twig #}
                                 {{ content.field_side_embed }}
                             </div>
                             <div id="567800qy7-2" class="tab-pane fade style-two" style="padding: 5px !important;">
-                                {#Refferal field template web/themes/gavias_financial/templates/views/field--field-referral-link.html.twig#}
+                                {#Refferal field template web/themes/gavias_financial/templates/views/field--field-referral-link.html.twig #}
                                 {{ content.field_referral_link }}
                             </div>
                             <div id="567800qy7-3" class="tab-pane fade style-two" style="padding: 5px !important;">
-                                {#Resources field template web/themes/gavias_financial/templates/field--field-resources-links.html.twig#}
+                                {#Resources field template web/themes/gavias_financial/templates/field--field-resources-links.html.twig #}
                                 {{ content.field_resources_links }}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <!--*********************************************| Body Body |****************************************************-->
@@ -136,19 +138,20 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         <div class="gsc-tabs ">
             <div class="tabs_wrapper tabs_horizontal">
                 <ul class="nav nav-tabs shadow_a1">
-                    <li class="active padding-two">
-                        <a data-toggle="tab" href="#full__foot_body_tab" class="heading-two padding-three">Body</a>
-                    </li>
-                    <li class="padding-two">
-                        <a data-toggle="tab" href="#full__foot_feedback_tab" class="heading-two padding-three">Feedback</a>
+                    <li class="active fulllinkmargin">
+                        <a data-toggle="tab" href="#full__foot_body_tab" class="heading-two fullbuttpadding">Body</a>
                     </li>
 
-                    <li class="padding-two">
-                        <a data-toggle="tab" href="#full__foot_disclaimer_tab" class="heading-two padding-three">Disclaimer</a>
+                    <li class="fulllinkmargin">
+                        <a data-toggle="tab" href="#full__foot_feedback_tab" class="heading-two fullbuttpadding">Feedback</a>
+                    </li>
+
+                    <li class="fulllinkmargin">
+                        <a data-toggle="tab" href="#full__foot_disclaimer_tab" class="heading-two fullbuttpadding">Disclaimer</a>
                     </li>
                 </ul>
                 <div class="tab-content island">
-                    <div id="full__foot_body_tab" class="tab-pane fade active in style-two">
+                    <div id="full__foot_body_tab" class="tab-pane fade active in style-two" style="padding: 10px">
                         <span class="dropcap border-dropcap">A</span>
                         {{ content.body }}
                     </div>

@@ -3049,7 +3049,7 @@ body.path-user summary {
 .nav-tabs > li > a {
   font-weight: 700;
   color: #000;
-  padding: 8px 18px !important;
+  padding: 8px 18px;
   border: none;
   font-size: 13px;
   text-transform: uppercase;
