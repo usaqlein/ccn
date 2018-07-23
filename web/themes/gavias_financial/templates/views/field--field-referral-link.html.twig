@@ -46,12 +46,12 @@
 ]
 %}
 <div style="text-align: center">
-  <h3 style="margin: 0; font-style: italic">Related Links</h3>
+  <span class="heading-three" style="margin: 0; font-style: italic; font-weight: bold">Related Links</span>
   {% for item in items %}
     <a href="{{ item.content['#url'] }}">
       <div class="custom__link_button">
-        <div class="custom__link_title style-two" style="font-weight: bold;">{{ item.content['#title'] }}</div>
-        <div class="custom__link_url style-two" style="height: 20px; overflow: hidden; font-style: italic">{{ item.content['#url'] }}</div>
+        <div class="custom__link_title heading-two" style="font-weight: bold;">{{ item.content['#title'] }}</div>
+        <div class="custom__link_url style-two" style="overflow: hidden; font-style: italic">{{ item.content['#url'] }}</div>
       </div>
     </a>
   {% endfor %}

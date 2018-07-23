@@ -10804,6 +10804,22 @@ div.jquery-countdown-timer-note-countdowntimer{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.text-ovelay-pic {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: red;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 5px;
+  overflow: hidden;
+}
+
 .back_light {
   background-color: #ffffff;
 }
@@ -10821,3 +10837,4 @@ div.jquery-countdown-timer-note-countdowntimer{
 .tax-embed-middle .crypto-token {
   text-align: center !important;
 }
+
