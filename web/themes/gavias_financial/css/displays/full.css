@@ -1,434 +1,732 @@
 /******************************************* /** Screen Sizes  /*******************************************************/
 @media (max-width: 281px) {
-    .full__head {
-
+    .column-content-inner {
+        top: 0 !important;
     }
+    h1 {
+    }
+    h2 {
+        font-size: 14px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    h3 {
+        font-size: 10px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    h3 a {
+        font-size: 10px !important;
+    }
+    h4 {
+        font-size: 8px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    /**********| COMMON |********/
+    .island {
+        margin-bottom: 10px !important;
+    }
+    .full__content .display-full {
+        display: none !important;
+    }
+    .full__content .display-middle {
+        display: none !important;
+    }
+    .full__content .display-small {
+        display: none !important;
+    }
+    .full__content .display-mini {
+        display: none !important;
+    }
+    .full__content .display-micro {
+        display: none !important;
+    }
+    .text-ovelay-pic {
+        background-color:rgba(0, 0, 0, 0.6) !important;
+        top: 2px !important;
+        bottom: 2px !important;
+        left: 2px !important;
+        right: 2px !important;
+        color: red !important;
+        padding: 1px !important;
+    }
+    /**********| FONTS |*********/
+    body {
+        font-size: 8px !important;
+    }
+    .full-read-more-text {
+        font-size: 6px !important;
+    }
+    .full__content .style-two{
+        font-size: 8px !important;
+    }
+    .full__content .heading-two {
+        font-size: 6px !important;
+    }
+    .full__content .style-three{
+        font-size: 6px !important;
+    }
+    .full__content .heading-three {
+        font-size: 14px !important;
+    }
+    .full__content .arrow_tag {
+        font-size: 6px !important;
+        height: 26px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 1px !important;
+    }
+    .fullbuttpadding {
+        padding: 4px 1px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 10px !important;
+        margin-left: -8px !important;
+    }
+    /**********| HEAD Title|*********/
     .full__title .title {
         font-size: 8px !important;
     }
     .full__title_info {
-        font-size: 6px !important;
+        font-size: 8px !important;
     }
-    .full__body {
-
-    }
-    .full__body_left {
-        width: 35% !important;
-    }
-    .full__body_center {
-        width: 65% !important;
-    }
-    .full__body_center_top {
-
-    }
+    /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 6px !important;
+        font-size: 8px !important;
     }
     .full__main .jquery-countdown-timer-note-countdowntimer {
-        font-size: 7px !important;
-        margin-top: -2px !important;
+        font-size: 8px !important;
+        margin-top: -4px !important;
     }
-    .full__body_center_middle .icon{
-        display: block;
+    .full__body_head {
+        min-height: 80px !important;
     }
-    .full__body_center_middle {
-
+    .full__top_summary {
+        padding: 10px 10px 10px 20px !important;
     }
-    .full__body_center_bottom {
-
+    /**********| Body Meta|**********/
+    /**********| Body Body|**********/
+    /**********| Foot Comments|**********/
+    .comment__meta {
+        display: none !important;
     }
-    .full__body_right {
-        display: none;
-
-    }
-    .full_foot {
-
-    }
-    .full__content .style-one{
-    }
-    .full__content .style-two{
-        font-size: 12px !important;
-        padding: 5px !important;
-    }
-    .full__content .style-three{
-        font-size: 14px;
-        padding: 10px !important;
-    }
-    .full__content .heading-one {
-    }
-    .full__content .heading-two {
-        font-size: 6px !important;
-        padding: 2px 1px !important;
-    }
-    .full__content .heading-three {
-        font-size: 12px !important;
-    }
-    .full__tags .arrow_tag {
-        font-size: 14px !important;
-        height: 26px;
+    .link-edit-blockbuider{
+        display: none !important;
     }
 }
-/***************************| 282 - 500 |*************************/
+/***************************| 282 - 500 micro|******************************************************************************/
 @media (min-width: 282px) {
-    .full__head {
-
+    .column-content-inner {
+        top: 0 !important;
     }
-    .full__title .title {
+    h1 {
+    }
+    h2 {
+        font-size: 18px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+    h3 {
+        font-size: 14px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+    h3 a {
+        font-size: 14px !important;
+    }
+    h4 {
+        font-size: 12px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+    /**********| COMMON |********/
+    .island {
+        margin-bottom: 15px !important;
+    }
+    .full__content .display-full {
+        display: none !important;
+    }
+    .full__content .display-middle {
+        display: none !important;
+    }
+    .full__content .display-small {
+        display: none !important;
+    }
+    .full__content .display-mini {
+        display: none !important;
+    }
+    .full__content .display-micro {
+        display: block !important;
+    }
+    .text-ovelay-pic {
+        background-color:rgba(0, 0, 0, 0.7) !important;
+        top: 7px !important;
+        bottom: 7px !important;
+        left: 7px !important;
+        right: 7px !important;
+        color: red !important;
+        padding: 3px !important;
+    }
+    /**********| FONTS |*********/
+    body {
         font-size: 10px !important;
     }
-    .full__title_info {
-        font-size: 10px !important;
-    }
-    .full__body {
-
-    }
-    .full__body_left {
-        width: 25% !important;
-    }
-    .full__body_center {
-        width: 75% !important;
-    }
-    .full__body_center_top {
-
-    }
-    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 10px !important;
-    }
-    .full__main .jquery-countdown-timer-note-countdowntimer {
-        font-size: 10px !important;
-        margin-top: -8px !important;
-    }
-    .full__body_center_middle .icon{
-        display: block;
-    }
-    .full__body_center_bottom {
-
-    }
-    .full__body_right {
-        display: none;
-    }
-    .full_foot {
-
-    }
-    .full__content .style-one{
+    .full-read-more-text {
+        font-size: 7px !important;
     }
     .full__content .style-two{
-        font-size: 12px !important;
-        padding: 5px !important;
-    }
-    .full__content .style-three{
-        font-size: 14px;
-        padding: 10px !important;
-    }
-    .full__content .heading-one {
+        font-size: 10px !important;
     }
     .full__content .heading-two {
         font-size: 8px !important;
-        padding: 2px 1px !important;
+    }
+    .full__content .style-three{
+        font-size: 8px !important;
     }
     .full__content .heading-three {
-        font-size: 10px !important;
-        padding: 2px 8px !important;
-    }
-    .full__tags .arrow_tag {
         font-size: 14px !important;
-        height: 26px;
     }
-}
-/***************************| 500 - 786  |*************************/
-@media (min-width: 501px) {
-    .full__head {
-
+    .full__content .arrow_tag {
+        font-size: 8px !important;
+        height: 26px !important;
     }
+    /**********| HEAD Title|*********/
     .full__title .title {
-        font-size: 18px !important;
-        font-weight: bold;
+        font-size: 10px !important;
     }
     .full__title_info {
-        font-size: 14px !important;
+        font-size: 10px !important;
     }
-    .full__body {
-
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 5px !important;
     }
-    .full__body_left {
-        width: 12% !important;
-
+    .fullbuttpadding {
+        padding: 5px 5px !important;
     }
-    .full__body_center {
-        width: 58% !important;
+    .fulllinkmargin {
+        margin-right: 10px !important;
     }
-    .full__body_center_top {
-
-    }
+    /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 15px !important;
+        font-size: 9px !important;
     }
     .full__main .jquery-countdown-timer-note-countdowntimer {
-        font-size: 12px !important;
-        margin-top: -10px !important;
+        font-size: 10px !important;
+        margin-top: -6px !important;
     }
-    .full__body_center_middle .icon{
-        display: block;
+    .full__body_head {
+        min-height: 80px !important;
     }
-    .full__body_center_bottom {
-
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
     }
-    .full__body_right {
-        width: 30% !important;
-
+    /**********| Body Meta|**********/
+    /**********| Body Body|**********/
+    /**********| Foot Comments|**********/
+    .comment__meta {
+        display: none !important;
     }
-    .full_foot {
-
+    .link-edit-blockbuider{
+        display: none !important;
     }
-    .full__content .style-one{
+}
+/***************************| 500 - 786  mini|******************************************************************************/
+@media (min-width: 501px) {
+    .column-content-inner {
+        top: 0 !important;
     }
-    .full__content .style-two{
-        font-size: 12px !important;
+    h1 {
+    }
+    h2 {
+        font-size: 22px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    h3 a {
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    /**********| COMMON |********/
+    .island {
+        margin-bottom: 15px !important;
+    }
+    .full__content .display-full {
+        display: none !important;
+    }
+    .full__content .display-middle {
+        display: none !important;
+    }
+    .full__content .display-small {
+        display: none !important;
+    }
+    .full__content .display-mini {
+        display: block !important;
+    }
+    .full__content .display-micro {
+        display: block !important;
+    }
+    .text-ovelay-pic {
+        background-color:rgba(0, 0, 0, 0.7) !important;
+        top: 15px !important;
+        bottom: 15px !important;
+        left: 15px !important;
+        right: 15px !important;
+        color: red !important;
         padding: 5px !important;
     }
-    .full__content .style-three{
-        font-size: 14px;
-        padding: 10px !important;
+    /**********| FONTS |*********/
+    body {
+        font-size: 14px !important;
     }
-    .full__content .heading-one {
-    }
-    .full__content .heading-two {
+    .full-read-more-text {
         font-size: 10px !important;
-        padding: 2px 1px !important;
     }
-    .full__content .heading-three {
+    .full__content .style-two{
+        font-size: 14px !important;
+    }
+    .full__content .heading-two {
+        font-size: 14px !important;
+    }
+    .full__content .style-three{
         font-size: 12px !important;
     }
-    .full__tags .arrow_tag {
+    .full__content .heading-three {
+        font-size: 20px !important;
+    }
+    .full__content .arrow_tag {
         font-size: 14px !important;
-        height: 26px;
+        height: 26px !important;
+    }
+    /**********| HEAD Title|*********/
+    .full__title .title {
+        font-size: 26px !important;
+        font-weight: bold !important;
+    }
+    .full__title_info {
+        font-size: 14px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 10px !important;
+    }
+    .fullbuttpadding {
+        padding: 5px 15px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 10px !important;
+    }
+    /**********| Body Head|**********/
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 16px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_head {
+        min-height: 85px !important;
+    }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
+    /**********| Body Meta|**********/
+    /**********| Body Body|**********/
+    /**********| Foot Comments|**********/
+    .comment__meta {
+        display: block !important;
+    }
+    .link-edit-blockbuider{
+        display: none !important;
     }
 }
-/***************************| 786 - 992  |*************************/
+/***************************| 768 - 992  small|******************************************************************************/
 @media (min-width: 768px) {
-    .full__head {
-
+    .column-content-inner {
+        top: 0 !important;
     }
-    .full__title .title {
-        font-size: 20px !important;
-        font-weight: bold;
+    h1 {
     }
-    .full__title_info {
-        font-size: 14px !important;
+    h2 {
+        font-size: 28px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
     }
-    .full__body {
-
-    }
-    .full__body_left {
-        width: 10% !important;
-    }
-    .full__body_center {
-        width: 65% !important;
-    }
-    .full__body_center_top {
-
-    }
-    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 20px !important;
-    }
-    .full__main .jquery-countdown-timer-note-countdowntimer {
-        font-size: 15px !important;
-        margin-top: -10px !important;
-    }
-    .full__body_center_middle .icon{
-        display: block;
-    }
-    .full__body_center_bottom {
-
-    }
-    .full__body_right {
-        width: 25% !important;
-    }
-    .full_foot {
-
-    }
-    .full__content .style-one{
-    }
-    .full__content .style-two{
-        font-size: 14px !important;
-        padding: 10px !important;
-    }
-    .full__content .style-three{
-        font-size: 14px;
-        padding: 10px !important;
-    }
-    .full__content .heading-one {
-    }
-    .full__content .heading-two {
-        font-size: 12px !important;
-        padding: 5px 5px !important;
-    }
-    .full__content .heading-three {
-        font-size: 13px !important;
-    }
-    .full__tags .arrow_tag {
-        font-size: 14px !important;
-        height: 26px;
-    }
-}
-/***************************| 992 - 1200  |*************************/
-@media (min-width: 992px) {
-    .full__head {
-
-    }
-    .full__title .title {
-        font-size: 20px !important;
-        font-weight: bold;
-    }
-    .full__title_info {
-        font-size: 14px !important;
-    }
-    .full__body {
-
-    }
-    .full__body_left {
-        width: 12% !important;
-    }
-    .full__body_center {
-        width: 63% !important;
-    }
-    .full__body_center_top {
-
-    }
-    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 18px !important;
-    }
-    .full__main .jquery-countdown-timer-note-countdowntimer {
-        font-size: 15px !important;
-        margin-top: -10px !important;
-    }
-    .full__body_center_middle .icon{
-        display: block;
-    }
-    .full__body_center_bottom {
-
-    }
-    .full__body_right {
-        width: 25% !important;
-    }
-    .full_foot {
-
-    }
-    .full__content .style-one{
-    }
-    .full__content .style-two{
-        font-size: 14px !important;
-        padding: 10px !important;
-    }
-    .full__content .style-three{
-        font-size: 14px;
-        padding: 10px !important;
-    }
-    .full__content .heading-one {
-    }
-    .full__content .heading-two {
-        font-size: 12px !important;
-        padding: 5px 5px !important;
-    }
-    .full__content .heading-three {
-        font-size: 13px !important;
-    }
-    .full__tags .arrow_tag {
-        font-size: 14px !important;
-        height: 26px;
-    }
-}
-/***************************| 1200+  |*************************/
-@media (min-width: 1200px) {
-    .full__head {
-
-    }
-    .full__title .title {
+    h3 {
         font-size: 22px !important;
-        font-weight: bold;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
     }
-    .full__title_info {
-        font-size: 15px !important;
-    }
-    .full__body {
-
-    }
-    .full__body_left {
-        width: 10% !important;
-    }
-    .full__body_center {
-        width: 65% !important;
-    }
-    .full__body_center_top {
-
-    }
-    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+    h3 a {
         font-size: 22px !important;
     }
-    .full__main .jquery-countdown-timer-note-countdowntimer {
+    h4 {
         font-size: 18px !important;
-        margin-top: -10px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
     }
-    .full__body_center_middle .icon{
-        display: block;
+    /**********| COMMON |********/
+    .island {
+        margin-bottom: 25px !important;
     }
-    .full__body_center_bottom {
-
+    .full__content .display-full {
+        display: none !important;
     }
-    .full__body_right {
-        width: 25% !important;
+    .full__content .display-middle {
+        display: none !important;
     }
-    .full_foot {
-
+    .full__content .display-small {
+        display: block !important;
     }
-    .full__content .style-one{
+    .full__content .display-mini {
+        display: block !important;
+    }
+    .full__content .display-micro {
+        display: block !important;
+    }
+    .text-ovelay-pic {
+        background-color:rgba(0, 0, 0, 0.8) !important;
+        top: 25px !important;
+        bottom: 25px !important;
+        left: 25px !important;
+        right: 25px !important;
+        color: red !important;
+        padding: 5px !important;
+    }
+    /**********| FONTS |*********/
+    body {
+        font-size: 16px !important;
+    }
+    .full-read-more-text {
+        font-size: 12px !important;
     }
     .full__content .style-two{
         font-size: 16px !important;
-        padding: 10px !important;
-    }
-    .full__content .style-three{
-        font-size: 14px;
-        padding: 10px !important;
-    }
-    .full__content .heading-one {
     }
     .full__content .heading-two {
-        font-size: 13px !important;
-        padding: 5px 8px !important;
+        font-size: 18px !important;
+    }
+    .full__content .style-three{
+        font-size: 16px !important;
     }
     .full__content .heading-three {
+        font-size: 26px !important;
+    }
+    .full__content .arrow_tag {
+        font-size: 14px !important;
+        height: 26px !important;
+    }
+    /**********| HEAD Title|*********/
+    .full__title .title {
+        font-size: 33px !important;
+        font-weight: bold !important;
+    }
+    .full__title_info {
         font-size: 14px !important;
     }
-    .full__tags .arrow_tag {
-        font-size: 14px !important;
-        height: 26px;
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 10px !important;
+    }
+    .fullbuttpadding {
+        padding: 8px 15px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 20px !important;
+    }
+    /**********| Body Head|**********/
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 15px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_head {
+        min-height: 95px !important;
+    }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
+    /**********| Body Meta|**********/
+    /**********| Body Body|**********/
+    /**********| Foot Comments|**********/
+    .comment__meta {
+        display: block !important;
+    }
+    .link-edit-blockbuider{
+        display: block !important;
     }
 }
-/******************************************* MAP  /*******************************************************
-
-[ Full Head (full__head)]
-[ Full Body (full__body)]
-        | Full Body Left (full__body_left) |
-        | Full Body Center (full__body_center)
-                | Full Body Center Top (full__body_center_top) | Full Body Center Middle (full__body_center_middle) | Full Body Center Bottom (full__body_center_bottom)
-        | Full Body Right(full__body_right)|
-[ Full Foot (full__foot) ]
-
-******************************************* /** Screen Sizes  /******************************************************/
-
-
-
-/**<*********************************************| HEAD |******************************************************/
+/***************************| 992 - 1200  middle|******************************************************************************/
+@media (min-width: 992px) {
+    .column-content-inner {
+        top: 50% !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 28px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 {
+        font-size: 22px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 a {
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    /**********| COMMON |********/
+    .island {
+        margin-bottom: 20px !important;
+    }
+    .full__content .display-full {
+        display: none !important;
+    }
+    .full__content .display-middle {
+        display: block !important;
+    }
+    .full__content .display-small {
+        display: block !important;
+    }
+    .full__content .display-mini {
+        display: block !important;
+    }
+    .full__content .display-micro {
+        display: block !important;
+    }
+    .text-ovelay-pic {
+        background-color:rgba(0, 0, 0, 0.8) !important;
+        top: 20px !important;
+        bottom: 20px !important;
+        left: 20px !important;
+        right: 20px !important;
+        color: red !important;
+        padding: 5px !important;
+    }
+    /**********| FONTS |*********/
+    body {
+        font-size: 14px !important;
+    }
+    .full-read-more-text {
+        font-size: 11px !important;
+    }
+    .full__content .style-two{
+        font-size: 14px !important;
+    }
+    .full__content .heading-two {
+        font-size: 16px !important;
+    }
+    .full__content .style-three{
+        font-size: 16px !important;
+    }
+    .full__content .heading-three {
+        font-size: 22px !important;
+    }
+    .full__content .arrow_tag {
+        font-size: 14px !important;
+        height: 26px !important;
+    }
+    /**********| HEAD Title|*********/
+    .full__title .title {
+        font-size: 34px !important;
+        font-weight: bold !important;
+    }
+    .full__title_info {
+        font-size: 18px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 10px !important;
+    }
+    .fullbuttpadding {
+        padding: 8px 15px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 15px !important;
+    }
+    /**********| Body Head|**********/
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 20px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 16px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_head {
+        min-height: 85px !important;
+    }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
+    /**********| Body Meta|**********/
+    /**********| Body Body|**********/
+    /**********| Foot Comments|**********/
+    .comment__meta {
+        display: block !important;
+    }
+    .link-edit-blockbuider{
+        display: block !important;
+    }
+}
+/***************************| 1200+  full|******************************************************************************/
+@media (min-width: 1200px) {
+    .column-content-inner {
+        top: 50% !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 28px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 {
+        font-size: 22px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 a {
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    /**********| COMMON |********/
+    .island {
+        margin-bottom: 25px !important;
+    }
+    .full__content .display-full {
+        display: block !important;
+    }
+    .full__content .display-middle {
+        display: block !important;
+    }
+    .full__content .display-small {
+        display: block !important;
+    }
+    .full__content .display-mini {
+        display: block !important;
+    }
+    .full__content .display-micro {
+        display: block !important;
+    }
+    .text-ovelay-pic {
+        background-color:rgba(0, 0, 0, 0.8) !important;
+        top: 25px !important;
+        bottom: 25px !important;
+        left: 25px !important;
+        right: 25px !important;
+        color: red !important;
+        padding: 5px !important;
+    }
+    /**********| FONTS |*********/
+    body {
+        font-size: 16px !important;
+    }
+    .full-read-more-text {
+        font-size: 12px !important;
+    }
+    .full__content .style-two{
+        font-size: 16px !important;
+    }
+    .full__content .heading-two {
+        font-size: 18px !important;
+    }
+    .full__content .style-three{
+        font-size: 18px !important;
+    }
+    .full__content .heading-three {
+        font-size: 28px !important;
+    }
+    .full__tags .arrow_tag {
+        font-size: 16px !important;
+        height: 26px !important;
+    }
+    /**********| HEAD Title|*********/
+    .full__title .title {
+        font-size: 38px !important;
+        font-weight: bold !important;
+    }
+    .full__title_info {
+        font-size: 18px !important;
+    }
+    /**********| Paddings |*********/
+    .full-boot-padding {
+        padding: 0 15px !important;
+    }
+    .fullbuttpadding {
+        padding: 8px 18px !important;
+    }
+    .fulllinkmargin {
+        margin-right: 25px !important;
+    }
+    /**********| Body Head|**********/
+    .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
+        font-size: 22px !important;
+    }
+    .full__main .jquery-countdown-timer-note-countdowntimer {
+        font-size: 18px !important;
+        margin-top: -10px !important;
+    }
+    .full__body_head {
+        min-height: 85px !important;
+    }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
+    /**********| Body Meta|**********/
+    /**********| Body Body|**********/
+    /**********| Foot Comments|******/
+    .comment__meta {
+        display: block !important;
+    }
+    .link-edit-blockbuider{
+        display: block !important;
+    }
+}
+/**<*********************************************| HTML |******************************************************/
+/**<*********************************************| FONT SIZES |********************************************************/
+.full__content .style-two{
+}
+.full__content .heading-two {
+    font-weight: bold;
+}
+.full__content .style-three{
+    font-style: italic;
+}
+.full__content .heading-three {
+    font-weight: bold;
+}
+/************************************************| HEAD MEDIA|*********************************************************/
 .full__head {
     width: 100%;
     overflow: hidden;
     -webkit-box-shadow: 5px 11px 6px -6px #777;
     -moz-box-shadow: 5px 11px 6px -6px #777;
     box-shadow: 5px 11px 6px -6px #777;
-}
-.full__head:hover {
-    /*border: 2px solid #777;*/
+    margin-bottom: 5px !important;
+    padding: 0 !important;
 }
 .full__media {
     margin-bottom: 0 !important;
@@ -442,98 +740,46 @@
 .full__media .owl-next {
     border: 1px solid #777;
 }
-
-.full__title .title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+/************************************************| HEAD Title|*********************************************************/
+/**********| TITLE |**********/
+/*.full__title .title {*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+/*}*/
 .full__title_info {
     margin-top: -10px;
     font-size: 12px;
 }
+/**********| Line|**********/
 .full__title .line {
     margin-top: -10px;
 }
+/**********| Tags |**********/
 .full__tags {
+    margin-bottom: 5px;
     height: 30px !important;
     overflow: hidden;
 }
 .full__tags .arrow_tag {
     margin: 0px 0px !important;
 }
+/************************************************| Body Head|**********************************************************/
 
-/**<*********************************************| BODY |******************************************************/
-.full__body {
-    display: table;
-    width: 100%;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-/************************************> body middle left <***************************/
-.full__body_left {
-    width: 10%;
-    display: table-cell;
-    background-color: #F6F6F6;
-}
-/************************************> body middle center <**************************/
-.full__body_center {
-    width: 65%;
-    display: table-cell;
-    background-color: #F6F6F6;
-}
-/**(******) full__body_center_top (*********)**/
-.full__body_center_top {
-    width: 100%;
-    padding: 0 5px;
-    background-color: #F6F6F6;
-}
-/**(*****) full__body_center_middle (********)**/
-.full__body_center_middle {
-    width: 100%;
-    background-color: #FFFFFF;
-}
 .full__short_summary {
     padding: 0 !important;
     font-style: italic; !important;
 }
-.full__body_center_middle_summary {
-
+.full__top_summary .field--name-field-punchline {
+    min-height: 50px;
 }
-.full__body_center_left {
-    margin-top: 10px;
-}
-.full__body_center_center {
-    margin-top: 10px;
-}
-.full__body_center_right {
-    margin-top: 10px;
-}
-/**(*****) body center bottom (*********)**/
-
+/************************************************| Body Meta|**********************************************************/
 .full__body_center_bottom {
     width: 100%;
-    padding: 0 !important;
     background-color: #F6F6F6;
 }
-/***********************************> body middle right <**************************/
-.full__body_right {
-    width: 25%;
-    display: table-cell;
-    background-color: #F6F6F6;
-}
+/************************************************| Body Body|**********************************************************/
 
-/***********************************************| FOOT |******************************************************/
-.full__foot {
-    width: 100%;
-    margin-bottom: 20px !important;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-/*.full__foot .gsc-tabs {*/
-    /*margin-top: -5px;*/
-/*}*/
+/************************************************| Foot Comments|******************************************************/
+
 /**<*********************************************| END |******************************************************/

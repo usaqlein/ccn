@@ -3049,7 +3049,7 @@ body.path-user summary {
 .nav-tabs > li > a {
   font-weight: 700;
   color: #000;
-  padding: 8px 18px !important;
+  padding: 8px 18px;
   border: none;
   font-size: 13px;
   text-transform: uppercase;
@@ -10774,6 +10774,11 @@ div.jquery-countdown-timer-note-countdowntimer{
 .sidepanel-block:hover .sidepanel-hover {
   display: block;
 }
+
+
+
+
+
 /******************************************* /** Screen Sizes  /*******************************************************/
 /******************************************* /** Object level  /*******************************************************/
 /******************************************* /** ICONS         /*******************************************************/
@@ -10783,4 +10788,58 @@ div.jquery-countdown-timer-note-countdowntimer{
 /************************************* /** BODY MIDDLE /**/
 /************************************* /** BODY Bottom /**/
 /******************************************* /** FOOTER        /*******************************************************/
-/******************************************* /** SPECIAL       /*******************************************************/
+/******************************************* /** SPECIAL  Tools    /*******************************************************/
+.island {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.keep_one_line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shadow_a1 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-ovelay-pic {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: red;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.back_light {
+  background-color: #ffffff;
+}
+.back_gray {
+  background-color: #F6F6F6;
+}
+.back_black {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.back_theme {
+  background-color: #5EB4E7;
+  color: #FFFFFF;
+}
+.tax-embed-middle .crypto-token {
+  text-align: center !important;
+}
+

@@ -5,22 +5,19 @@ function gavias_financial_base_url(){
   return $base_url . '/' . $theme_path . '/';
 }
 
-function gavias_financial_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-  if($variables['elements']['content']) {
-    if (isset($variables['elements']['content']['#block_content'])) {
-      /** \Drupal\block_content\Entity\BlockContent $block_content */
-      $block_content = is_object($variables['elements']['content']['#block_content']) ? $variables['elements']['content']['#block_content'] : NULL;
-      $bundle = ($block_content) ? $block_content->bundle() : NULL;
-      if ($bundle) {
-        $suggestions[] = 'block__' . $bundle;
-      }
-    }
-  }
-}
-
-//function gavias_financial_theme_suggestions_view_alter(array &$suggestions, array $variables) {
-//  $x = 'stop';
+//function gavias_financial_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+//  if($variables['elements']['content']) {
+//    if (isset($variables['elements']['content']['#block_content'])) {
+//      /** \Drupal\block_content\Entity\BlockContent $block_content */
+//      $block_content = is_object($variables['elements']['content']['#block_content']) ? $variables['elements']['content']['#block_content'] : NULL;
+//      $bundle = ($block_content) ? $block_content->bundle() : NULL;
+//      if ($bundle) {
+//        $suggestions[] = 'block__' . $bundle;
+//      }
+//    }
+//  }
 //}
+
 
 function gavias_financial_preprocess_node(&$variables) {
   $date = $variables['node']->getCreatedTime();
@@ -146,33 +143,6 @@ function gavias_financial_preprocess_node(&$variables) {
   }
   $variables['field_names'] = implode(', ', array_keys($variables['content']));
 }
-
-//function gavias_financial_preprocess_node__article__card(&$variables){
-//
-//}
-//
-//function gavias_financial_preprocess_node__article__box(&$variables){
-//
-//
-//}
-//
-//function gavias_financial_preprocess_node__article__full(&$variables){
-//
-//
-//}
-//function gavias_financial_preprocess_node__special__card(&$variables){
-//
-//}
-//
-//function gavias_financial_preprocess_node__special__box(&$variables){
-//
-//
-//}
-//
-//function gavias_financial_preprocess_node__special__full(&$variables){
-//
-//
-//}
 
 function gavias_financial_preprocess_node__portfolio(&$variables){
   $node = $variables['node'];
