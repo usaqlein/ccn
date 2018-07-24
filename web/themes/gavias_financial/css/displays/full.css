@@ -3,6 +3,26 @@
     .column-content-inner {
         top: 0 !important;
     }
+    h1 {
+    }
+    h2 {
+        font-size: 14px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    h3 {
+        font-size: 10px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    h3 a {
+        font-size: 10px !important;
+    }
+    h4 {
+        font-size: 8px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
     /**********| COMMON |********/
     .island {
         margin-bottom: 10px !important;
@@ -20,7 +40,7 @@
         display: none !important;
     }
     .full__content .display-micro {
-        display: block !important;
+        display: none !important;
     }
     .text-ovelay-pic {
         background-color:rgba(0, 0, 0, 0.6) !important;
@@ -62,14 +82,15 @@
         padding: 4px 1px !important;
     }
     .fulllinkmargin {
-        margin-right: 5px !important;
+        margin-right: 10px !important;
+        margin-left: -8px !important;
     }
     /**********| HEAD Title|*********/
     .full__title .title {
-        font-size: 10px !important;
+        font-size: 8px !important;
     }
     .full__title_info {
-        font-size: 10px !important;
+        font-size: 8px !important;
     }
     /**********| Body Head|**********/
     .full__main .jquery-countdown-timer-countdowntimer.countdownHolder {
@@ -81,6 +102,9 @@
     }
     .full__body_head {
         min-height: 80px !important;
+    }
+    .full__top_summary {
+        padding: 10px 10px 10px 20px !important;
     }
     /**********| Body Meta|**********/
     /**********| Body Body|**********/
@@ -96,6 +120,26 @@
 @media (min-width: 282px) {
     .column-content-inner {
         top: 0 !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 18px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+    h3 {
+        font-size: 14px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+    h3 a {
+        font-size: 14px !important;
+    }
+    h4 {
+        font-size: 12px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
     }
     /**********| COMMON |********/
     .island {
@@ -176,6 +220,9 @@
     .full__body_head {
         min-height: 80px !important;
     }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
     /**********| Body Meta|**********/
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
@@ -190,6 +237,26 @@
 @media (min-width: 501px) {
     .column-content-inner {
         top: 0 !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 22px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    h3 a {
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
     }
     /**********| COMMON |********/
     .island {
@@ -271,6 +338,9 @@
     .full__body_head {
         min-height: 85px !important;
     }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
     /**********| Body Meta|**********/
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
@@ -285,6 +355,26 @@
 @media (min-width: 768px) {
     .column-content-inner {
         top: 0 !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 28px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 {
+        font-size: 22px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 a {
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
     }
     /**********| COMMON |********/
     .island {
@@ -366,6 +456,9 @@
     .full__body_head {
         min-height: 95px !important;
     }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
     /**********| Body Meta|**********/
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
@@ -380,6 +473,26 @@
 @media (min-width: 992px) {
     .column-content-inner {
         top: 50% !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 28px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 {
+        font-size: 22px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 a {
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
     }
     /**********| COMMON |********/
     .island {
@@ -461,6 +574,9 @@
     .full__body_head {
         min-height: 85px !important;
     }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
     /**********| Body Meta|**********/
     /**********| Body Body|**********/
     /**********| Foot Comments|**********/
@@ -475,6 +591,26 @@
 @media (min-width: 1200px) {
     .column-content-inner {
         top: 50% !important;
+    }
+    h1 {
+    }
+    h2 {
+        font-size: 28px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 {
+        font-size: 22px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
+    }
+    h3 a {
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+        margin-bottom: 13px !important;
     }
     /**********| COMMON |********/
     .island {
@@ -556,6 +692,9 @@
     .full__body_head {
         min-height: 85px !important;
     }
+    .full__top_summary {
+        padding: 10px 10px 10px 50px !important;
+    }
     /**********| Body Meta|**********/
     /**********| Body Body|**********/
     /**********| Foot Comments|******/
@@ -603,11 +742,11 @@
 }
 /************************************************| HEAD Title|*********************************************************/
 /**********| TITLE |**********/
-.full__title .title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+/*.full__title .title {*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+/*}*/
 .full__title_info {
     margin-top: -10px;
     font-size: 12px;
@@ -626,9 +765,7 @@
     margin: 0px 0px !important;
 }
 /************************************************| Body Head|**********************************************************/
-.full__top_summary {
-    padding-top: 0 !important;
-}
+
 .full__short_summary {
     padding: 0 !important;
     font-style: italic; !important;

@@ -38,7 +38,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                 <span class="second"></span>
                 <span class="three"></span>
             </div>
-            <div class="title">
+            <div class="title keep_one_line">
                 <span>{{ label }}</span>
             </div>
             <div class="full__title_info">
@@ -65,9 +65,9 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
                 </div>
             <!--*************| Body Head:summary |*********-->
             {% else %}
-                <div class="widget gsc-quote-text  wow fadeInDown full__top_summary" style="visibility: visible; animation-name: fadeInDown; padding: 10px 10px 10px 50px">
+                <div class="widget gsc-quote-text  wow fadeInDown full__top_summary" style="visibility: visible; animation-name: fadeInDown;">
                     <div class="widget-content full__short_summary">
-                        <i class="icon fa fa-quote-left"></i>
+                        <i class="icon fa fa-quote-left display-micro"></i>
                         <span class="dropcap bg-dropcap bg-text-kind display-mini">Short<br>Summary</span>
                         {% if content.field_punchline['#items'] is not empty %}
                             {{ content.field_punchline }}
@@ -83,20 +83,20 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <div class="full__body_meta back_gray island">
         <div class="container">
             <div class="full__body_center_top">
-                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_left full-boot-padding">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_left full-boot-padding keep_one_line">
                     <div class="widget gsc-heading align-center shadow_a1 back_light" style="padding: 5px 0 0 0 !important; clear: both">
                         {{ content.field_content_category }}
                     </div>
                 </div>
 
 
-                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_center full-boot-padding">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_center full-boot-padding keep_one_line">
                     <div class="widget gsc-heading align-center shadow_a1 back_light" style="padding: 5px 0 0 0 !important; clear: both">
                         {{ content.field_tax_embed_one }}
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_right full-boot-padding">
+                <div class="col-md-4 col-sm-4 col-xs-4 full__body_center_right full-boot-padding keep_one_line">
                     <div class="widget gsc-heading align-center shadow_a1 back_light" style="padding: 5px 0 0 0 !important; clear: both">
                         {{ content.content_sub_category }}
                     </div>
