@@ -365,7 +365,7 @@ body.logged-in.toolbar-horizontal .header-v2 {
   margin-top: -1px;
 }
 @media (max-width: 767px) {
-  .topbar {
+  .top-bar-left {
     display: none;
   }
 }
@@ -379,7 +379,12 @@ body.logged-in.toolbar-horizontal .header-v2 {
 .topbar .block {
   margin: 0 !important;
 }
-
+.topbar a {
+  color: #FFFFFF;
+}
+.topbar a:hover {
+  color: #5EB4E7;
+}
 .language-box .links > li {
   margin-right: 10px;
   opacity: 0.6;
