@@ -403,18 +403,18 @@ header .header-main {
   background: #fff;
 }
 header .site-branding-logo {
-  padding: 30px 0 0;
+  padding: 7px 0 0;
   display: inline-block;
   max-height: 80px;
 }
 @media (max-width: 1199px) {
   header .site-branding-logo {
-    padding: 18px 0 0 !important;
+    padding: 7px 0 0 !important;
   }
 }
 @media (max-width: 991px) {
   header .site-branding-logo {
-    padding: 15px 0 !important;
+    padding: 0 !important;
   }
 }
 @media (max-width: 991px) {
@@ -534,7 +534,7 @@ header.header-v1 {
   margin-top: 1px;
 }
 header.header-v1 .site-branding-logo {
-  padding-top: 25px;
+  padding-top: 7px;
 }
 header.header-v1 .gva-search-region .icon {
   color: #000;
@@ -572,7 +572,7 @@ header.header-v2 .gva-search-region .icon {
   }
 }
 header.header-v2 .site-branding-logo {
-  padding-top: 20px;
+  padding-top: 7px;
 }
 header.header-v2 .header-inner {
   padding-right: 40px;
