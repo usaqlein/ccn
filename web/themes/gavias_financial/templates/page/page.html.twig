@@ -28,8 +28,9 @@
 		{% if page.help %}
 			<div class="help">
 				<div class="container">
+					<div class="control-panel"><i class="fa fa-cogs"></i></div>
 					<div class="content-inner">
-						{{ page.help }}
+                        {{ page.help }}
 					</div>
 				</div>
 			</div>
@@ -39,7 +40,7 @@
 			<div class="container">
 				<div class="control-panel">
 					<ul class="tabs nav-tabs primary drupal-tabs">
-						<li><i class="fa fa-share-alt"></i></li>
+						<li style="background: #666666"><i class="fa fa-share-alt" style="color: #FFFFFF;"></i></li>
 						<li style="border-top: 1px solid"><a target="_blank" style="padding: 0 !important;" href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"><i class="fa fa-facebook"></i></a></li>
 						<li style="border-top: 1px solid"><a target="_blank" style="padding: 0 !important;" href="https://twitter.com/share?url={{ url('<current>') }}"><i class="fa fa-twitter"></i></a></li>
 					</ul>

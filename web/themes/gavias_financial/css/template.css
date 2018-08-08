@@ -4972,7 +4972,7 @@ div.resizable-textarea textarea {
 /*Logged In*/
 body.logged-in.node--type-page .help {
   position: fixed;
-  top: 200px;
+  top: 300px;
   left: 0;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -10958,3 +10958,10 @@ div.jquery-countdown-timer-note-countdowntimer{
   text-align: center !important;
 }
 
+.views-view-grid.horizontal.cols-3.clearfix > .views-row.row {
+  margin-bottom: 10px;
+}
+
+.category.port-card_home {
+    padding: 5px !important;
+}

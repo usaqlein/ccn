@@ -420,6 +420,7 @@ article.node--type-article, article.node--type-special {
 .content-box {
     margin: 0 !important;
     border: 2px solid #5eb4e7;
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -529,7 +530,7 @@ li.box__footer_link a{
     border: none !important;
 }
 
-.category-list .item-list ul li a:after {
+.box__footer .category-list .item-list ul li a:after {
     top: 5px !important;
 }
 .item-list ul li.view-list-item.box__footer_link {
