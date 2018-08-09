@@ -4536,12 +4536,32 @@ div.resizable-textarea textarea {
   margin-bottom: 60px;
 }
 
-.contact-request-call-back input[type*='text'], .contact-request-call-back select, .contact-request-call-back #edit-name, .contact-request-call-back .form-item-name {
+.contact-request-call-back input[type*='text'], .contact-request-call-back select, .contact-request-call-back #edit-name, .contact-request-call-back .form-item-name, .contact-request-call-back .form-item-mail {
   width: 100%;
   height: 60px !important;
-  line-height: 60px;
+  line-height: 60px !important;
 }
-.contact-request-call-back select, .contact-request-call-back input[type*='text'], .contact-request-call-back input[type*='phone'], .contact-request-call-back #edit-name, .contact-request-call-back .form-item-name {
+
+.contact-request-call-back .form-item-name {
+  padding-left: 15px;
+}
+
+.contact-request-call-back .js-form-submit {
+  height: 60px;
+}
+
+.contact-request-call-back .option {
+  color: #ffffff;
+}
+
+.submid .form-actions {
+  width: 100%;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.contact-request-call-back select, .contact-request-call-back input[type*='text'], .contact-request-call-back input[type*='phone'], .contact-request-call-back #edit-name, .contact-request-call-back .form-item-name, .contact-request-call-back .form-item-mail {
   background: #000 !important;
   color: #b5b5b5 !important;
 }

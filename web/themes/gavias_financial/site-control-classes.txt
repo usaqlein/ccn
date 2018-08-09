@@ -34,4 +34,11 @@ EXAMPLE
         {{ content.field_content_category }}
     </div>
 
+
+
+FORMS
+-----
+
+To customize looks of contact and after creating new contact froms web/themes/gavias_financial/includes/contact.php
+
 TODO Make remaining the same way
