@@ -194,38 +194,60 @@ function gavias_financial_form_contact_message_contact_us_form_alter(&$form, \Dr
 
 function gavias_financial_form_contact_message_subscribe_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   //contact_form=subscribe
+
+  //$form['name']['#weight'] = -80;
+//$form['name']['#prefix'] = '<div class="col-sm-3 col-2">';
+//$form['name']['#suffix'] = '</div>';
+//$form['name']['#attributes']['placeholder'][] = $form['name']['#title'];
+//$form['name']['#attributes']['class'][] = 'form-control';
+//unset($form['name']['#title']);
+
+  $form['html_before']['#weight'] = -99;
+  $form['html_before']['#prefix'] = '<div class="contact-request-call-back"><div class="row">';
+
+
   // Name
-  $form['name']['#weight'] = -1;
-  $form['name']['#prefix'] = '<div class="contact-feedback"><div class="form-group">';
+  $form['name']['#weight'] = -80;
+  $form['name']['#prefix'] = '<div class="form-group col-sm-3 col-1">';
   $form['name']['#suffix'] = '</div>';
-  $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
+  $form['name']['#attributes']['placeholder'][] = $form['name']['#title'];
   $form['name']['#attributes']['class'][] = 'form-control';
   unset($form['name']['#title']);
 
-  // SITE UPDATES | field_site_updates
-  $form['field_site_updates']['#prefix'] = '<div class="pull-left margin-right-20"><div class="form-group">';
-  $form['field_site_updates']['#suffix'] = '</div></div>';
-
-  // CRYPTO NEWS & EVENTS | field_crypto_news_events
-  $form['field_crypto_news_events']['#prefix'] = '<div class="pull-left margin-right-20"><div class="form-group">';
-  $form['field_crypto_news_events']['#suffix'] = '</div></div>';
-
   // Mail
-  $form['mail']['#weight'] = -2;
-  $form['mail']['#prefix'] = '<div class="form-group">';
+  $form['mail']['#weight'] = -70;
+  $form['mail']['#prefix'] = '<div class="form-group col-sm-4 col-2">';
   $form['mail']['#suffix'] = '</div>';
-  $form['mail']['#attributes']['placeholder'][] = $form['mail']['#title'].'*';
+  $form['mail']['#attributes']['placeholder'][] = $form['mail']['#title'];
   $form['mail']['#attributes']['class'][] = 'form-control';
   unset($form['mail']['#title']);
 
   // Submit
-  $form['actions']['#weight'] = 99;
-  $form['actions']['#prefix'] = '<div class="clearfix pull-left">';
-  $form['actions']['#suffix'] = '</div></div>';
+  $form['actions']['#weight'] = 90;
+  $form['actions']['#prefix'] = '<div class="col-sm-3 col-4">';
+  $form['actions']['#suffix'] = '</div>';
   $form['actions']['submit']['#attributes']['class'][] = 'btn';
   $form['actions']['submit']['#attributes']['class'][] = 'btn-theme-submit';
+
+  // SITE UPDATES | field_site_updates
+  $form['field_site_updates']['#weight'] = 10;
+//  $form['field_site_updates']['#prefix'] = '<div class="pull-left margin-right-20"><div class="form-group">';
+  $form['field_site_updates']['#prefix'] = '<div class="form-group col-sm-1 col-1">';
+  $form['field_site_updates']['#suffix'] = '</div>';
+
+  // CRYPTO NEWS & EVENTS | field_crypto_news_events
+  $form['field_crypto_news_events']['#weight'] = 20;
+//  $form['field_crypto_news_events']['#prefix'] = '<div class="pull-left margin-right-20"><div class="form-group">';
+  $form['field_crypto_news_events']['#prefix'] = '<div class="form-group col-sm-1 col-1">';
+  $form['field_crypto_news_events']['#suffix'] = '</div>';
+
+  $form['html_after']['#weight'] = 99;
+  $form['html_after']['#prefix'] = '';
+  $form['html_after']['#suffix'] = '</div></div>';
+
   $form['actions']['submit']['#value'] = t('Subscribe');
   if (isset($form['actions']['preview'])) {
     unset($form['actions']['preview']);
   }
 }
+
