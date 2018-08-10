@@ -38,16 +38,15 @@
         {# SOCIAL MEDIA #}
 		<div class="social-side">
 			<div class="container">
-				<div class="control-panel">
+				<div class="control-panel social-panel">
 					<ul class="tabs nav-tabs primary drupal-tabs">
-						<li style="background: #666666"><i class="fa fa-share-alt" style="color: #FFFFFF;"></i></li>
-						<li style="border-top: 1px solid"><a target="_blank" style="padding: 0 !important;" href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"><i class="fa fa-facebook"></i></a></li>
-						<li style="border-top: 1px solid"><a target="_blank" style="padding: 0 !important;" href="https://twitter.com/share?url={{ url('<current>') }}"><i class="fa fa-twitter"></i></a></li>
+						<li class="social-side-head"><i class="fa fa-share-alt" style="color: #FFFFFF;"></i></li>
+						<li class="social-side-block" style="border-top: 1px solid"><a target="_blank" style="padding: 0 !important;" href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"><i class="fa fa-facebook" style="margin-right: 0"></i></a></li>
+						<li class="social-side-block" style="border-top: 1px solid"><a target="_blank" style="padding: 0 !important;" href="https://twitter.com/home?status={{ url('<current>') }}"><i class="fa fa-twitter" style="margin-right: 0"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
 		{% if page.fw_before_content %}
 			<div class="fw-before-content area">
 				{{ page.fw_before_content }}

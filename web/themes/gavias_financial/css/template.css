@@ -5104,10 +5104,28 @@ body.logged-in .help {
   margin-top: -15px;
   z-index: 11;
 }
-/*.social-side .control-panel:hover {*/
-  /*cursor: pointer;*/
-  /*color: #5eb4e7;*/
-/*}*/
+
+.social-panel:hover {
+  border-color: #5EB4E7 !important;
+}
+
+li.social-side-block:hover {
+  border-top-color: #5EB4E7 !important;
+  border-bottom-color: #5EB4E7 !important;
+}
+
+.social-panel:hover li.social-side-head {
+  background-color: #5EB4E7;
+}
+
+.social-panel {
+  border-color: #666666 !important;
+}
+
+li.social-side-head {
+  background-color: #666666;
+}
+
 .social-side .drupal-tabs {
   border: none;
   width: 100%;
@@ -10982,6 +11000,12 @@ div.jquery-countdown-timer-note-countdowntimer{
   margin-bottom: 10px;
 }
 
-.category.port-card_home {
-    padding: 5px !important;
+.grid-content_mid_home article {
+    border-radius: 5px;
+}
+.port-content_mid_listing article {
+  border-radius: 5px;
+}
+.port-content_mid_special article {
+  border-radius: 5px;
 }
