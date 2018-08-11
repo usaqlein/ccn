@@ -4554,6 +4554,11 @@ div.resizable-textarea textarea {
   color: #ffffff;
 }
 
+.contact-request-call-back input.form-email {
+  height: 100% !important;
+  background-color: #000000 !important;
+}
+
 .submid .form-actions {
   width: 100%;
   text-align: center;
@@ -4623,9 +4628,9 @@ div.resizable-textarea textarea {
 }
 
 .contact-v4 input[type*="submit"] {
-  display: block;
-  width: 100%;
-}
+   display: block;
+   width: 100%;
+ }
 .contact-v4 select, .contact-v4 input[type*='text'], .contact-v4 input[type*='phone'], .contact-v4 input[type*='email'], .contact-v4 #edit-name, .contact-v4 #edit-mail, .contact-v4 div[id*="edit-name"], .contact-v4 textarea, .contact-v4 .js-form-item-mail {
   background: none !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -4633,6 +4638,28 @@ div.resizable-textarea textarea {
 .contact-v4 select.js-form-item-mail, .contact-v4 input[type*='text'].js-form-item-mail, .contact-v4 input[type*='phone'].js-form-item-mail, .contact-v4 input[type*='email'].js-form-item-mail, .contact-v4 #edit-name.js-form-item-mail, .contact-v4 #edit-mail.js-form-item-mail, .contact-v4 div[id*="edit-name"].js-form-item-mail, .contact-v4 textarea.js-form-item-mail, .contact-v4 .js-form-item-mail.js-form-item-mail {
   border: none !important;
   padding: 0 !important;
+}
+
+.contact-v5 input[type*="submit"] {
+  display: block;
+  width: 100%;
+}
+.contact-v5 select, .contact-v5 input[type*='text'], .contact-v5 input[type*='phone'], .contact-v5 input[type*='email'], .contact-v5 #edit-name, .contact-v5 #edit-mail, .contact-v5 div[id*="edit-name"], .contact-v5 textarea, .contact-v5 .js-form-item-mail {
+  background: #000000 !important;
+
+  color: #bbbbbb !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.contact-v5 select.js-form-item-mail, .contact-v5 input[type*='text'].js-form-item-mail, .contact-v5 input[type*='phone'].js-form-item-mail, .contact-v5 input[type*='email'].js-form-item-mail, .contact-v5 #edit-name.js-form-item-mail, .contact-v5 #edit-mail.js-form-item-mail, .contact-v5 div[id*="edit-name"].js-form-item-mail, .contact-v5 textarea.js-form-item-mail, .contact-v5 .js-form-item-mail.js-form-item-mail {
+  border: #000000 !important;
+  color: #bbbbbb !important;
+}
+
+.contact-v5 .form-item-name {
+  padding-left: 5px !important;
+}
+.contact-v5 textarea {
+  color: #5EB4E7 !important;
 }
 
 #forum {
@@ -11008,4 +11035,34 @@ div.jquery-countdown-timer-note-countdowntimer{
 }
 .port-content_mid_special article {
   border-radius: 5px;
+}
+
+.full-length select{
+  width: 100%;
+}
+
+.min-height .form-item {
+  margin-bottom: 5px;
+}
+
+.min-height input {
+  width: 100%;
+  padding: 1px 10px;
+}
+
+.min-height .form-item-mail {
+  height: 40px !important;
+}
+
+.min-height input.form-email {
+  height: 40px !important;
+}
+
+.min-height .form-group {
+  margin-bottom: 8px !important;
+}
+
+.min-height textarea {
+  max-height: 75px;
+  padding: 5px !important;
 }

@@ -38,6 +38,9 @@
     .foot-comments {
         font-size: 8px !important;
     }
+    .foot-comments .comment-label {
+        font-size: 7px !important;
+    }
     .content-card {
         padding-bottom: 40px !important;
     }
@@ -98,6 +101,9 @@
     .foot-comments {
         font-size: 14px !important;
     }
+    .foot-comments .comment-label {
+        font-size: 12px !important;
+    }
     .content-card {
         padding-bottom: 40px !important;
     }
@@ -156,7 +162,10 @@
         font-size: 12px !important;
     }
     .foot-comments {
-        font-size: 12px !important;
+        font-size: 10px !important;
+    }
+    .foot-comments .comment-label {
+        font-size: 8px !important;
     }
     .content-card {
         padding-bottom: 40px !important;
@@ -215,6 +224,9 @@
     .foot-comments {
         font-size: 12px !important;
     }
+    .foot-comments .comment-label {
+        font-size: 10px !important;
+    }
     .content-card {
         padding-bottom: 40px !important;
     }
@@ -272,6 +284,9 @@
     .foot-comments {
         font-size: 12px !important;
     }
+    .foot-comments .comment-label {
+        font-size: 9px !important;
+    }
     .content-card {
         padding-bottom: 40px !important;
     }
@@ -283,7 +298,7 @@
         padding-top: 5px !important;
     }
     .card__special .jquery-countdown-timer-countdowntimer.countdownHolder {
-        font-size: 13px !important;
+        font-size: 12px !important;
     }
     .card__special .jquery-countdown-timer-note-countdowntimer {
         font-size: 11px !important;
@@ -333,6 +348,9 @@
     }
     .foot-comments {
         font-size: 14px !important;
+    }
+    .foot-comments .comment-label {
+        font-size: 12px !important;
     }
     .content-card {
         padding-bottom: 40px !important;
