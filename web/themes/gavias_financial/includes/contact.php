@@ -1,13 +1,13 @@
 <?php
 function gavias_financial_form_contact_message_feedback_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   //contact_form=feedback
-  // Name
-  $form['name']['#weight'] = -1;
-  $form['name']['#prefix'] = '<div class="contact-feedback"><div class="form-group">';
-  $form['name']['#suffix'] = '</div>';
-  $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
-  $form['name']['#attributes']['class'][] = 'form-control';
-  unset($form['name']['#title']);
+//  // Name
+//  $form['name']['#weight'] = -1;
+//  $form['name']['#prefix'] = '<div class="contact-feedback"><div class="form-group">';
+//  $form['name']['#suffix'] = '</div>';
+//  $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
+//  $form['name']['#attributes']['class'][] = 'form-control';
+//  unset($form['name']['#title']);
 
   // Mail
   $form['mail']['#weight'] = -2;
@@ -18,13 +18,13 @@ function gavias_financial_form_contact_message_feedback_form_alter(&$form, \Drup
   unset($form['mail']['#title']);
 
 
-  // Subject
-  $form['subject']['widget'][0]['#weight'] = -3;
-  $form['subject']['widget'][0]['#prefix'] = '<div class="form-group">';
-  $form['subject']['widget'][0]['#suffix'] = '</div>';
-  $form['subject']['widget'][0]['value']['#attributes']['class'][] = 'form-control';
-  $form['subject']['widget'][0]['value']['#attributes']['placeholder'][] = $form['subject']['widget'][0]['#title'].'*';
-  unset($form['subject']['widget'][0]['value']['#title']);
+//  // Subject
+//  $form['subject']['widget'][0]['#weight'] = -3;
+//  $form['subject']['widget'][0]['#prefix'] = '<div class="form-group">';
+//  $form['subject']['widget'][0]['#suffix'] = '</div>';
+//  $form['subject']['widget'][0]['value']['#attributes']['class'][] = 'form-control';
+//  $form['subject']['widget'][0]['value']['#attributes']['placeholder'][] = $form['subject']['widget'][0]['#title'].'*';
+//  unset($form['subject']['widget'][0]['value']['#title']);
  
   // Message
   $form['message']['#weight'] = -5;
@@ -151,10 +151,10 @@ function gavias_financial_form_contact_message_contact_us_form_alter(&$form, \Dr
   //contact_form=contact_us
   $form['#enctype'] = 'multipart/form-data';
 
-  // Content Type
+  // Reason
   $form['field_contact_reason']['#weight'] = -90;
-  $form['field_contact_reason']['#prefix'] = '<div class="contact-feedback"><div class="form-group">';
-  $form['field_contact_reason']['#suffix'] = '</div>';
+  $form['field_contact_reason']['#prefix'] = '<div class="contact-feedback full-length"><div class="form-group">';
+  $form['field_contact_reason']['#suffix'] = '</div></div>';
 
   // Name
   $form['name']['#weight'] = -1;
@@ -194,13 +194,6 @@ function gavias_financial_form_contact_message_contact_us_form_alter(&$form, \Dr
 
 function gavias_financial_form_contact_message_subscribe_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   //contact_form=subscribe
-
-  //$form['name']['#weight'] = -80;
-//$form['name']['#prefix'] = '<div class="col-sm-3 col-2">';
-//$form['name']['#suffix'] = '</div>';
-//$form['name']['#attributes']['placeholder'][] = $form['name']['#title'];
-//$form['name']['#attributes']['class'][] = 'form-control';
-//unset($form['name']['#title']);
 
   $form['html_before']['#weight'] = -99;
   $form['html_before']['#prefix'] = '<div class="contact-request-call-back"><div class="row">';
