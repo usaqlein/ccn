@@ -2766,6 +2766,45 @@ body.path-user summary {
   clear: both;
 }
 
+/* Special Need Based PADDING */
+
+/* meand padding 20 for 1200+ /992 - 1200 Padding 5 / 786 - 992 none*/
+@media (min-width: 768px) {
+  .taxcatv0 .view-list-item {
+    margin-right: 10px !important;
+  }
+  .taxcatv0 .view-list-item a img {
+    background-color: #ffffff;
+  }
+}
+@media (min-width: 991px) {
+  .taxcatv0 .view-list-item {
+    margin-right: 6px !important;
+  }
+  .taxcatv0 .view-list-item a img {
+    background-color: #ffffff;
+  }
+  .taxcatv0 .block-title > span {
+    color: #ffffff !important;
+  }
+}
+@media (min-width: 1200px) {
+  .taxcatv0 .view-list-item {
+    margin-right: 20px !important;
+  }
+  .taxcatv0 .view-list-item a img {
+    background-color: #ffffff;
+  }
+  .taxcatv0 .block-title > span {
+    color: #ffffff !important;
+  }
+}
+
+
+.title-white .block-title > span {
+  color: #ffffff !important;
+}
+
 @media (max-width: 991px) {
   .padding-bottom-100 {
     padding-bottom: 30px !important;
