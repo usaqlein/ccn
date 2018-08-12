@@ -14,14 +14,14 @@
     }
     /***************************| width + padding  |*************************/
     .box__head_image {
-        height: 300px !important;
+        height: 200px !important;
     }
     .box__head_image > iframe {
         min-height: 0 !important;
-        max-height: 300px !important;
+        max-height: 200px !important;
     }
     .box__head_image img {
-        min-height: 300px !important;
+        min-height: 200px !important;
     }
     .box-icons a {
         font-size: 12px !important;

@@ -14,18 +14,27 @@
     }
     /********| width + padding  |*******/
     .card__head_image {
-        height: 300px !important;
+        height: 200px !important;
     }
     .card__head_image > iframe {
         min-height: 0 !important;
-        max-height: 300px !important;
+        max-height: 200px !important;
     }
     .card__head_image img {
-        min-height: 300px !important;
+        min-height: 200px !important;
     }
     .box-icons a {
         font-size: 12px !important;
     }
+    /*--=== belt hight Left===-->*/
+    .card_icon_belt_left {
+        margin-top: -15px !important;
+    }
+    /*--=== belt hight Right ===-->*/
+    .card_icon_belt_right {
+        margin-top: -15px !important;
+    }
+    /*--=== End Card Belt Icon Left===-->*/
     .card__title {
         font-size: 14px !important;
     }
@@ -87,6 +96,15 @@
     .box-icons a {
         font-size: 12px !important;
     }
+    /*--=== belt hight Left===-->*/
+    .card_icon_belt_left {
+        margin-top: -20px !important;
+    }
+    /*--=== belt hight Right ===-->*/
+    .card_icon_belt_right {
+        margin-top: -20px !important;
+    }
+    /*--=== End Card Belt Icon Left===-->*/
     .card__title {
         font-size: 22px;
     }
@@ -150,6 +168,15 @@
     .box-icons a {
         font-size: 14px !important;
     }
+    /*--=== belt hight Left===-->*/
+    .card_icon_belt_left {
+        margin-top: -25px !important;
+    }
+    /*--=== belt hight Right ===-->*/
+    .card_icon_belt_right {
+        margin-top: -25px !important;
+    }
+    /*--=== End Card Belt Icon Left===-->*/
     .card__title {
         font-size: 22px;
     }
@@ -213,6 +240,15 @@
     .box-icons a {
         font-size: 13px !important;
     }
+    /*--=== belt hight Left===-->*/
+    .card_icon_belt_left {
+        margin-top: -25px !important;
+    }
+    /*--=== belt hight Right ===-->*/
+    .card_icon_belt_right {
+        margin-top: -25px !important;
+    }
+    /*--=== End Card Belt Icon Left===-->*/
     .card__punchline {
         font-size: 14px !important;
     }
@@ -273,6 +309,15 @@
     .box-icons a {
         font-size: 13px !important;
     }
+    /*--=== belt hight Left===-->*/
+    .card_icon_belt_left {
+        margin-top: -25px !important;
+    }
+    /*--=== belt hight Right ===-->*/
+    .card_icon_belt_right {
+        margin-top: -25px !important;
+    }
+    /*--=== End Card Belt Icon Left===-->*/
     .card__punchline {
         font-size: 14px !important;
     }
@@ -338,6 +383,15 @@
     .box-icons a {
         font-size: 14px !important;
     }
+    /*--=== belt hight Left===-->*/
+    .card_icon_belt_left {
+        margin-top: -25px !important;
+    }
+    /*--=== belt hight Right ===-->*/
+    .card_icon_belt_right {
+        margin-top: -25px !important;
+    }
+    /*--=== End Card Belt Icon Left===-->*/
     .card__punchline {
         font-size: 14px !important;
     }
@@ -525,7 +579,6 @@ p.avatar-bottom-text{
 .card_icon_belt_left {
     position: absolute;
     z-index: 10;
-    margin-top: -25px;
     left: 10px;
 
 }
