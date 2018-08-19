@@ -1,0 +1,37 @@
+{%
+set classes = [
+'node',
+'node--type-' ~ node.bundle|clean_class,
+node.isPromoted() ? 'node--promoted',
+node.isSticky() ? 'node--sticky',
+not node.isPublished() ? 'node--unpublished',
+view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+'clearfix',
+]
+%}
+<article{{ attributes.addClass(classes)|without('about') }}>
+    <header>
+        {{ title_prefix }}
+            <h2{{ title_attributes.addClass('node__title') }}>
+                <span style="color: #ffffff !important;"> {{ label }} </span>
+            </h2>
+            <div class="full__head shadow_a1">
+                <div class="full__media post-thumbnail">
+                        {{ content.field_image }}
+                </div>
+            </div>
+            <center><h2>{{ content.field_sub_heading }}</h2></center>
+        {{ title_suffix }}
+    </header>
+    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        {{ content|without('field_sub_heading','field_sub_url','field_image') }}
+    </div>
+    {% if display_submitted %}
+        <div class="node__meta">
+                <span{{ author_attributes }}>
+                    {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+                </span>
+            {{ metadata }}
+        </div>
+    {% endif %}
+</article>
