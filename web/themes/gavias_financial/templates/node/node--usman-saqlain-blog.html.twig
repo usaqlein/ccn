@@ -29,7 +29,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         {{ title_suffix }}
     </header>
     <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-        {{ content|without('field_sub_heading','field_sub_url','field_image') }}
+        {{ content|without('field_image') }}
     </div>
     {% if display_submitted %}
         <div class="node__meta">
