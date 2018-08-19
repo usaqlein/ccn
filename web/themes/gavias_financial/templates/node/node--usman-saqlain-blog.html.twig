@@ -9,6 +9,11 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 'clearfix',
 ]
 %}
+<style>
+    div.breadcrumbs {
+        display: none !important;
+    }
+</style>
 <article{{ attributes.addClass(classes)|without('about') }}>
     <header>
         {{ title_prefix }}
